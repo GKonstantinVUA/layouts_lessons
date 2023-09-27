@@ -46,6 +46,6 @@ mark {
 	color: #ff00a3;
 }
 
-.block-presentation_foto img + .signature-photo_vooge {
-	color: rgb(7, 247, 99);
+.block-presentation_foto > img + div {
+	color: rgb(230, 109, 88);
 }
