@@ -1,0 +1,51 @@
+@import url("reset.css");
+
+.navigation_menu {
+	color: cornflowerblue;
+}
+
+.atricle-body_container > p {
+	color: #bcbc00;
+}
+
+.author_article .tagline_author {
+	color: blueviolet;
+}
+
+.first-article.first-article_miley-cyrus .publication_date {
+	color: chartreuse;
+}
+
+.author_photo {
+	color: chocolate;
+}
+
+.block-text_multi-level .block-text_special ~ p {
+	color: cyan;
+}
+
+.color-link_article {
+	color: #ff00a3;
+}
+
+mark {
+	background-color: #ff00a3;
+	color: aliceblue;
+}
+
+.navigation_menu + .article-title_main {
+	color: crimson;
+}
+
+[class*="-callout_article"] {
+	color: green;
+}
+
+[class*="-callout_article"] p,
+[class*="-callout_article"] span {
+	color: #ff00a3;
+}
+
+.block-presentation_foto img + .signature-photo_vooge {
+	color: rgb(7, 247, 99);
+}
