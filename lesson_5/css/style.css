@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+
+@import url("reset.css");
+
+div.basic-practice_layout {
+	font: 400 18px "Inter", sans-serif;
+	line-height: 1.46; /* 26.314/18 */
+	color: #7d7d7d;
+}
+
+.consulting-business_title {
+	font: 600 30px "Poppins", sans-serif;
+	line-height: 1.27; /* 38.1/30 */
+	color: #37393f;
+}
+
+.consulting_block > p + .advertising-text_section p {
+	font: 600 20px "Poppins", sans-serif;
+	line-height: 1.27; /* 25.4/20 */
+	color: #6b77e5;
+}
+
+.project_title {
+	font: 700 40px "Poppins", sans-serif;
+	line-height: 1.27; /* 50.8/40 */
+	color: #37393f;
+}
+
+.test li {
+	list-style: square;
+}
+
+.two_test li {
+	list-style: decimal-leading-zero;
+}
