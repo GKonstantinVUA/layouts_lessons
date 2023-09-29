@@ -1,6 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular, 700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab:500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:regular,italic,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:700&display=swap");
+
+@import url("fonts.css");
 
 @import url("reset.css");
+
+/* Блок верстки з теми уроку*/
+h1 {
+	font: 700 44px "Lora", serif;
+	color: blue;
+}
 
 div.basic-practice_layout {
 	font: 400 18px "Inter", sans-serif;
@@ -26,10 +38,200 @@ div.basic-practice_layout {
 	color: #37393f;
 }
 
+.test {
+	padding-left: 40px;
+}
+
 .test li {
-	list-style: square;
+	list-style: disc;
+}
+
+.two_test {
+	padding-left: 55px;
 }
 
 .two_test li {
 	list-style: decimal-leading-zero;
+}
+
+/* Блок з додатковою версткою статей Martin Scorsese*/
+
+#additional-section a {
+	font: 700 18px "Inter", sans-serif;
+	color: #e90606;
+}
+.article_culture * {
+	font: 400 17px "PT Serif", serif;
+	line-height: 1.647059; /* 28/17 */
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.article_culture h3 {
+	font: 500 39px "Zilla Slab", serif;
+	line-height: 1.21; /* 47/39 */
+	text-align: center;
+}
+
+.author-byline_text,
+.full-date_publication {
+	font: 500 12px "Zilla Slab", serif;
+	color: #8b8d91;
+	text-transform: uppercase;
+}
+
+.author-name_link {
+	font: 700 12px "Zilla Slab", serif;
+	color: #e90606;
+	text-transform: uppercase;
+}
+
+.article-content_body .letter-m_dropcap {
+	font: 500 68px "Zilla Slab", serif;
+	text-shadow: -2.5px -2.5px 1px #00f9f2, 2px 2px 1px #ff0150;
+	letter-spacing: 5.5px;
+	line-height: 1.05;
+}
+
+.link-jump_other-article {
+	color: #e90606;
+}
+
+.link-italic-jump_other-article {
+	color: #e90606;
+	font-style: italic;
+	letter-spacing: 0.75px;
+}
+
+.text-content_bold {
+	font-weight: 700;
+}
+
+.signature_photo {
+	font: 400 13px "Roboto", sans-serif;
+	line-height: 1.15; /* 15/13 */
+}
+
+.author_photo p {
+	font: 400 12px "Roboto", sans-serif;
+	line-height: 1.25; /* 15/12 */
+	color: #a3a5a9;
+}
+
+.text-content_italic {
+	font-style: italic;
+	letter-spacing: 0.75px;
+}
+
+.author_photo .name-magazine_big-letter,
+.magazine_name {
+	font: 400 12px "Roboto", sans-serif;
+	line-height: 1.25; /* 15/12 */
+	color: #a3a5a9;
+	text-transform: uppercase;
+}
+
+.contact-info_article,
+.jump-articles_social-media,
+.icon-social_jump,
+.more-read_link {
+	text-align: center;
+}
+
+.more-read_link a {
+	text-decoration: underline;
+}
+
+.more-read_link .text-content_bold {
+	text-decoration: overline;
+}
+
+.contast-info_bold,
+.jump-articles_social-media {
+	font: 700 18px "Roboto", sans-serif;
+	color: rgba(0, 0, 0, 0.95);
+	text-transform: uppercase;
+	letter-spacing: 0.95px;
+}
+
+.contact-info_article a {
+	font: 400 18px "Roboto", sans-serif;
+	color: #e90606;
+	text-transform: uppercase;
+	letter-spacing: 1.05px;
+}
+
+/* Блок з додатковою версткою статей Pearl Harbor*/
+
+.article_travel {
+	font: 400 16px "Georgia", serif;
+	letter-spacing: 0.1px;
+	line-height: 1.6;
+	color: #333;
+}
+
+.jump-page_link-italic a {
+	font-style: italic;
+	color: #6b77e5;
+	text-decoration: line-through;
+}
+
+.jump-page_link-italic {
+	text-align: right;
+}
+
+#article_pearl-harbor h3 {
+	font: 600 38px "Franklin Gothic Demi", serif;
+	line-height: 1.211;
+	color: #37393f;
+	text-align: center;
+}
+
+.signature_for_article {
+	font: 500 18px "Franklin Gothic", serif;
+	line-height: 1.5;
+	color: #37393f;
+}
+
+.description-photo_cover,
+.info-publication_author p,
+.date-publication_pearl-harbor,
+.description-photo_block-image p,
+.information-author_photo {
+	font: 400 14px "Century Gothic", sans-serif;
+	letter-spacing: 0.1px;
+	color: #000;
+}
+
+.description-photo_cover .information-author_photo,
+.info-publication_author p,
+.date-publication_pearl-harbor,
+.information-author_photo {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.info-publication_author .name-author_pearl-harbor,
+.number-photo_block,
+.block-text_pearl-harbor h4 {
+	font: 700 14px "Century Gothic", sans-serif;
+	letter-spacing: 3px;
+	color: #000;
+}
+
+.block-text_pearl-harbor h4 {
+	font: 700 24px "Century Gothic", sans-serif;
+	letter-spacing: 0.5px;
+	color: #000;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.сontainer-text_italic {
+	font-style: italic;
+	letter-spacing: 0.7px;
+}
+
+.jump-menu_additional {
+	font: 700 16px "Century Gothic Bold", sans-serif;
+	color: crimson;
 }

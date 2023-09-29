@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .a {
+        fill: #3b5998;
+      }
+
+      .b {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>facebook_icon</title>
+  <g>
+    <circle class="a" cx="15" cy="15" r="15"/>
+    <path class="b" d="M16.14,16.28h2.51l.48-3.14h-3v-2A1.56,1.56,0,0,1,17.9,9.42h1.36V6.75a16.36,16.36,0,0,0-2.42-.21c-2.46,0-4.06,1.5-4.06,4.22v2.38H10.05v3.14h2.73v7.57h3.37Z"/>
+  </g>
+</svg>
