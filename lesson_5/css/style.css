@@ -8,13 +8,20 @@
 @import url("reset.css");
 
 /* Блок верстки з теми уроку*/
+
+body {
+	font: 400 19px "Inter", sans-serif;
+	color: #000000;
+	line-height: 1.1;
+}
+
 h1 {
 	font: 700 44px "Lora", serif;
 	color: blue;
 }
 
 div.basic-practice_layout {
-	font: 400 18px "Inter", sans-serif;
+	font-size: 18px;
 	line-height: 1.46; /* 26.314/18 */
 	color: #7d7d7d;
 }
