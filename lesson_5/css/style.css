@@ -83,6 +83,7 @@ div.basic-practice_layout {
 	font: 500 12px "Zilla Slab", serif;
 	color: #8b8d91;
 	text-transform: uppercase;
+	word-spacing: 5px;
 }
 
 .author-name_link {
