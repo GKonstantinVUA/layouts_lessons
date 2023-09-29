@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .a {
+        fill: #0177b5;
+      }
+
+      .b {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>linked_ln_icon</title>
+  <g>
+    <circle class="a" cx="15" cy="15" r="15"/>
+    <g>
+      <rect class="b" x="8.74" y="11.88" width="2.89" height="9.33"/>
+      <path class="b" d="M19,11.69a3,3,0,0,0-2.71,1.49v-1.3H13.51v9.33H16.4V16.54c0-1.21.28-2.42,1.77-2.42s1.49,1.39,1.49,2.52v4.57h2.9l-.09-5C22.47,13.65,22,11.69,19,11.69Z"/>
+      <circle class="b" cx="10.15" cy="8.89" r="1.68"/>
+    </g>
+  </g>
+</svg>
