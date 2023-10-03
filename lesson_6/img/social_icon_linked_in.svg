@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .a {
+        fill: #7e84fe;
+      }
+
+      .b {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>social_icon_linked_in</title>
+  <g>
+    <path class="a" d="M0,0H36V36H0Z"/>
+    <g>
+      <rect class="b" x="10.49" y="14.25" width="3.47" height="11.2"/>
+      <path class="b" d="M22.81,14a3.5,3.5,0,0,0-3.24,1.79V14.25H16.21v11.2h3.47v-5.6c0-1.45.33-2.91,2.13-2.91s1.79,1.67,1.79,3v5.49h3.47L27,19.4C27,16.38,26.4,14,22.81,14Z"/>
+      <circle class="b" cx="12.17" cy="10.67" r="2.02"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'GNUTypewriter';
+    src: url('../fonts/GNUTypewriter.woff2') format('woff2'),
+        url('../fonts/GNUTypewriter.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Leto One Defect';
+    src: url('../fonts/LetoOneDefect.woff2') format('woff2'),
+        url('../fonts/LetoOneDefect.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+

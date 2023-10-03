@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular;600&display=swap");
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font: 18px "Inter", sans-serif;
+}
+
+.navigation-menu_lesson li {
+	display: inline-block;
+}
+
+.navigation-menu_lesson {
+	text-align: center;
+}
+
+.header-container img {
+	margin-bottom: 20px;
+}
+.header-container {
+	margin-bottom: 40px;
+	font: 700 20px "Golos", sans-serif;
+	text-transform: uppercase;
+	color: #4d34b9;
+}
+
+.main-block {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+h1 {
+	font: 700 27px "Golos", sans-serif;
+	text-align: center;
+	margin: 0 0 30px 0;
+	color: #37393f;
+}
+/* Практика з display: none для тегу br */
+h1 br {
+	display: none;
+}
+
+.shared-container_lesson mark {
+	background-color: rgb(0, 255, 64);
+}
+
+.main-block {
+	margin-bottom: 60px;
+}
+
+.shared-container_lesson {
+	margin-bottom: 30px;
+}
+.block-colsantin_layout {
+	max-width: 692px;
+	margin: 0 auto;
+}
+
+.block-colsantin_layout {
+	margin-bottom: 60px;
+}
+
+.block-colsantin_layout img {
+	max-width: 100%;
+	margin-bottom: 38px;
+}
+
+.description_management-consulting h2 {
+	font: 600 30px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.27; /* 38.1/30 */
+	margin-bottom: 13px;
+	text-transform: capitalize;
+}
+
+.description_management-consulting {
+	margin-bottom: 42px;
+}
+
+.description_management-consulting > p {
+	color: #7d7d7d;
+	line-height: 1.46; /* 26.314/18 */
+	margin-bottom: 42px;
+}
+
+.special-paragraph_color {
+	margin-bottom: 12px;
+}
+
+.special-paragraph_color p {
+	font: 600 20px "Poppins", sans-serif;
+	color: #6b77e5;
+	line-height: 1.27; /* 25.4/20 */
+}
+
+/* Блок Our benefits */
+
+.benefits_block-consulting {
+	font-size: 0;
+}
+
+.benefits_block-consulting .visual-view {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 29px;
+}
+
+.visual-view img {
+	max-width: 100%;
+}
+
+.benefits_block-consulting .text-description-consulting {
+	display: inline-block;
+	max-width: 332px;
+	font-size: 18px;
+	font-family: "Inter", sans-serif;
+	color: #7d7d7d;
+}
+
+.text-description-consulting h3 {
+	font: 600 25px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.65;
+	margin-bottom: 15px;
+}
+
+.text-description-consulting p {
+	font: 600 20px "Poppins", sans-serif;
+	color: #40ddb6;
+	line-height: 1.5;
+	margin-bottom: 21px;
+}
+
+.text-description-consulting li {
+	margin-bottom: 30px;
+}
+
+.text-description-consulting .element_not-margin,
+.icon-social li.element_not-margin,
+.description_management-consulting .element_not-margin,
+.visual-view .element_not-margin {
+	margin-bottom: 0px;
+}
+
+/* Блок Jewellery */
+
+.jewellery-block_presentation {
+	font-size: 0;
+	margin-bottom: 40px;
+}
+
+.specification_jewellery {
+	display: inline-block;
+	max-width: 563px;
+	font-size: 20px;
+	margin-right: 38px;
+	padding-top: 28px;
+}
+
+.screen-jewellery_advertisement {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.screen-jewellery_advertisement img {
+	max-width: 100%;
+}
+
+.about_us {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #d06b00;
+	margin-bottom: 13px;
+}
+
+.specification_jewellery h4 {
+	font: 59px "DM Serif Text", serif;
+	line-height: 1.52; /* 89.435/59 */
+	text-transform: capitalize;
+	margin-bottom: 25px;
+}
+
+.specification_jewellery p {
+	font-size: 20px;
+	color: #474747;
+	line-height: 1.8; /* 36/20 */
+}
+
+.screen-jewellery_advertisement img {
+	margin-right: 22px;
+}
+
+.screen-jewellery_advertisement .element_not-margin,
+.icon-social li.element_not-margin {
+	margin-right: 0px;
+}
+
+/* Налаштування footer згідно властивостей з лекції */
+
+.footer-container {
+	max-width: 380px;
+	font-size: 0;
+	margin: 0 auto;
+}
+
+.icon-social li {
+	display: inline-block;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+/* Блок з практикою */
+.ptactice-block_main {
+	max-width: 800px;
+	margin: 0 auto;
+	font: 18px "GNUTypewriter", serif;
+	text-align: justify;
+}
+
+.content-block_practice {
+	max-width: 530px;
+	max-height: 350px;
+	margin: 0 auto;
+	padding: 0 15px;
+	overflow: scroll;
+	line-height: 1.5;
+}
+
+.ptactice-block_main h5 {
+	font: 26px "Leto One Defect", serif;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #474747;
+}
+
+.content-block_practice mark {
+	background: rgba(135, 131, 120, 0.15);
+	color: #eb5757;
+}
+
+.content-block_practice a {
+	display: inline-block;
+	margin-bottom: 25px;
+	color: #4d34b9;
+	text-decoration: underline;
+}
+
+.item-display_description,
+.item-box-sizing_description,
+.item-indentation_description {
+	margin-bottom: 25px;
+}
+
+.phrase-italic {
+	font-style: italic;
+	color: blueviolet;
+}
+
+.content-block_practice ol li {
+	list-style: disc;
+}
+
+.content-block_practice ol {
+	padding-left: 40px;
+}
+
+.content-block_practice h6 {
+	color: brown;
+	margin-bottom: 10px;
+}
+
+.scheme_padding,
+.scheme_margin {
+	font-size: 0;
+	margin-bottom: 30px;
+}
+
+.scheme_padding img,
+.scheme_margin img {
+	display: inline-block;
+	vertical-align: bottom;
+	max-width: 50%;
+	margin-right: 12px;
+}
+
+.scheme_padding span,
+.scheme_margin span {
+	display: inline-block;
+	font-size: 10px;
+}
+
+.item-indentation_description > p {
+	margin-bottom: 20px;
+}
+
+.color-text_item {
+	color: #d06b00;
+}
+
+.color-text_item .big-text_color,
+.black-text_item .big-text_black {
+	text-transform: uppercase;
+}
