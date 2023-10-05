@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font: 400 18px "Inter", sans-serif;
+	color: #7d7d7d;
+}
+
+.main-block {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.header-image_main {
+	margin-bottom: 45px;
+}
+
+.main-menu_block {
+	max-width: 1400px;
+	margin: 0 auto 60px;
+}
+
+.navigation-menu_lesson li {
+	display: inline-block;
+	font: 500 26px "Inter", sans-serif;
+	text-transform: uppercase;
+	color: #98046c;
+}
+
+h1 {
+	font: 700 38px "Poppins", sans-serif;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #b02f08;
+}
+
+/* Блок з макету Colsanting */
+
+.block-colsanting_layout {
+	max-width: 1248px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.block-colsanting_layout h2 {
+	margin-bottom: 70px;
+}
+
+.block-colsanting_layout {
+	margin-bottom: 150.5px;
+}
+
+.aside_colsanting-label {
+	font-size: 0;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.aside_colsanting-label .title-template_information {
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: #37393f;
+	line-height: 0.89; /* 16/18 */
+	display: inline-block;
+}
+
+.aside_colsanting-label .icon-figure_label {
+	width: 12px;
+	height: 12px;
+	background-color: #40ddb6;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+.block-colsanting_layout h2 {
+	font: 700 60px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.21; /* 72.6/60 */
+	text-align: center;
+}
+
+[class*="-block_layout"] h3 {
+	font: 700 40px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.21; /* 48.4/40 */
+	margin-bottom: 11px;
+}
+
+[class*="-block_layout"] p {
+	line-height: 1.46; /* 26.314/18 */
+	/* margin-bottom: 11px; */
+}
+
+.icon-graphick-block_layout p {
+	margin-bottom: 32px;
+}
+
+.unit-phrases .word-bold_title,
+.unit-phrases .word-color_title {
+	display: inline-block;
+}
+
+.unit-phrases .word-bold_title {
+	font: 700 30px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 0.53; /* 16/30 */
+	margin-right: 15px;
+}
+
+.unit-phrases .word-color_title {
+	font: 400 30px "Poppins", sans-serif;
+	color: #40ddb6;
+	line-height: 0.53; /* 16/30 */
+}
+
+.icon-graphick-block_layout,
+.photogrphy-block_layout {
+	margin-bottom: 100px;
+}
+
+.fonts-block_layout {
+	margin-bottom: 150.5px;
+}
+
+.photogrphy-block_layout p {
+	margin-bottom: 24px;
+}
+
+.photogrphy-block_layout .element_not-margin p,
+.box-project_information .element_not-margin {
+	margin-bottom: 0;
+}
+
+.unit-phrases .phrases-block_span {
+	margin-bottom: 8px;
+}
+
+.unit-phrases p,
+.phrase-fonts-block_color {
+	color: #40ddb6;
+}
+
+.box-project_information {
+	max-width: 830px;
+	margin: 0 auto;
+}
+
+.box-project_information h4 {
+	font: 700 40px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.27; /* 50.8/40 */
+	margin-bottom: 13px;
+}
+
+.box-project_information > * {
+	margin-bottom: 35px;
+}
+
+.project_information_paragraph > p {
+	margin-bottom: 25px;
+}
+
+.project_information_list-mark ul li {
+	list-style: disc;
+	margin-bottom: 30px;
+}
+
+.project_information_list-mark ul {
+	padding-left: 55px;
+}
+
+.project_information_list-number ol li {
+	list-style: decimal-leading-zero;
+	margin-bottom: 30px;
+}
+
+.project_information_list-number ol {
+	padding-left: 50px;
+}
+
+.element_not-margin li {
+	margin-bottom: 0;
+}
+
+/* Блок Euphoria */
+.block-euphoria_layout {
+	max-width: 1250px;
+	margin: 0 auto 100px;
+	padding: 0 5px;
+	font: 18px "Causten", sans-serif;
+	color: #807d7e;
+}
+
+.sector-wrapper_euphoria {
+	padding: 0 25px;
+}
+
+.aside_euphoria-label .icon-figure_label {
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: #8a33fd;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.block-euphoria_layout h2 {
+	font: 600 28px "Core Sans C 65", sans-serif;
+	letter-spacing: 0.56px;
+	color: #3c4242;
+	line-height: 1.2; /* 33.5/28 */
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+.block-euphoria_layout h5 {
+	font: 600 20px "Core Sans C 65", sans-serif;
+	letter-spacing: 0.4px;
+	color: #807d7e;
+	line-height: 1.7; /* 33.5/20 */
+	margin-bottom: 25px;
+}
+
+.area_euphoria {
+	margin-bottom: 25px;
+}
+
+.area_euphoria h5.element_not-margin,
+div.area_euphoria.element_not-margin {
+	margin-bottom: 0;
+}
+
+.area_euphoria > p {
+	margin-bottom: 20px;
+}
+
+.area_euphoria .word-euphoria_black {
+	font: 20px "Causten Bold", sans-serif;
+}
+
+/* Блок Jewellery */
+.block-jewellery_layout {
+	max-width: 1103px;
+	margin: 0 auto 150.5px;
+	padding: 0 10px;
+	font-size: 0;
+}
+
+.item-text_jewellery,
+.item-image_jewellery .image-girl_flower,
+.item-image_jewellery .image-girl_suit {
+	display: inline-block;
+}
+
+.item-image_jewellery .image-girl_flower img,
+.item-image_jewellery .image-girl_suit img {
+	max-width: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+	margin-left: -12px;
+	margin-top: 16px;
+}
+
+.image-girl_flower {
+	margin-right: 24px;
+}
+
+.item-text_jewellery {
+	max-width: 504px;
+	font: 700 30px "Cormorant Infant", serif;
+	color: #606060;
+	vertical-align: middle;
+	margin-right: 70px;
+}
+
+.item-image_jewellery {
+	display: inline-block;
+	max-width: 510px;
+}
+
+.item-text_jewellery h5 {
+	font-size: 20px;
+	color: #d58417;
+	line-height: 1; /* 20/20 */
+	text-transform: uppercase;
+	margin-bottom: 27px;
+}
+
+.item-text_jewellery h6 {
+	font-size: 64px;
+	color: #000;
+	line-height: 1; /* 20/20 */
+	text-transform: capitalize;
+	margin-bottom: 31px;
+}
+
+.item-text_jewellery p {
+	line-height: 1.4; /* 42/30 */
+}
+
+.item-image_jewellery .image-girl_flower {
+	width: 177px;
+	height: 336px;
+	border-radius: 235px;
+	border: 1px solid #502203;
+}
+
+.item-image_jewellery .image-girl_suit {
+	width: 308px;
+	height: 506px;
+	border-radius: 235px;
+	border: 1px solid #502203;
+}
+
+/* Блок-практика з лекції */
+.block-practicle_lesson {
+	max-width: 1103px;
+	margin: 0 auto;
+	margin-bottom: 150px;
+}
+.additions-lesson_title {
+	text-align: center;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 300;
+	background-color: rgb(160, 167, 164);
+	margin-bottom: 40px;
+	color: #710498;
+}
+
+.test-border_one,
+.test-border_two,
+.test-border_three {
+	width: 400px;
+	height: 300px;
+	margin: 0 auto 40px;
+	padding: 20px;
+}
+
+.test-border_one {
+	border-top: 3px solid rgb(9, 18, 145);
+	border-left: 3px dotted #710498;
+	border-bottom: 3px dashed #98046c;
+	border-right: 3px double #269804;
+	background-color: aqua;
+	color: black;
+}
+
+.test-border_two {
+	outline: 3px solid #b02f08;
+	background-color: rgb(255, 187, 0);
+	color: black;
+}
+
+.test-border_three {
+	background-color: #46d1f4;
+	outline: 3px dashed rgb(12, 12, 103);
+	color: aliceblue;
+	border-radius: 10px;
+}
+
+.block-circle_test {
+	margin: 0 auto 40px;
+	padding: 20px;
+	background-color: #6cf143;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid rgb(74, 20, 128);
+}
+
+.block-shadow_one,
+.block-opacity_test {
+	width: 400px;
+	height: 300px;
+	margin: 0 auto 40px;
+	padding: 20px;
+}
+
+.block-shadow_one {
+	color: #791407;
+	background-color: rgb(68, 250, 64);
+	box-shadow: 4px 4px 5px 0.8px #a5a6a8, inset 4px 4px 5px 0.8px #727275;
+}
+
+.block-opacity_test {
+	background-color: darkseagreen;
+	opacity: 0.75;
+	border: 2px solid red;
+}
+
+/* Footer */
+
+.footer-container {
+	max-width: 380px;
+	font-size: 0;
+	margin: 0 auto;
+}
+
+.icon-social li {
+	display: inline-block;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.icon-social li.element_not-margin {
+	margin-bottom: 0;
+	margin-right: 0;
+}
