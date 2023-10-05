@@ -11,16 +11,18 @@ body {
 
 .main-block {
 	max-width: 1400px;
-	margin: 0 auto;
+	margin: 0 auto 150px;
 }
 
 .header-image_main {
 	margin-bottom: 45px;
 }
-
+.header-container {
+	margin-bottom: 60px;
+}
 .main-menu_block {
 	max-width: 1400px;
-	margin: 0 auto 60px;
+	margin: 0 auto;
 }
 
 .navigation-menu_lesson li {
@@ -208,12 +210,15 @@ h1 {
 	margin-right: 15px;
 }
 
-.block-euphoria_layout h2 {
+.aside_euphoria-label {
+	margin-bottom: 30px;
+}
+
+.aside_euphoria-label h2 {
 	font: 600 28px "Core Sans C 65", sans-serif;
 	letter-spacing: 0.56px;
 	color: #3c4242;
 	line-height: 1.2; /* 33.5/28 */
-	margin-bottom: 30px;
 	display: inline-block;
 }
 
@@ -240,6 +245,10 @@ div.area_euphoria.element_not-margin {
 
 .area_euphoria .word-euphoria_black {
 	font: 20px "Causten Bold", sans-serif;
+}
+
+.area_euphoria .element_not-margin p {
+	margin-bottom: 0;
 }
 
 /* Блок Jewellery */
@@ -320,7 +329,6 @@ div.area_euphoria.element_not-margin {
 .block-practicle_lesson {
 	max-width: 1103px;
 	margin: 0 auto;
-	margin-bottom: 150px;
 }
 .additions-lesson_title {
 	text-align: center;
