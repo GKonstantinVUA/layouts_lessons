@@ -132,11 +132,6 @@ h1 {
 	margin-bottom: 24px;
 }
 
-.photogrphy-block_layout .element_not-margin p,
-.box-project_information .element_not-margin {
-	margin-bottom: 0;
-}
-
 .unit-phrases .phrases-block_span {
 	margin-bottom: 8px;
 }
@@ -182,10 +177,6 @@ h1 {
 
 .project_information_list-number ol {
 	padding-left: 50px;
-}
-
-.element_not-margin li {
-	margin-bottom: 0;
 }
 
 /* Блок Euphoria */
@@ -234,21 +225,12 @@ h1 {
 	margin-bottom: 25px;
 }
 
-.area_euphoria h5.element_not-margin,
-div.area_euphoria.element_not-margin {
-	margin-bottom: 0;
-}
-
 .area_euphoria > p {
 	margin-bottom: 20px;
 }
 
 .area_euphoria .word-euphoria_black {
 	font: 20px "Causten Bold", sans-serif;
-}
-
-.area_euphoria .element_not-margin p {
-	margin-bottom: 0;
 }
 
 /* Блок Jewellery */
@@ -415,7 +397,12 @@ div.area_euphoria.element_not-margin {
 	margin-bottom: 50px;
 }
 
+/* Сброс отступа Margin */
+
 .icon-social li.element_not-margin {
-	margin-bottom: 0;
 	margin-right: 0;
+}
+
+[class*="element_not-margin"] {
+	margin-bottom: 0;
 }
