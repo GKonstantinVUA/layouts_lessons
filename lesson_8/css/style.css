@@ -436,3 +436,18 @@ li.item_not_margin {
 	margin-right: 0;
 	margin-bottom: 0;
 }
+
+/* постер */
+.poster_frilancer-life {
+	background: linear-gradient(
+			253deg,
+			rgba(98, 199, 202, 0.5746499283307073) 0%,
+			rgba(145, 237, 240, 0.4906163148853291) 100%
+		),
+		url("../img/frilanser_for_life.webp") center/900px 800px no-repeat fixed;
+	max-height: 930px;
+	min-height: 800px;
+	width: 100%;
+	margin: 0 auto 60px;
+	padding: 0 15px;
+}
