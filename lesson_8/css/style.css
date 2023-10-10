@@ -20,12 +20,12 @@ body {
 }
 
 .name-lesson_layout {
-	padding: 46px 0;
-	font: 700 32px "Poppins", sans-serif;
+	padding: 20px 0;
+	font: 700 24px "Poppins", sans-serif;
 	color: #37393f;
 	line-height: 1.4;
 	max-width: 545px;
-	margin-left: 330px;
+	margin-left: 260px;
 	margin-right: 420px;
 	text-align: center;
 }
@@ -44,7 +44,7 @@ body {
 
 .name-lesson_layout p {
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 16px;
 }
 
 .name-lesson_layout .text-big_paragraph {
@@ -56,7 +56,7 @@ body {
 	color: #37393f;
 	line-height: 1.2;
 	vertical-align: top;
-	padding-top: 66px;
+	padding-top: 40px;
 }
 
 .main-menu_lesson li {
@@ -425,6 +425,7 @@ body {
 	background-color: #fafafa;
 	background-size: 60px 60px;
 	padding: 50px 0;
+	border-top: 4px solid rgba(30, 126, 121, 0.15);
 }
 
 /* сброс margin */
