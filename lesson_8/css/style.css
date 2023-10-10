@@ -1,0 +1,438 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font: 18px "Inter", sans-serif;
+	color: #7d7d7d;
+}
+
+.header-container {
+	background: url("../img/logo_heder_lesson.svg") 160px / auto no-repeat,
+		url("../img/background_header.svg") repeat fixed;
+	border-bottom: 4px solid rgba(98, 198, 202, 0.726);
+	font-size: 0;
+}
+
+.name-lesson_layout,
+.main-menu_lesson,
+.main-menu_lesson li {
+	display: inline-block;
+}
+
+.name-lesson_layout {
+	padding: 46px 0;
+	font: 700 32px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.4;
+	max-width: 545px;
+	margin-left: 330px;
+	margin-right: 420px;
+	text-align: center;
+}
+
+.topic-lesson_text {
+	padding: 5px 15px;
+	background-color: #72e5e9;
+	border-radius: 8px;
+}
+
+.main-menu_lesson li {
+	padding: 5px 15px;
+	background-color: #72e5e9;
+	border-radius: 4px;
+}
+
+.name-lesson_layout p {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.name-lesson_layout .text-big_paragraph {
+	text-transform: uppercase;
+}
+
+.main-menu_lesson {
+	font: 600 16px "Inter", sans-serif;
+	color: #37393f;
+	line-height: 1.2;
+	vertical-align: top;
+	padding-top: 66px;
+}
+
+.main-menu_lesson li {
+	margin-right: 50px;
+}
+
+/* Body */
+
+body {
+	background: url("../img/background_body.svg");
+	background-attachment: fixed;
+}
+
+.main-block {
+	max-width: 1270px;
+	margin: 0 auto 60px;
+	background-color: #fcfcfc;
+	padding-bottom: 60px;
+}
+
+.header-container,
+.whitecollar_box,
+.clothing-women_box {
+	margin-bottom: 60px;
+}
+
+.whitecollar_box {
+	max-width: 702px;
+	margin: 0 auto 60px;
+	padding: 30px 15px 0 15px;
+}
+
+.block-consulting_layout {
+	margin-bottom: 80px;
+}
+
+/* Блок 1 whitecollar */
+.whitecollar_box h2 {
+	font: 500 18px "Inter", sans-serif;
+	color: #37393f;
+	line-height: 1.22; /* 22/18 */
+	text-transform: capitalize;
+	margin-bottom: 16px;
+	background: url("../img/figure_green_square.svg") 0 5px no-repeat;
+	padding-left: 18px;
+}
+
+.whitecollar_box h3 {
+	font: 700 40px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.21; /* 48.4/40 */
+	text-transform: capitalize;
+	max-width: 414px;
+	margin-bottom: 20px;
+}
+
+.set-paragraph_whitecollar {
+	margin-bottom: 20px;
+}
+
+.set-paragraph_whitecollar p {
+	margin-bottom: 15px;
+	line-height: 1.46; /* 26.314/18 */
+}
+
+.whitecollar_box ul {
+	margin-bottom: 43px;
+}
+
+.whitecollar_box li {
+	margin-bottom: 23px;
+	font: 20px "Poppins", sans-serif;
+	background: url("../img/label_mark_list.svg") 0 3px no-repeat;
+	line-height: 1.65; /* 33/20 */
+	padding-left: 35px;
+	min-height: 27px;
+}
+
+.desc-section_whitecollar {
+	margin-bottom: 37px;
+	font-size: 0;
+}
+
+[class*="-quote_whitecollar"] {
+	display: inline-block;
+	max-width: 295px;
+	padding: 31px 32px 32px;
+	border: 1px solid #e3e3e3;
+	font-size: 16px;
+}
+
+.experience-quote_whitecollar {
+	margin-right: 21px;
+}
+
+.description_whitecollar-first {
+	background: url("../img/label_certificate.svg") no-repeat;
+	padding-left: 58px;
+}
+
+.description_whitecollar-second {
+	background: url("../img/label_cup.svg") no-repeat;
+	padding-left: 58px;
+}
+
+.description_whitecollar-first h4,
+.description_whitecollar-second h4 {
+	font: 600 20px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.5; /* 30/20 */
+	margin-bottom: 3px;
+}
+
+.description_whitecollar-first p,
+.description_whitecollar-second p {
+	font-size: 16px;
+	line-height: 1.35; /* 21.63/16 */
+}
+
+.whitecollar_box a {
+	display: inline-block;
+	background-color: #6b77e5;
+	padding: 21px 27px 22px;
+	color: #fff;
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 600;
+	line-height: 1.22; /* 22/18 */
+}
+
+/* Сектор 2 whitecollar */
+
+.client-projects_box {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 48px;
+}
+
+.title-project_content {
+	text-align: center;
+	max-width: 852px;
+	margin: 0 auto;
+	margin-bottom: 47px;
+}
+
+.title-project_content h2 {
+	display: inline-block;
+	font: 500 18px "Inter", sans-serif;
+	color: #37393f;
+	line-height: 1.22; /* 22/18 */
+	text-transform: capitalize;
+	background: url("../img/figure_green_square.svg") 0 5px no-repeat;
+	padding-left: 18px;
+	margin-bottom: 14px;
+}
+
+.title-project_content h3 {
+	font: 700 40px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.21; /* 48.4/40 */
+	margin-bottom: 14px;
+}
+
+.set-paragraph_client-projects p {
+	line-height: 1.46; /* 26.314/18 */
+}
+
+.advertising-line_projects-first {
+	margin-bottom: 58px;
+}
+
+.set-brandbook_client-projects {
+	font-size: 0;
+}
+
+.brochure_project-first,
+.brochure_project-second,
+.brochure_project-third,
+.brochure_project-fourth,
+.brochure_project-fifth,
+.brochure_project-sixth {
+	display: inline-block;
+	width: 100%;
+	max-width: 384px;
+	font-size: 14px;
+}
+
+.thumb-area_project {
+	min-height: 501px;
+	max-width: 100%;
+}
+
+.brochure_project-first .thumb-area_project {
+	background: url("../img/computer.webp") no-repeat;
+	margin-bottom: 24px;
+	margin-right: 34px;
+}
+
+.brochure_project-second .thumb-area_project {
+	background: url("../img/man_with_laptop.webp") no-repeat;
+	margin-bottom: 24px;
+	margin-right: 34px;
+}
+
+.brochure_project-third .thumb-area_project {
+	background: url("../img/trading_chart.webp") no-repeat;
+	margin-bottom: 24px;
+}
+
+.brochure_project-fourth .thumb-area_project {
+	background: url("../img/businesswoman.webp") no-repeat;
+	margin-bottom: 24px;
+	margin-right: 34px;
+}
+
+.brochure_project-fifth .thumb-area_project {
+	background: url("../img/business_meeting.webp") no-repeat;
+	margin-bottom: 24px;
+	margin-right: 34px;
+}
+
+.brochure_project-sixth .thumb-area_project {
+	background: url("../img/coffee_on_table.webp") no-repeat;
+	margin-bottom: 24px;
+}
+
+.zone-text_thumb h4 {
+	font: 600 20px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.27; /* 25.4/20 */
+	margin-bottom: 10px;
+}
+
+.date-zone_project {
+	line-height: 1.46; /* 20.466/14 */
+	background: url("../img/label_note.svg") 0 center no-repeat;
+	padding-left: 25px;
+	min-height: 20px;
+}
+
+/* Блок euphoria */
+.block-euphoria_layout {
+	font: 20px "Causten", sans-serif;
+	color: #807d7e;
+	line-height: 1.68; /* 33.5/20 */
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* Блок 1 Euphoria */
+.clothing-women_box h2 {
+	font: 600 28px "Core Sans C", sans-serif;
+	color: #3c4242;
+	line-height: 1.2; /* 33.5/28 */
+	letter-spacing: 0.56px;
+	margin-bottom: 30px;
+	background: url("../img/figure_oval.svg") 0 3px no-repeat;
+	padding-left: 21px;
+}
+
+[class*="title_chapter_"] h3 {
+	font: 600 20px "Core Sans C", sans-serif;
+	color: #807d7e;
+	line-height: 1.7; /* 33.5/20 */
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+
+.clothing-women_box a {
+	font: 600 20px "Core Sans C", sans-serif;
+	color: #807d7e;
+	line-height: 1.7; /* 33.5/20 */
+	letter-spacing: 0.4px;
+}
+
+.title_chapter_first > p,
+.title_chapter_second > p {
+	margin-bottom: 20px;
+}
+
+.description-zone_euphoria {
+	max-width: 1260px;
+	padding: 0 32px 0 21px;
+}
+
+.title_chapter_first,
+.title_chapter_second {
+	margin-bottom: 25px;
+}
+
+.title_chapter_first .phrase-text_sector,
+.title_chapter_second .phrase-text_sector {
+	font-weight: 700;
+}
+
+/* Блок 2 Euphoria */
+
+.fashion_box {
+	font-size: 0;
+	padding: 0 6px;
+}
+
+.unit-pic-first {
+	display: inline-block;
+	max-width: 614px;
+	min-height: 640px;
+	background: url("../img/plant_leaves.webp") 0 0 / cover no-repeat;
+	font-size: 18px;
+	border-radius: 10px 0 0 10px;
+	padding: 180px 74px 175px;
+}
+
+.unit-pic-second {
+	display: inline-block;
+	width: 100%;
+	max-width: 614px;
+	min-height: 640px;
+	background: url("../img/youth_group.webp") 0 0 / cover no-repeat;
+
+	vertical-align: top;
+	border-radius: 0 10px 10px 0;
+}
+
+.unit-pic-first h5 {
+	font: 800 34px "Core Sans C", sans-serif;
+	color: #fff;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 1.47; /* 50/34 */
+	letter-spacing: 0.208px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.unit-pic-first p {
+	font-weight: 300;
+	color: #fff;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	margin-bottom: 50px;
+}
+
+.unit-pic-first a {
+	padding: 12px 44px;
+	border-radius: 8px;
+	background: #fff;
+	color: #3c4242;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+/* Футер */
+
+.footer-container {
+	background: linear-gradient(
+		135deg,
+		rgba(30, 126, 121, 0.25) 25%,
+		rgba(30, 126, 121, 0.34) 25%,
+		rgba(30, 126, 121, 0.34) 50%,
+		rgba(30, 126, 121, 0.25) 50%,
+		rgba(30, 126, 121, 0.25) 75%,
+		rgba(30, 126, 121, 0.34) 75%
+	);
+	background-color: #fafafa;
+	background-size: 60px 60px;
+	padding: 50px 0;
+}
+
+/* сброс margin */
+[class*="_not_margin"] {
+	margin-bottom: 0;
+}
+
+li.item_not_margin {
+	margin-right: 0;
+	margin-bottom: 0;
+}
