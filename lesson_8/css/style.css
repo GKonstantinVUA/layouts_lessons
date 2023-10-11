@@ -20,26 +20,26 @@ body {
 }
 
 .name-lesson_layout {
-	padding: 20px 0;
 	font: 700 24px "Poppins", sans-serif;
 	color: #37393f;
 	line-height: 1.4;
+	text-align: center;
+	padding: 20px 0;
 	max-width: 545px;
 	margin-left: 260px;
 	margin-right: 420px;
-	text-align: center;
 }
 
 .topic-lesson_text {
-	padding: 5px 15px;
 	background-color: #72e5e9;
 	border-radius: 8px;
+	padding: 5px 15px;
 }
 
 .main-menu_lesson li {
-	padding: 5px 15px;
 	background-color: #72e5e9;
 	border-radius: 4px;
+	padding: 5px 15px;
 }
 
 .name-lesson_layout p {
@@ -99,8 +99,8 @@ body {
 	color: #37393f;
 	line-height: 1.22; /* 22/18 */
 	text-transform: capitalize;
-	margin-bottom: 16px;
 	background: url("../img/figure_green_square.svg") 0 5px no-repeat;
+	margin-bottom: 16px;
 	padding-left: 18px;
 }
 
@@ -118,8 +118,8 @@ body {
 }
 
 .set-paragraph_whitecollar p {
-	margin-bottom: 15px;
 	line-height: 1.46; /* 26.314/18 */
+	margin-bottom: 15px;
 }
 
 .whitecollar_box ul {
@@ -127,10 +127,11 @@ body {
 }
 
 .whitecollar_box li {
-	margin-bottom: 23px;
 	font: 20px "Poppins", sans-serif;
-	background: url("../img/label_mark_list.svg") 0 3px no-repeat;
+	color: #37393f;
 	line-height: 1.65; /* 33/20 */
+	background: url("../img/label_mark_list.svg") 0 3px no-repeat;
+	margin-bottom: 23px;
 	padding-left: 35px;
 	min-height: 27px;
 }
@@ -143,9 +144,9 @@ body {
 [class*="-quote_whitecollar"] {
 	display: inline-block;
 	max-width: 295px;
-	padding: 31px 32px 32px;
 	border: 1px solid #e3e3e3;
 	font-size: 16px;
+	padding: 31px 32px 32px;
 }
 
 .experience-quote_whitecollar {
@@ -177,14 +178,14 @@ body {
 }
 
 .whitecollar_box a {
-	display: inline-block;
-	background-color: #6b77e5;
-	padding: 21px 27px 22px;
+	font-weight: 600;
+	line-height: 1.22; /* 22/18 */
 	color: #fff;
 	text-align: center;
 	text-transform: capitalize;
-	font-weight: 600;
-	line-height: 1.22; /* 22/18 */
+	display: inline-block;
+	background-color: #6b77e5;
+	padding: 21px 27px 22px;
 }
 
 /* Сектор 2 whitecollar */
@@ -203,12 +204,12 @@ body {
 }
 
 .title-project_content h2 {
-	display: inline-block;
 	font: 500 18px "Inter", sans-serif;
 	color: #37393f;
 	line-height: 1.22; /* 22/18 */
 	text-transform: capitalize;
 	background: url("../img/figure_green_square.svg") 0 5px no-repeat;
+	display: inline-block;
 	padding-left: 18px;
 	margin-bottom: 14px;
 }
@@ -312,7 +313,7 @@ body {
 	font: 600 28px "Core Sans C", sans-serif;
 	color: #3c4242;
 	line-height: 1.2; /* 33.5/28 */
-	letter-spacing: 0.56px;
+	letter-spacing: 0.6px;
 	margin-bottom: 30px;
 	background: url("../img/figure_oval.svg") 0 3px no-repeat;
 	padding-left: 21px;
@@ -361,11 +362,11 @@ body {
 }
 
 .unit-pic-first {
+	font-size: 18px;
 	display: inline-block;
 	max-width: 614px;
 	min-height: 640px;
 	background: url("../img/plant_leaves.webp") 0 0 / cover no-repeat;
-	font-size: 18px;
 	border-radius: 10px 0 0 10px;
 	padding: 175px 74px 175px;
 }
@@ -384,11 +385,8 @@ body {
 .unit-pic-first h5 {
 	font: 800 34px "Core Sans C", sans-serif;
 	color: #fff;
-	font-size: 34px;
-	font-style: normal;
-	font-weight: 800;
 	line-height: 1.47; /* 50/34 */
-	letter-spacing: 0.208px;
+	letter-spacing: 0.2px;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 }
@@ -402,12 +400,12 @@ body {
 }
 
 .unit-pic-first a {
+	font-weight: 600;
+	color: #3c4242;
 	padding: 12px 44px;
 	border-radius: 8px;
 	background: #fff;
-	color: #3c4242;
 	text-transform: capitalize;
-	font-weight: 600;
 }
 
 /* Футер */
