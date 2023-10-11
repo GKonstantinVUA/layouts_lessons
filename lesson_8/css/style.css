@@ -368,7 +368,7 @@ body {
 	min-height: 640px;
 	background: url("../img/plant_leaves.webp") 0 0 / cover no-repeat;
 	border-radius: 10px 0 0 10px;
-	padding: 175px 74px 175px;
+	padding: 152px 74px 175px;
 }
 
 .unit-pic-second {
@@ -400,6 +400,7 @@ body {
 }
 
 .unit-pic-first a {
+	display: inline-block;
 	font-weight: 600;
 	color: #3c4242;
 	padding: 12px 44px;
@@ -415,7 +416,7 @@ body {
 		135deg,
 		rgba(30, 126, 121, 0.25) 25%,
 		rgba(30, 126, 121, 0.34) 25%,
-		rgba(30, 126, 121, 0.34) 50%,
+		rgba(120, 160, 158, 0.34) 50%,
 		rgba(30, 126, 121, 0.25) 50%,
 		rgba(30, 126, 121, 0.25) 75%,
 		rgba(30, 126, 121, 0.34) 75%
