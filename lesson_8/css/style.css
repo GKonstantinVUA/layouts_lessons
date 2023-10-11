@@ -366,9 +366,9 @@ body {
 	display: inline-block;
 	max-width: 614px;
 	min-height: 640px;
-	background: url("../img/plant_leaves.webp") 0 0 / cover no-repeat;
+	background: url("../img/plant_leaves.webp") 0 0 / contain no-repeat;
 	border-radius: 10px 0 0 10px;
-	padding: 152px 74px 175px;
+	padding: 156px 74px 175px;
 }
 
 .unit-pic-second {
