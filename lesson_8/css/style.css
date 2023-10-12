@@ -193,7 +193,7 @@ body {
 .client-projects_box {
 	max-width: 1250px;
 	margin: 0 auto;
-	padding: 0 48px;
+	padding: 0 15px;
 }
 
 .title-project_content {
@@ -245,42 +245,45 @@ body {
 	font-size: 14px;
 }
 
+.brochure_project-first,
+.brochure_project-second,
+.brochure_project-fourth,
+.brochure_project-fifth {
+	margin-right: 34px;
+}
+
 .thumb-area_project {
 	min-height: 501px;
 	max-width: 100%;
 }
 
 .brochure_project-first .thumb-area_project {
-	background: url("../img/computer.webp") no-repeat;
+	background: url("../img/computer.webp") 0 0 / cover no-repeat, #d2cfcf;
 	margin-bottom: 24px;
-	margin-right: 34px;
 }
 
 .brochure_project-second .thumb-area_project {
-	background: url("../img/man_with_laptop.webp") no-repeat;
+	background: url("../img/man_with_laptop.webp") 0 0 / cover no-repeat, #d2cfcf;
 	margin-bottom: 24px;
-	margin-right: 34px;
 }
 
 .brochure_project-third .thumb-area_project {
-	background: url("../img/trading_chart.webp") no-repeat;
+	background: url("../img/trading_chart.webp") 0 0 / cover no-repeat, #d2cfcf;
 	margin-bottom: 24px;
 }
 
 .brochure_project-fourth .thumb-area_project {
-	background: url("../img/businesswoman.webp") no-repeat;
+	background: url("../img/businesswoman.webp") 0 0 / cover no-repeat, #d2cfcf;
 	margin-bottom: 24px;
-	margin-right: 34px;
 }
 
 .brochure_project-fifth .thumb-area_project {
-	background: url("../img/business_meeting.webp") no-repeat;
+	background: url("../img/business_meeting.webp") 0 0 / cover no-repeat, #d2cfcf;
 	margin-bottom: 24px;
-	margin-right: 34px;
 }
 
 .brochure_project-sixth .thumb-area_project {
-	background: url("../img/coffee_on_table.webp") no-repeat;
+	background: url("../img/coffee_on_table.webp") 0 0 / cover no-repeat, #d2cfcf;
 	margin-bottom: 24px;
 }
 
@@ -366,7 +369,7 @@ body {
 	display: inline-block;
 	max-width: 614px;
 	min-height: 640px;
-	background: url("../img/plant_leaves.webp") 0 0 / contain no-repeat;
+	background: url("../img/plant_leaves.webp") 0 0 / cover no-repeat, #d2cfcf;
 	border-radius: 10px 0 0 10px;
 	padding: 156px 74px 175px;
 }
@@ -376,7 +379,7 @@ body {
 	width: 100%;
 	max-width: 614px;
 	min-height: 640px;
-	background: url("../img/youth_group.webp") 0 0 / cover no-repeat;
+	background: url("../img/youth_group.webp") 0 0 / cover no-repeat, #d2cfcf;
 
 	vertical-align: top;
 	border-radius: 0 10px 10px 0;
