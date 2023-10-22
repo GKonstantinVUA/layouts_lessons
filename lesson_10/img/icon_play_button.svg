@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .a {
+        fill: #6b77e5;
+      }
+
+      .b {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>icon_play_button</title>
+  <g>
+    <circle class="a" cx="12" cy="12" r="12"/>
+    <path class="b" d="M11,15.86l4-3.42a.53.53,0,0,0,.16-.2.64.64,0,0,0,0-.24.54.54,0,0,0-.21-.45L11,8.14a.6.6,0,0,0-1,.45v6.82A.6.6,0,0,0,11,15.86Z"/>
+  </g>
+</svg>

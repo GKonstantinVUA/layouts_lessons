@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap");
+
+@font-face {
+	font-family: "Anonymous Pro";
+	src: url("../fonts/AnonymousPro-Bold.woff2") format("woff2"),
+		url("../fonts/AnonymousPro-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Anonymous Pro";
+	src: url("../fonts/AnonymousPro.woff2") format("woff2"), url("../fonts/AnonymousPro.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Anonymous Pro";
+	src: url("../fonts/AnonymousPro-Italic.woff2") format("woff2"),
+		url("../fonts/AnonymousPro-Italic.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}

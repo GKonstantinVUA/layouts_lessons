@@ -1,0 +1,197 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	background: url("../img/background_body.svg") repeat;
+	font: 18px "Roboto", sans-serif;
+	color: rgb(143, 143, 143);
+}
+
+/* Налаштування header */
+.header-container {
+	background-color: #c9d1c8;
+	padding: 10px;
+}
+
+.header-container > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header-container .name_lesson {
+	margin-right: 350px;
+	text-align: right;
+	font-weight: 700;
+	line-height: 1.4;
+	font-size: 20px;
+}
+
+.header-container img {
+	margin-left: 70px;
+	margin-right: 20px;
+}
+
+.main-menu_lesson li {
+	display: inline-block;
+}
+
+.main-menu_lesson li:not(:last-child) {
+	margin-right: 40px;
+}
+
+.main-menu_lesson a:hover {
+	font-size: 19px;
+	color: #304040;
+	text-decoration: underline;
+}
+
+.main-menu_lesson a:active {
+	background-color: #084058;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #c9d1c8;
+}
+
+.main-block {
+	max-width: 1290px;
+	margin: 40px auto;
+}
+
+.main-block > *:not(:last-child) {
+	margin-bottom: 45px;
+}
+
+.block-lesson {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 20px 15px;
+	font-size: 0;
+}
+
+.block-lesson > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.block-lesson h2 {
+	font: 700 24px "Anonymous Pro", sans-serif;
+	color: #04202c;
+	line-height: 1.4;
+	text-align: right;
+}
+
+.block-lesson .description_block .indent-block {
+	max-width: 700px;
+}
+
+.block-lesson .description_block .indent_block p:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.block-lesson_icons {
+	background: #eff3f3 url("../img/backround_section_one.webp") center/cover no-repeat;
+}
+
+.block-lesson_design-elements {
+	background: #eff3f3 url("../img/backround_section_two.webp") center/cover no-repeat;
+}
+
+.block-lesson_content-images {
+	background: #eff3f3 url("../img/backround_section_three.webp") center/cover no-repeat;
+}
+
+.block-lesson .row-images_block {
+	text-align: center;
+}
+
+.block-lesson .row-images_block img:not(:last-child) {
+	margin-right: 60px;
+}
+
+/* Блок з описом */
+
+.description_block {
+	font-size: 0;
+}
+.description_block > * {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.description_block > *:not(:last-child) {
+	margin-right: 15px;
+}
+
+.description_block .indent-block {
+	background-color: #c9d1c8;
+	padding: 5px 10px;
+	border-right: 3px solid #04202c;
+	border-bottom: 3px solid #04202c;
+	border-radius: 0 0 6px 0;
+	box-shadow: inset 0px 0px 0px 4px #c4c2c2;
+}
+
+.description_block .indent-block {
+	font: 19px "Roboto", sans-serif;
+	color: #05131a;
+	line-height: 1.2;
+	text-align: justify;
+}
+
+.description_block .indent-block span {
+	font: 20px "Anonymous Pro", sans-serif;
+	color: #d83209;
+	line-height: 1.2;
+}
+
+.description_block .name_title {
+	font: 20px "Anonymous Pro", sans-serif;
+	color: #5f6103;
+	line-height: 1.2;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.description_block .indent-block p:not(:last-child) {
+	margin-bottom: 6px;
+}
+
+.pointer_icon img:hover {
+	width: 39px;
+	height: 39px;
+}
+
+.pointer_icon img:active {
+	width: 33px;
+	height: 33px;
+}
+
+.indent-block_icon {
+	visibility: hidden;
+}
+
+.indent-block_icon:target {
+	visibility: visible;
+}
+
+.indent-block_design-elements {
+	visibility: hidden;
+}
+
+.indent-block_design-elements:target {
+	visibility: visible;
+}
+
+.indent-block_content-images {
+	visibility: hidden;
+}
+
+.indent-block_content-images:target {
+	visibility: visible;
+}
+
+/* Блок footer  */
+
+.footer-container {
+	background-color: #04202c;
+	padding: 40px 0;
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .a {
+        fill: #40ddb6;
+      }
+    </style>
+  </defs>
+  <title>icon_marker_check</title>
+  <path class="a" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0ZM9.81,18,5.16,12.85l1.37-1.23,3.23,3.59,7.66-9.13,1.42,1.19Z"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .a {
+        fill: #304040;
+      }
+    </style>
+  </defs>
+  <title>Ресурс 1</title>
+  <g>
+    <path class="a" d="M7.24,0H36V19.18H26.45v9.57H7.24Z"/>
+    <path class="a" d="M0,36V7.25H3.56V32.36H23.91V36Z"/>
+    <path class="a" d="M35.71,21.68,29,28.42V21.68Z"/>
+  </g>
+</svg>
