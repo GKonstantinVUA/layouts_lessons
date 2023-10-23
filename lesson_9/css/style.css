@@ -437,6 +437,10 @@ body {
 	background-color: #baffeebd;
 }
 
+.link_card-main:active {
+	background-color: #77b8eebd;
+}
+
 .link_card-main:active h4 {
 	text-decoration: underline;
 	color: #094a68;
