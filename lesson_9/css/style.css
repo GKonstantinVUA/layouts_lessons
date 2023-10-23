@@ -1,0 +1,1225 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font: 18px "Inter", sans-serif;
+	color: #7d7d7d;
+}
+
+.header-container {
+	padding: 15px 0;
+	background-color: #2f2e33;
+	margin-bottom: 45px;
+}
+
+.block-main_menu > *,
+.lesson-topic_text {
+	display: inline-block;
+}
+
+.block-main_menu {
+	font-size: 0;
+}
+
+.block-main_menu > *:not(:last-child) {
+	margin-right: 280px;
+}
+
+.text-block_lesson::before {
+	content: "";
+	width: 94px;
+	height: 103px;
+	background: url("../img/logo_heder_lesson.svg") center/cover no-repeat;
+	margin: 0 70px 0 110px;
+	vertical-align: middle;
+}
+
+.lesson-topic_text {
+	vertical-align: middle;
+	font-size: 22px;
+	color: aliceblue;
+}
+
+.navigation-menu_lesson li {
+	display: inline-block;
+	font-size: 0;
+}
+
+.navigation-menu_lesson li {
+	vertical-align: middle;
+	font-size: 16px;
+	color: aliceblue;
+	padding: 5px 7px;
+}
+
+.navigation-menu_lesson li:not(:last-child) {
+	margin-right: 40px;
+}
+
+.lesson-topic_text > *:not(:last-child) {
+	margin-bottom: 5px;
+	line-height: 1.5;
+}
+
+.navigation-menu_lesson li:hover {
+	background-color: #d5d6d2;
+	border-radius: 5px;
+	color: #2f2e33;
+	line-height: 1.3;
+}
+
+.navigation-menu_lesson li:active {
+	background-color: #b2fd74;
+	color: rgb(1, 119, 221);
+}
+
+/* Блок main */
+
+.main-block {
+	margin-bottom: 45px;
+}
+
+.wrapper_main {
+	max-width: 1280px;
+	background-color: #ccccca;
+	margin: 0 auto;
+	padding: 40px 15px 0 15px;
+}
+
+.wrapper_main > *:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+/* Блок footer  */
+
+.footer-container {
+	background-color: #3a5199;
+	padding: 40px 0;
+}
+
+/* Начало сектора consulting */
+.sector_consulting > *:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+/* Блок 1 */
+
+.inner_international-business {
+	max-width: 722px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.inner_international-business h2 {
+	font: 600 30px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.27; /* 38.1/30 */
+}
+
+.description_business {
+	margin-bottom: 40px;
+}
+
+.description_business h2 {
+	margin-bottom: 3px;
+}
+
+.description_business-two h2 {
+	margin-bottom: 4px;
+}
+
+.content-text_holder {
+	margin-bottom: 42px;
+	line-height: 1.46; /* 26.314/18 */
+}
+
+.content-text_holder p:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.description_business h4 {
+	font: 600 20px "Poppins", sans-serif;
+	color: #6b77e5;
+	line-height: 1.27; /* 25.4/20 */
+	margin-bottom: 12px;
+}
+
+.content-text_holder-two {
+	line-height: 1.46; /* 26.314/18 */
+}
+
+.content-text_holder-two p:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.content-text_holder-three {
+	line-height: 1.46; /* 26.314/18 */
+}
+
+.content-text_holder-three p:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+/* Подблок row_benefits */
+.row_benefits {
+	font-size: 0;
+	margin-bottom: 45px;
+}
+
+.img_office-table,
+.benefits_text-block {
+	display: inline-block;
+}
+
+.img_office-table {
+	vertical-align: top;
+	margin-right: 29px;
+	max-width: 331px;
+}
+
+.img_office-table img {
+	width: 100%;
+	min-height: 262px;
+}
+
+.benefits_text-block {
+	font-size: 18px;
+	max-width: 332px;
+	width: 100%;
+}
+
+.benefits_text-block h3 {
+	font: 600 25px "Poppins", sans-serif;
+	color: #37393f;
+	line-height: 1.27; /* 31.75/25 */
+	margin-bottom: 15px;
+}
+
+.benefits_text-block h4 {
+	font: 600 20px "Poppins", sans-serif;
+	color: #40ddb6;
+	line-height: 1.27; /* 25.4/20 */
+	margin-bottom: 21px;
+}
+
+.benefits_text-block ul {
+	line-height: 1.22; /* 22/18 */
+}
+
+.benefits_text-block li:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.benefits_text-block li {
+	margin-left: 36px; /* відступ для вирівнювання у разі якщо контент збільшиься ще на 1 строку */
+	min-height: 28px;
+}
+
+.benefits_text-block li::before {
+	content: "";
+	width: 27px;
+	height: 27px;
+	background: url("../img/label_mark_list.svg") center/cover no-repeat;
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-left: -36px; /* відступ для вирівнювання у разі якщо контент збільшиься ще на 1 строку */
+}
+
+/* Блок 2 */
+.row_whitecollar {
+	max-width: 704px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.row_whitecollar > *:not(:last-child) {
+	margin-bottom: 46px;
+}
+
+.desc_business-plan h4 {
+	font-weight: 500;
+	color: #37393f;
+	line-height: 1.22;
+	margin-bottom: 16px;
+	text-transform: capitalize;
+}
+
+.desc_business-plan h4:before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	background: #40ddb6 center/cover no-repeat;
+	margin-right: 6px;
+}
+
+.desc_business-plan h2 {
+	max-width: 414px;
+	font: 700 40px "Poppins", sans-serif;
+	line-height: 1.21; /* 48.4/40 */
+	margin-bottom: 16px;
+	color: #37393f;
+	text-transform: capitalize;
+}
+
+.content-text_desciption p {
+	line-height: 1.46; /* 26.314/18 */
+}
+
+.content-text_desciption > p:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.box_mision-vision > *:not(:last-child) {
+	margin-bottom: 31px;
+}
+
+.mision-vision_text-content li {
+	border: 1px solid #e3e3e3;
+}
+
+.mision-vision_text-content .desc_vision-mision {
+	padding: 28px 38px;
+}
+
+.mision-vision_text-content > *:not(:last-child) {
+	margin-bottom: 31px;
+}
+
+.box_mision-vision h3 {
+	font: 600 20px "Poppins", sans-serif;
+	line-height: 1.5; /* 30/20 */
+	color: #37393f;
+	text-transform: capitalize;
+	margin-left: 46px;
+	min-height: 28px;
+}
+
+.box_mision-vision h3::before {
+	content: "";
+	width: 27px;
+	height: 27px;
+	background: url("../img/label_mark_list.svg") center/cover no-repeat;
+	vertical-align: middle;
+	margin-right: 19px;
+	margin-left: -46px;
+}
+
+.box_mision-vision .content-text_desciption p:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.box_mision-vision .content-text_desciption p {
+	line-height: 1.5; /* 26.314/18 */
+	padding-left: 46px;
+}
+
+.button_jump-about a {
+	background-color: #6b77e5;
+	padding: 21px 35px 22px 35px;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.button_jump-about a:hover {
+	background-color: #5967ec;
+	color: #bae6ee;
+	text-decoration: underline;
+}
+
+.button_jump-about a:active {
+	padding: 19px 33px 20px 33px;
+	background-color: #606488;
+	text-decoration: underline;
+	color: #55f355;
+	text-decoration: underline;
+}
+
+/* Блок 3 */
+
+.row_work-process {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.section-title_text {
+	text-align: center;
+	margin-bottom: 41px;
+}
+
+.section-title_text h4 {
+	display: inline-block;
+	color: #37393f;
+	margin-bottom: 14px;
+	line-height: 1.22; /* 22/18 */
+	text-transform: capitalize;
+}
+
+.section-title_text h2 {
+	color: #37393f;
+	font: 700 40px "Poppins", sans-serif;
+	line-height: 1.22; /* 22/18 */
+	text-transform: capitalize;
+}
+
+.section-title_text h4:before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	background: #40ddb6 center/cover no-repeat;
+	margin-right: 6px;
+}
+
+.cards_advertising {
+	font-size: 0;
+	padding-top: 36px;
+}
+
+.card_make-appointment,
+.card_consultation,
+.card_enjoy_service {
+	display: inline-block;
+	max-width: 386px;
+	width: 100%;
+	background-color: #f4f4f4;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.card_make-appointment a,
+.card_consultation a,
+.card_enjoy_service a {
+	padding: 58px 43px;
+}
+
+.card_make-appointment h3,
+.card_consultation h3,
+.card_enjoy_service h3 {
+	color: #37393f;
+	font: 600 25px "Poppins", sans-serif;
+	margin-bottom: 16px;
+	line-height: 1.3; /* 31.75/25 */
+}
+
+.card_make-appointment p,
+.card_consultation p,
+.card_enjoy_service p {
+	line-height: 1.5; /* 26.314/18 */
+}
+
+.content-text_taglin {
+	margin-bottom: 37px;
+}
+
+.content-text_taglin p:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.card_make-appointment h4,
+.card_consultation h4,
+.card_enjoy_service h4 {
+	font-weight: 600;
+	color: #6b77e5;
+	line-height: 1.22; /* 22/18 */
+}
+
+.cards_advertising > *:not(:last-child) {
+	margin-right: 31px;
+}
+
+.link_card-main:hover h4 {
+	text-decoration: underline;
+	color: #f56709;
+}
+
+.link_card-main:hover {
+	background-color: #baffeebd;
+}
+
+.link_card-main:active h4 {
+	text-decoration: underline;
+	color: #094a68;
+}
+
+.card_make-appointment .label_icon::before {
+	content: "";
+	width: 72px;
+	height: 72px;
+	background: url("../img/label_calendar.svg") center/cover no-repeat;
+	vertical-align: middle;
+	margin-top: -140px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/* Отдельный вариант реализации иконки */
+.card_consultation .label_icon::before {
+	content: "";
+	width: 72px;
+	height: 72px;
+	background: url("../img/label_puzzle.svg") center/43px 43px no-repeat, #6b77e5;
+	vertical-align: middle;
+	margin-top: -140px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.card_enjoy_service .label_icon::before {
+	content: "";
+	width: 72px;
+	height: 72px;
+	background: url("../img/label_service.svg") center/cover no-repeat;
+	vertical-align: middle;
+	margin-top: -140px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/* Сектора jewellery */
+
+.sector_jewellery {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+	font-size: 0;
+}
+
+.sector_jewellery > * {
+	display: inline-block;
+	font: 700 24px "Cormorant Infant", serif;
+	color: #000000;
+	vertical-align: middle;
+}
+
+.about-order_row h3 {
+	max-width: 488px;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.about-order_row h3::after {
+	content: "";
+	height: 3px;
+	width: 63%;
+	display: block;
+	background-color: #78473b;
+}
+
+.sector_jewellery > *:not(:first-of-type, :last-child) {
+	margin-right: 55px;
+}
+
+.wrapper-photo_sector {
+	max-width: 334px;
+	max-height: 381px;
+	border: 1px solid #000;
+	margin-bottom: 34px;
+}
+
+.wrapper-photo_sector img {
+	width: 100%;
+	min-height: 381px;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-top: 9px;
+}
+
+.rings-finger_row h4 {
+	font-size: 40px;
+	margin-bottom: 31px;
+	padding-top: 70px;
+	max-width: 339px;
+}
+
+.description_ring-jewellery {
+	margin-bottom: 4px;
+	max-width: 335px;
+}
+
+.wrapper-photo_sector img:hover {
+	box-shadow: 0 0 5px 1px #78473b;
+}
+
+.wrapper-photo_sector:active {
+	transform: scale(0.95);
+}
+
+.description_ring-jewellery:hover {
+	color: #185243;
+	text-transform: uppercase;
+}
+
+.price_ring-jewellery:hover {
+	color: #8b260d;
+	font-size: 26px;
+}
+
+.description_ring-jewellery:active {
+	color: #8b260d;
+}
+
+.price_ring-jewellery:active {
+	font-size: 18px;
+}
+
+/* Сектор additional practice */
+
+.unorder-list_main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px 45px;
+	font-size: 0;
+}
+
+.unorder_list-content h3 {
+	font: 700 35px "Bodoni72C", serif;
+	text-align: center;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	color: #212b36;
+}
+
+.selction-list_one,
+.selction-list_two,
+.unorder_list-content ul {
+	display: inline-block;
+}
+
+.selction-list_one,
+.selction-list_two {
+	font: 24px "Inter", sans-serif;
+	line-height: 1.6;
+}
+
+.unorder-list_main
+	> *:not(
+		:last-child,
+		#spoller_hover,
+		#spoller_active,
+		#spoller_visited,
+		#spoller_focus,
+		#spoller_target,
+		#spoller_before-after,
+		#button-views
+	) {
+	margin-bottom: 20px;
+}
+.unorder_list-content > *:not(:last-child) {
+	margin-bottom: 27px;
+}
+
+.selction-list_one > :not(:last-child),
+.selction-list_two > :not(:last-child) {
+	margin-right: 106px;
+}
+
+.unorder_list-content li {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 0.9;
+	margin-left: 32px;
+	max-width: 350px;
+	width: 100%;
+	min-height: 19px;
+}
+
+.unorder_list-content li:not(:last-child) {
+	margin-bottom: 18px;
+}
+
+.ul-elements li::before {
+	content: "";
+	margin-left: -39px;
+	width: 19px;
+	height: 19px;
+	margin-right: 20px;
+	vertical-align: middle;
+	transition: all 0.5s;
+}
+
+.one-list_content li::before {
+	background: url("../img/list_ellipse.svg") center/12px 12px no-repeat;
+}
+
+.one-list_content li:hover::before {
+	transform: scale(1.5);
+}
+
+.two-list_content li::before {
+	background: url("../img/list_checkmark_circle.svg") center/cover no-repeat;
+}
+
+.two-list_content li:hover::before {
+	transform: scale(0.5);
+}
+
+.three-list_content li::before {
+	background: url("../img/list_checkmark_circle_one.svg") center/cover no-repeat;
+}
+
+.three-list_content li:hover::before {
+	background: url("../img/list_checkmark_circle_two.svg") center/cover no-repeat;
+	transform: scale(1.5);
+}
+
+.four-list_content li::before {
+	background: url("../img/list_cross_circle.svg") center/cover no-repeat;
+}
+
+.four-list_content li:hover::before {
+	background: url("../img/list_cross_circle_one.svg") center/cover no-repeat;
+	transform: rotate(180deg);
+}
+
+.five-list_content li::before {
+	background: url("../img/list_arrow_right.svg") center/cover no-repeat;
+}
+
+.five-list_content li:hover::before {
+	transform: rotate(-90deg) scale(1.5);
+}
+
+.six-list_content li::before {
+	background: url("../img/list_star.svg") center/cover no-repeat;
+}
+
+.six-list_content li:hover::before {
+	background: url("../img/list_star_one.svg") center/cover no-repeat;
+	transform: scale(1.5) rotate(720deg);
+}
+
+.ul-elements li {
+	transition: all 0.5s;
+}
+
+.one-list_content li:not(:hover, :nth-child(even)) {
+	color: #860f4a;
+}
+
+.two-list_content li:hover {
+	transform: scale(1.06);
+}
+
+.three-list_content li:hover {
+	transform: scale(0.95);
+	background-color: #2bb50f;
+	color: #e5e5e5;
+}
+
+.four-list_content li:hover:nth-child(odd) {
+	background-color: #de494e;
+	color: #e5e5e5;
+}
+
+.four-list_content li:hover:nth-child(even) {
+	background-color: #23b65e;
+	color: #e5e5e5;
+}
+
+.four-list_content li:hover:nth-child(even)::before {
+	background: url("../img/list_cross_circle_two.svg") center/cover no-repeat;
+}
+
+.five-list_content li:hover:nth-child(odd) {
+	color: #d50961;
+}
+
+.five-list_content li:hover:nth-child(odd)::before {
+	background: url("../img/list_arrow_left.svg") center/cover no-repeat;
+}
+
+.six-list_content:hover {
+	background-color: #e89c3e;
+}
+
+.six-list_content li:hover:nth-child(3n-1)::before {
+	background-color: #71ec6f;
+}
+
+.six-list_content li:hover:nth-child(3n-1) {
+	background-color: #71ec6f;
+}
+
+/* Сектор практика з лекції - опис властивостей*/
+
+.number_list-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	font-size: 0;
+}
+
+.number_list-content h3 {
+	font: 700 35px "Bodoni72C", serif;
+	text-align: center;
+	line-height: 1.5;
+	letter-spacing: 3px;
+	color: #212b36;
+	margin-bottom: 25px;
+}
+
+.seven-list_content {
+	margin-bottom: 20px;
+}
+
+.number_list-content .seven-list_content {
+	font-size: 16px;
+	counter-reset: item;
+}
+
+.number_list-content .seven-list_content a::before {
+	counter-increment: item;
+	content: counter(item);
+	font-size: 12px;
+	line-height: 1.7; /* 20/12 */
+	color: #e3e3e3;
+	background-color: #1b9778;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.number_list-content .seven-list_content a {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #1b9778;
+	max-width: 500px;
+	vertical-align: top;
+}
+
+.button_close-list a {
+	font-size: 14px;
+	color: white;
+	background-color: #6b77e5;
+	padding: 8px;
+	border-radius: 6px;
+	display: none;
+}
+
+.button_close-list a:hover {
+	text-decoration: underline;
+	background-color: #4554da;
+	padding: 10px;
+}
+
+.number_list-content .description-state > *:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.number_list-content .description-state {
+	margin-bottom: 15px;
+	max-width: 650px;
+	text-align: justify;
+	background-color: #6b77e5;
+	color: #fffffd;
+	border-left: 2px solid #041cf7;
+	border-bottom: 2px solid #041cf7;
+	border-right: 2px solid #041cf7;
+	border-radius: 0 0 6px 6px;
+	box-shadow: inset 0px 0px 0px 6px #ccccca;
+	display: none;
+}
+
+.description-state {
+	margin-left: 40px;
+	padding: 20px;
+}
+
+.seven-list_content .description-state span {
+	color: #860000;
+	font-weight: 600;
+}
+
+.seven-list_content a span {
+	color: #5f3403;
+}
+
+.seven-list_content a:hover {
+	font-weight: 600;
+}
+
+.seven-list_content a:hover::before {
+	font-weight: 600;
+	color: #8b260d;
+	font-size: 16px;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+}
+
+/* Spoiler #1 */
+#spoller_hover:target ~ .number_list-content .description-state:first-of-type {
+	display: block;
+}
+
+#spoller_hover:target ~ .number_list-content .button-views_properties:first-of-type {
+	display: inline-block;
+}
+
+/* Spoiler #2 */
+#spoller_active:target ~ .number_list-content .description-state:nth-of-type(2) {
+	display: block;
+}
+
+#spoller_active:target ~ .number_list-content .button-views_properties:first-of-type {
+	display: inline-block;
+}
+
+/* Spoiler #3 */
+#spoller_visited:target ~ .number_list-content .description-state:nth-of-type(3) {
+	display: block;
+}
+
+#spoller_visited:target ~ .number_list-content .button-views_properties:first-of-type {
+	display: inline-block;
+}
+
+/* Spoiler #4 */
+#spoller_focus:target ~ .number_list-content .description-state:nth-of-type(4) {
+	display: block;
+}
+
+#spoller_focus:target ~ .number_list-content .button-views_properties:first-of-type {
+	display: inline-block;
+}
+
+/* Spoiler #5 */
+#spoller_target:target ~ .number_list-content .description-state:nth-of-type(5) {
+	display: block;
+}
+
+#spoller_target:target ~ .number_list-content .button-views_properties:first-of-type {
+	display: inline-block;
+}
+
+/* Spoiler #6 */
+#spoller_before-after:target ~ .number_list-content .description-state:nth-of-type(6) {
+	display: block;
+}
+
+#spoller_before-after:target ~ .number_list-content .button-views_properties:first-of-type {
+	display: inline-block;
+}
+
+/* Сектор гри*/
+
+.sector-game_lesson {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	font-size: 0;
+}
+
+.sector-game_lesson > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.zone_game {
+	min-height: 650px;
+	border: 2px solid #041cf7;
+}
+
+.sector-game_lesson h3 {
+	font: 700 35px "Bodoni72C", serif;
+	text-align: center;
+	line-height: 1.1;
+	letter-spacing: 3px;
+	color: #212b36;
+}
+
+.sector-game_lesson p {
+	font: 400 24px "Bodoni72C", serif;
+	text-align: center;
+	line-height: 1.2;
+	letter-spacing: 2px;
+	color: #212b36;
+	font-style: italic;
+}
+
+.sector-game_lesson .author_quote {
+	font-style: normal;
+}
+
+/* Линии */
+
+.line_game-setup {
+	background-color: #1b5c4c;
+	cursor: move;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.line_one {
+	width: 45px;
+	height: 45px;
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_two {
+	width: 45px;
+	height: 45px;
+	margin-top: -45px;
+	margin-left: 36px;
+}
+
+.line_three {
+	width: 20px;
+	height: 215px;
+	margin-left: 260px;
+	margin-top: -45px;
+}
+
+.line_four {
+	width: 615px;
+	height: 15px;
+	margin-top: -15px;
+	margin-left: 260px;
+}
+
+.line_five {
+	width: 75px;
+	height: 75px;
+	margin-top: -15px;
+	margin-left: 804px;
+}
+
+.line_six {
+	width: 75px;
+	height: 75px;
+	margin-top: -15px;
+	margin-left: 860px;
+}
+
+.line_seven {
+	width: 75px;
+	height: 75px;
+	margin-top: -24px;
+	margin-left: 910px;
+}
+
+.line_eight {
+	width: 75px;
+	height: 75px;
+	margin-top: -24px;
+	margin-left: 960px;
+}
+
+.line_nine {
+	width: 75px;
+	height: 75px;
+	margin-top: -24px;
+	margin-left: 1010px;
+}
+
+.line_ten {
+	width: 75px;
+	height: 75px;
+	margin-top: -24px;
+	margin-left: 1064px;
+}
+
+.line_eleven {
+	width: 25px;
+	height: 190px;
+	margin-top: -20px;
+	margin-left: 1064px;
+}
+
+.line_twelve {
+	width: 275px;
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 814px;
+}
+
+.line_thirteen {
+	width: 275px;
+	height: 15px;
+	transform: rotate(45deg);
+	margin-top: -112px;
+	margin-left: 586px;
+}
+
+.line_fourteen {
+	width: 275px;
+	height: 15px;
+	transform: rotate(-45deg);
+	margin-top: -14px;
+	margin-left: 402px;
+}
+
+.line_fifteen {
+	width: 175px;
+	height: 25px;
+	transform: rotate(45deg);
+	margin-top: 12px;
+	margin-left: 306px;
+}
+
+.line_sixteen {
+	width: 175px;
+	height: 25px;
+	transform: rotate(-45deg);
+	margin-top: -24px;
+	margin-left: 198px;
+}
+
+.line_seventeen {
+	width: 235px;
+	height: 25px;
+	margin-top: 33px;
+}
+
+.line_eighteen {
+	width: 45px;
+	height: 680px;
+	margin-top: -50px;
+	margin-top: -683px;
+}
+
+/* Налаштування гри */
+
+.line_one:hover + .line_two {
+	visibility: visible;
+}
+
+.line_two:hover {
+	visibility: visible;
+	opacity: 1;
+	width: 245px;
+}
+
+.line_two:hover + .line_three {
+	visibility: visible;
+}
+
+.line_three:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_three:hover + .line_four {
+	visibility: visible;
+}
+.line_four:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_four:hover + .line_five {
+	visibility: visible;
+}
+
+.line_five:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_five:hover + .line_six {
+	visibility: visible;
+}
+.line_six:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_six:hover + .line_seven {
+	visibility: visible;
+}
+.line_seven:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_seven:hover + .line_eight {
+	visibility: visible;
+}
+.line_eight:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_eight:hover + .line_nine {
+	visibility: visible;
+}
+.line_nine:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_nine:hover + .line_ten {
+	visibility: visible;
+}
+.line_ten:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_ten:hover + .line_eleven {
+	visibility: visible;
+}
+.line_eleven:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_eleven:hover + .line_twelve {
+	visibility: visible;
+}
+.line_twelve:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_twelve:hover + .line_thirteen {
+	visibility: visible;
+}
+.line_thirteen:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_thirteen:hover + .line_fourteen {
+	visibility: visible;
+}
+.line_fourteen:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_fourteen:hover + .line_fifteen {
+	visibility: visible;
+}
+.line_fifteen:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_fifteen:hover + .line_sixteen {
+	visibility: visible;
+}
+.line_sixteen:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_sixteen:hover + .line_seventeen {
+	visibility: visible;
+}
+.line_seventeen:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.line_seventeen:hover + .line_eighteen {
+	visibility: visible;
+}
+.line_eighteen:hover {
+	visibility: visible;
+	opacity: 1;
+}

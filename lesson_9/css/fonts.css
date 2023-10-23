@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+
+@font-face {
+	font-family: "Bodoni72C";
+	src: url("../fonts/Bodoni72C-Bold.woff2") format("woff2"),
+		url("../fonts/Bodoni72C-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bodoni72C";
+	src: url("../fonts/Bodoni72C.woff2") format("woff2"), url("../fonts/Bodoni72C.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bodoni72C";
+	src: url("../fontsBodoniClassicText-CyrillicItalic.woff2") format("woff2"),
+		url("../fontsBodoniClassicText-CyrillicItalic.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
