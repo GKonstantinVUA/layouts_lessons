@@ -72,6 +72,10 @@ body {
 	margin-bottom: 15px;
 }
 
+.main-block .block-lesson h2 {
+	margin-bottom: 45px;
+}
+
 .block-lesson h2 {
 	font: 700 24px "Anonymous Pro", sans-serif;
 	color: #04202c;
