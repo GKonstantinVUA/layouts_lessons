@@ -701,6 +701,10 @@ body {
 	margin-bottom: 37px;
 }
 
+.description-item__text--paragraphs p:not(:last-child) {
+	margin-bottom: 10px;
+}
+
 .item-indicators--desc {
 	opacity: 0.6;
 	background: #f6f6f6;
@@ -773,7 +777,10 @@ body {
 	margin-right: 89px;
 }
 
-.video-preview--fashion::after {
+/* ------------------------------------------------ */
+/* Special */
+
+/* .video-preview--fashion::after {
 	content: "1:00M";
 	width: 51px;
 	height: 22px;
@@ -784,7 +791,35 @@ body {
 	letter-spacing: 0.36px;
 	margin-left: -80px;
 	padding-top: 20px;
+} */
+
+.video-preview--fashion p {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 1.2; /* 26/22 */
+	letter-spacing: 0.44px;
 }
+
+.video-preview--fashion {
+	max-width: 532px;
+	min-height: 32px;
+	width: 100%;
+	background: url("../img/girl-video.webp") center/cover no-repeat;
+	border-radius: 12px;
+}
+
+.video-preview--fashion p:nth-child(1) {
+	text-align: right;
+	padding: 27px 27px 0 0;
+}
+
+.video-preview--fashion p:nth-child(2) {
+	text-align: center;
+	padding: 267px 0 35px 0;
+}
+
+/* ------------------------------------------------ */
 
 /* Розділ Similar Products */
 
@@ -848,6 +883,7 @@ body {
 .product-properties--text > * {
 	display: inline-block;
 	vertical-align: middle;
+	width: 69%;
 }
 
 .product-properties--text span {
