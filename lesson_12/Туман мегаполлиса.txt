@@ -1,0 +1,13 @@
+Сине-зеленый
+#2c4a52
+
+Фарватер
+#537072
+
+Дымка
+#8e9b97
+
+Смог
+#f4ebdb 
+
+https://www.colorzilla.com/gradient-editor/
