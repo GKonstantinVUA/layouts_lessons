@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+  <defs>
+    <style>
+      .a {
+        fill: #47118d;
+      }
+    </style>
+  </defs>
+  <title>menu_table_list_solid</title>
+  <path class="a" d="M0,2.57A2.54,2.54,0,0,1,2.5,0h15A2.54,2.54,0,0,1,20,2.57V15.43A2.54,2.54,0,0,1,17.5,18H2.5A2.54,2.54,0,0,1,0,15.43H0Zm2.5,0V5.14H5V2.57Zm15,0H7.5V5.14h10ZM2.5,7.71v2.58H5V7.71Zm15,0H7.5v2.58h10Zm-15,5.15v2.57H5V12.86Zm15,0H7.5v2.57h10Z"/>
+</svg>
