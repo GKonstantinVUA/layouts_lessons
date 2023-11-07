@@ -88,62 +88,56 @@ body {
 	display: inline-block;
 }
 
-.nav__list .link__item a {
-	max-width: 100%;
-	min-height: 20px;
-	position: relative;
-}
-
 .nav__list .link__item {
 	font-size: 18px;
 	color: #47118d;
-	position: relative;
+	padding: 15px 22px;
 }
 
-.nav__list .link__item:nth-child(1)::before {
+.nav__list .link__jump::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.nav__list .link__jump {
+	position: relative;
+	padding-left: 30px;
+}
+
+.nav__list .link__jump:nth-child(1)::before {
 	content: "";
 	width: 20px;
 	height: 18px;
 	background: url("../img/menu_house_chimney_solid.svg") center/cover no-repeat;
 }
 
-.nav__list .link__item:nth-child(2)::before {
+.nav__list .link__jump:nth-child(2)::before {
 	content: "";
 	width: 20px;
 	height: 18px;
 	background: url("../img/menu_cart_shopping_solid.svg") center/cover no-repeat;
 }
 
-.nav__list .link__item:nth-child(3)::before {
+.nav__list .link__jump:nth-child(3)::before {
 	content: "";
 	width: 20px;
 	height: 18px;
 	background: url("../img/menu_gear_solid.svg") center/cover no-repeat;
 }
 
-.nav__list .link__item:nth-child(4)::before {
+.nav__list .link__jump:nth-child(4)::before {
 	content: "";
 	width: 20px;
 	height: 18px;
 	background: url("../img/menu_table_list_solid.svg") center/cover no-repeat;
 }
 
-.nav__list .link__item:nth-child(5)::before {
+.nav__list .link__jump:nth-child(5)::before {
 	content: "";
 	width: 20px;
 	height: 18px;
 	background: url("../img/menu_envelope_open_solid.svg") center/cover no-repeat;
-}
-
-.nav__list .link__item::before {
-	margin-right: 12px;
-	position: relative;
-	top: 3px;
-	left: 0;
-}
-
-.nav__list .link__item {
-	padding: 15px 22px;
 }
 
 /* TODO: Секція #2 */
