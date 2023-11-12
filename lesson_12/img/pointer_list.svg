@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.05" height="14.05" viewBox="0 0 23.05 14.05">
+  <defs>
+    <style>
+      .a {
+        fill: #f5fcfa;
+        stroke: #e9e6e6;
+        stroke-miterlimit: 10;
+        stroke-width: 0.05px;
+      }
+    </style>
+  </defs>
+  <title>Polygon 18</title>
+  <path class="a" d="M10.05.66A2,2,0,0,1,13,.66l9.48,10A2,2,0,0,1,21,14H2A2,2,0,0,1,.57,10.68Z"/>
+</svg>

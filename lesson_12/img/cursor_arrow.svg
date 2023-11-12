@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6">
+  <defs>
+    <style>
+      .a {
+        fill: #212b36;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>Ресурс 3</title>
+  <path class="a" d="M10.81.23a.68.68,0,0,0-1,0L5.5,4.49,1.17.2h0a.68.68,0,0,0-1,0h0a.76.76,0,0,0,0,1L4.65,5.65h0a1.18,1.18,0,0,0,1.68,0l4.44-4.39h0A.74.74,0,0,0,10.81.23Z"/>
+</svg>
