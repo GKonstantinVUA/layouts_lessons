@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson #11</title>
+</head>
+
+<body>
+	<!-- TODO: Верхне меню -->
+	<header class="header">
+
+		<!-- !Меню в header -->
+		<div class="header__menu menu">
+
+			<!-- ?Лого -->
+			<a href="#" class="menu__logo logo">
+				<img class="logo__company" src="img/logo-company.svg" alt="Logo Company">
+			</a>
+
+			<!-- ?Меню -->
+			<div class="menu__block block">
+				<ul class="block__list">
+					<li class="block__item">
+						<a href="#" class="block__link" target="_blank">Shop</a>
+					</li>
+					<li class="block__item">
+						<a href="#" class="block__link" target="_blank">Men</a>
+					</li>
+					<li class="block__item">
+						<a href="#" class="block__link" target="_blank">Women</a>
+					</li>
+					<li class="block__item">
+						<a href="#" class="block__link" target="_blank">Combos</a>
+					</li>
+					<li class="block__item">
+						<a href="#" class="block__link" target="_blank">Joggers</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- ?Пошук -->
+			<div class="menu__search item">
+				<img src="img/icon_search.svg" alt="Search" class="item__search">
+			</div>
+
+			<!-- ?Дії -->
+			<div class="menu__actions actions">
+				<ul class="actions__list">
+					<li class="actions__item">
+						<a href="#" class="actions__link" target="_blank">
+							<img src="img/icon_heart.svg" alt="Favorite" class="actions__img">
+						</a>
+					</li>
+					<li class="actions__item">
+						<a href="#" class="actions__link" target="_blank">
+							<img src="img/icon_user.svg" alt="User" class="actions__img">
+						</a>
+					</li>
+					<li class="actions__item">
+						<a href="#" class="actions__link" target="_blank">
+							<img src="img/icon-shopping-cart.svg" alt="Buy" class="actions__img">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- TODO: Основний блок -->
+	<main class="main">
+		<div class="main__section block">
+			<!-- !Загальний контент -->
+			<div class="block__sidebar content">
+
+				<!-- ?Бокова панель -->
+				<div class="content__choice-panel choice-panel">
+					<ul class="choice-panel__list">
+						<li class="choice-panel__item">
+							<a href="#"><img src="img/model-one.webp" alt="Model" class="choice-panel__link"></a>
+						</li>
+						<li class="choice-panel__item">
+							<a href="#"><img src="img/model-two.webp" alt="Model" class="choice-panel__link"></a>
+						</li>
+						<li class="choice-panel__item">
+							<a href="#"><img src="img/model-three.webp" alt="Model" class="choice-panel__link"></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="content__buttons-jump button">
+					<ul class="button__list">
+						<li class="button__item">
+							<a href="#" class="button__link">
+								<img src="img/buttton-choice-up.svg" alt="Button" class="button__up-jump">
+							</a>
+						</li>
+						<li class="button__item">
+							<a href="#" class="button__link">
+								<img src="img/buttton-choice-down.svg" alt="Button" class="button__up-down">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- !Контент банер -->
+				<!-- ?Банер -->
+				<div class="content__banner banner">
+					<img src="img/model-poster.webp" alt="Model poster" class="banner__image">
+				</div>
+
+				<!-- !Контент з справа -->
+				<!-- ?Перехід по розділам -->
+				<div class="content__cloth parametrs">
+
+					<div class="parametrs__twisting pagination">
+						<ul class="pagination__list">
+							<li>
+								<a href="#" class="pagination__link">Shop</a>
+							</li>
+							<li>
+								<img src="img/jump-tab.svg" alt="Delimiter" class="pagination__control">
+							</li>
+							<li>
+								<a href="#" class="pagination__link">Women</a>
+							</li>
+							<li>
+								<img src="img/jump-tab.svg" alt="Delimiter" class="pagination__control">
+							</li>
+							<li>
+								<a href="#" class="pagination__link">Top</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- ?Головний заголовок -->
+					<h1 class="parametrs__title">Raven Hoodie With Black colored Design</h1>
+
+					<!-- ?Оцінка. Відгуки -->
+					<div class="parametrs__evaluation evaluation">
+
+						<div class="evaluation__rating">
+							<img src="img/stars.svg" alt="Stars" class="evaluation__icons">
+							<span class="evaluation__points">3.5</span>
+						</div>
+
+						<div class="evaluation__comment">
+							<img src="img/comment.svg" alt="Comment" class="evaluation__comments">
+							<span class="evaluation__value-coments">120 comment</span>
+						</div>
+					</div>
+
+					<!-- ?Вибір розміру -->
+					<div class="parametrs__size size-guide">
+
+						<div class="size-guide__jump select-pagination">
+							<ul class="select-pagination__list">
+								<li class="select-pagination__item">
+									<a href="#" class="select-pagination__link">Select Size</a>
+								</li>
+								<li class="select-pagination__item">
+									<a href="#" class="select-pagination__link">Size Guide</a>
+								</li>
+								<li class="select-pagination__item">
+									<img src="img/arrow-move.svg" alt="Arrow Move" class="select-pagination__control">
+								</li>
+							</ul>
+						</div>
+
+						<div class="size-guide__choice choice-size">
+							<ul class="choice-size__list">
+								<li class="choice-size__item">xs</li>
+								<li class="choice-size__item">s</li>
+								<li class="choice-size__item">m</li>
+								<li class="choice-size__item">l</li>
+								<li class="choice-size__item">xl</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- ?Вибір коліру -->
+					<div class="parametrs__colours color">
+						<h3 class="color__title">Colours Available</h3>
+						<ul class="color__list">
+							<li class="color__item">
+								<a href="#" class="color__link">
+									<img src="img/colour-black.svg" alt="Color" class="color__flag color__flag--black">
+								</a>
+							</li>
+							<li class="color__item">
+								<a href="#" class="color__link">
+									<img src="img/colour-yellow.svg" alt="Color" class="color__flag color__flag--yellow">
+								</a>
+							</li>
+							<li class="color__item">
+								<a href="#" class="color__link">
+									<img src="img/colour-violet.svg" alt="Color" class="color__flag color__flag--violet">
+								</a>
+							</li>
+							<li class="color__item">
+								<a href="#" class="color__link">
+									<img src="img/colour-red.svg" alt="Color" class="color__flag color__flag--red">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- ?Кнопки для покупки -->
+					<div class="parametrs__buy button-buy">
+						<a class="button-buy__card" href="#">Add to card</a>
+						<a class="button-buy__price" href="#">$63.00</a>
+					</div>
+
+					<!-- ?Налаштування для користувача -->
+					<div class="parametrs__user-guide user-guide">
+
+						<div class="user-guide__row">
+							<ul class="user-guide__list">
+								<li class="user-guide__item">
+									<a href="#" class="user-guide__link">
+										<img src="img/buy-secure-payment.svg" alt="Secure Payment" class="user-guide__marker user-guide__marker--payment">
+										Secure payment
+									</a>
+								</li>
+								<li class="user-guide__item">
+									<a href="#" class="user-guide__link">
+										<img src="img/buy-size-fit.svg" alt="Size & Fit" class="user-guide__marker user-guide__marker--size-fit">
+										Size &amp; Fit</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="delivery delivery--setup delivery--method-two">
+							<ul>
+								<li class="user-guide__item">
+									<a href="#" class="user-guide__link">
+										<img src="img/buy-free-shipping.svg" alt="Free shipping" class="user-guide__marker user-guide__marker--shipping">
+										Free shipping
+									</a>
+								</li>
+
+								<li class="user-guide__item">
+									<a href="#" class="user-guide__link">
+										<img src="iimg/buy-free-shipping-returns.svg" alt="Free Shipping returns" class="user-guide__marker user-guide__marker--shipping">
+										Free Shipping &amp; Returns
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- !Контент Product Description -->
+			<div class="block__product-inner description">
+
+				<h2 class="description__title">Product Description</h2>
+
+				<div class="description__intelligence intelligence">
+
+					<ul class="intelligence__list">
+						<li class="intelligence__item">
+							<a href="#" class="intelligence__link">Description</a>
+						</li>
+						<li class="intelligence__item">
+							<a href="#" class="intelligence__link">User comments</a>
+							<span class="intelligence__value">21</span>
+						</li>
+						<li class="intelligence__item">
+							<a href="#" class="intelligence__link">Question & Answer</a>
+							<span class="intelligence__value">4</span>
+						</li>
+					</ul>
+
+					<div class="intelligence__paragraph">
+						<p>
+							100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck. Precisely stitched with no pilling & no fading. Provide all-time comfort. Anytime, anywhere. Infinite range of matte-finish HD prints.
+						</p>
+					</div>
+				</div>
+
+				<div class="description__screensaires screensaires">
+					<div class="screensaires__column">
+						<ul class="screensaires__list">
+							<li class="screensaires__item">
+								<h3 class="screensaires__title">Fabric</h3>
+								<p>Bio-washed Cotton</p>
+							</li>
+							<li class="border border--line-one">
+								<h3 class="screensaires__title">Pattern</h3>
+								<p>Printed</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="screensaires__column">
+						<ul class="screensaires__list">
+							<li class="screensaires__item">
+								<h3 class="screensaires__title">Neck</h3>
+								<p>Round Neck</p>
+							</li>
+							<li class="screensaires__item">
+								<h3 class="screensaires__title">Sleeve</h3>
+								<p>Half-sleeves</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="screensaires__column">
+						<ul class="screensaires__list">
+							<li class="screensaires__item">
+								<h3 class="screensaires__title">Fit</h3>
+								<p>Regular-fit</p>
+							</li>
+							<li class="screensaires__item">
+								<h3 class="screensaires__title">Style</h3>
+								<p>Casual Wear</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="description__video preview">
+					<div class="preview__time-code">1:00 M</div>
+					<div class="preview__name">Raven Hoodie with black colored design</div>
+					<img src="img/play-preview.svg" alt="Prewiew" class="preview__button">
+				</div>
+			</div>
+
+			<!-- !Контент Similar Products -->
+			<div class="block__similar-goods goods">
+				<h2 class="goods__title">Similar Products</h2>
+
+				<!-- ?Перший рядок з товарами -->
+				<div class="goods__row card">
+
+					<a href="#" class="card__link">
+						<img src="img/product-one.webp" alt="Product" class="card__pic">
+						<img src="img/card__like.svg" alt="Card favorite" class="card__favorite">
+						<div class="card__text text-card">
+							<div class="text-card__desc">
+								<div class="text-card__model-link">
+									White T-Shirt
+								</div>
+								<div class="text-card__author-linl">
+									Priya's Brand
+								</div>
+							</div>
+							<div class="text-card__price">$13.00</div>
+						</div>
+					</a>
+
+					<a href="#" class="card__link">
+						<img src="img/product-two.webp" alt="Product" class="card__pic">
+						<img src="img/card__like.svg" alt="Card favorite" class="card__favorite">
+						<div class="card__text text-card">
+							<div class="text-card__desc">
+								<div class="text-card__model-link">Dark Green Sweatshirt...</div>
+								<div class="text-card__author">Roboto's Brand</div>
+							</div>
+							<div class="text-card__price">$127.00</div>
+						</div>
+					</a>
+
+					<a href="#" class="card__link">
+						<img src="img/product-three.webp" alt="Product" class="card__pic">
+						<img src="img/card__like.svg" alt="Card favorite" class="card__favorite">
+						<div class="card__text text-card">
+							<div class="text-card__desc">
+								<div class="text-card__model-link">Levender Sweatshirt...</div>
+								<div class="text-card__author">Jhanvi's Brand</div>
+							</div>
+							<div class="text-card__price">$133.00</div>
+						</div>
+					</a>
+
+					<a href="#" class="card__link">
+						<img src="img/product-four.webp" alt="Product" class="card__pic">
+						<img src="img/card__like.svg" alt="Card favorite" class="card__favorite">
+						<div class="card__text text-card">
+							<div class="text-card__desc">
+								<div class="text-card__model-link">Urban jacket with white...</div>
+								<div class="text-card__author">Sagar's Brand</div>
+							</div>
+							<div class="text-card__price">$79.00</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- ?Другий рядок з товарами -->
+				<div class="goods__row card">
+
+					<a href="#" class="card__link">
+						<img src="img/product-five.webp" alt="Product" class="card__pic">
+						<img src="img/card__like.svg" alt="Card favorite" class="card__favorite">
+						<div class="card__text text-card">
+							<div class="text-card__desc">
+								<div class="text-card__model-link">Plain White T-Shirt</div>
+								<div class="text-card__author">Jhanvi's Brand</div>
+							</div>
+							<div class="text-card__price">$123.00</div>
+						</div>
+					</a>
+
+					<a href="#" class="card__link">
+						<img src="img/product-six.webp" alt="Product" class="card__pic">
+						<img src="img/card__like.svg" alt="Card favorite" class="card__favorite">
+						<div class="card__text text-card">
+							<div class="text-card__desc">
+								<div class="text-card__model-link">Checks Shirt with white...</div>
+								<div class="text-card__author">H.M's Brand</div>
+							</div>
+							<div class="text-card__price">$123.00</div>
+						</div>
+					</a>
+
+					<a href="#" class="card__link">
+						<img src="img/product-seven.webp" alt="Product" class="card__pic">
+						<img src="img/card__like.svg" alt="Card favorite" class="card__favorite">
+						<div class="card__text text-card">
+							<div class="text-card__desc">
+								<div class="text-card__model-link">One piece black top &...</div>
+								<div class="text-card__author">Nike's Brand</div>
+							</div>
+							<div class="text-card__price">$123.00</div>
+						</div>
+					</a>
+
+					<a href="#" class="card__link">
+						<img src="img/product-eight.webp" alt="Product" class="card__pic">
+						<img src="img/card__like.svg" alt="Card favorite" class="card__favorite">
+						<div class="card__text text-card">
+							<div class="text-card__desc">
+								<div class="text-card__model-link">Denim Blue Shirt</div>
+								<div class="text-card__author">MOMO's Brand</div>
+							</div>
+							<div class="text-card__price">$38.00</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- TODO: Нижне меню -->
+	<footer class="footer">
+
+		<div class="footer__inner footer-nav">
+
+			<!-- ?Нижне меню -->
+			<div class="footer-nav__unit row-menu">
+
+				<div class="row-menu__block">
+					<h5 class="row-menu__title">Need Help</h5>
+					<ul class="row-menu__list">
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Contact Us</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Track Order</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Returns & Refunds</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">FAQ's</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Career</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="row-menu__block">
+					<h5 class="row-menu__title">Company</h5>
+					<ul class="row-menu__list">
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">About Us</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Euphoria Blog</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Euphoriastan</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Collaboration</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Media</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="row-menu__block">
+					<h5 class="row-menu__title">More Info</h5>
+					<ul class="row-menu__list">
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Term and Conditions</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Privacy Policy</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Shipping Policy</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Sitemap</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="row-menu__block">
+					<h5 class="row-menu__title">Location</h5>
+					<ul class="row-menu__list">
+						<li class="row-menu__item">
+							<a href="mailto:support@euphoria.in" class="row-menu__link" target="_blank">support@euphoria.in</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">Eklingpura Chouraha, Ahmedabad Main Road</a>
+						</li>
+						<li class="row-menu__item">
+							<a href="#" class="row-menu__link" target="_blank">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- ?Соціальні мережі -->
+			<div class="footer-nav__socials socials">
+
+				<div class="socials__network network">
+					<ul class="network__list">
+						<li class="network__item">
+							<a href="https://uk-ua.facebook.com/" target="_blank" class="network__link">
+								<img src="img/social-icon-facebook.svg" alt="Facebook" title="Facebook" class="network__icon">
+							</a>
+						</li>
+						<li class="network__item">
+							<a href="https://www.instagram.com/" target="_blank" class="network__link">
+								<img src="img/social-icon-instagram.svg" alt="Instagram" title="Instagram" class="network__icon">
+							</a>
+						</li>
+						<li class="network__item">
+							<a href="https://twitter.com/" target="_blank" class="network__link">
+								<img src="img/social-icon-twitter.svg" alt="Twitter" title="Twitter" class="network__icon">
+							</a>
+						</li>
+						<li class="network__item">
+							<a href="https://ua.linkedin.com/" target="_blank" class="network__link">
+								<img src="img/social-icon-linedin.svg" alt="Linkedin" title="Linkedin" class="network__icon">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-nav__store store">
+					<h5 class="store__title">Download the app</h5>
+
+					<div class="store__block shop">
+						<a href="https://play.google.com" target="_blank" title="Google Play" class="shop__link">
+							<img src="img/shop-google-play.svg" alt="Google Play" class="shop__userpic">
+							<div class="shop__text">
+								<div class="shop__support">Android app on</div>
+								<h6 class="shop__name">Google play</h6>
+							</div>
+						</a>
+
+						<a href="https://www.apple.com/app-store/" target="_blank" title="App Store" class="shop__link">
+							<img src="img/shop-app-store.svg" alt="App Store" class="shop__userpic">
+							<div class="shop__text">
+								<div class="shop__support">Available on the</div>
+								<h6 class="shop__name">App store</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- ?Популярні категорії -->
+			<div class="footer-nav__popular popular-categories">
+				<h5 class="popular-categories__title">Popular categories</h5>
+				<img src="img/icon-open.svg" alt="Open" class="popular-categories__img">
+			</div>
+
+			<!-- ?Авторське право -->
+			<div class="footer-nav__copyright copyright">
+				<div class="copyright__info">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</div>
+			</div>
+
+		</div>
+
+	</footer>
+</body>
+
+</html>
