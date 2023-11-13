@@ -7,6 +7,11 @@ body {
 	background: url("../img/fon.svg");
 }
 
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
 .wrapper__setup {
 	padding-top: 180px;
 	padding-bottom: 60px;
