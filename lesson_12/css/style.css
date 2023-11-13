@@ -94,6 +94,12 @@ body {
 	position: relative;
 }
 
+.section__actions .action-icon__img {
+	max-width: 18px;
+	min-height: 21px;
+	width: 100%;
+}
+
 .action-icon a:not(:last-child) {
 	margin-right: 20px;
 }
@@ -1119,6 +1125,21 @@ body {
 
 .letters__block > :not(:last-child) {
 	margin-right: 56px;
+}
+
+.figure__king {
+	max-width: 35px;
+	min-height: 62px;
+	width: 100%;
+}
+
+.figure__knight,
+.figure__pawn,
+.figure__rook-double,
+.figure__rook {
+	max-width: 37px;
+	min-height: 56px;
+	width: 100%;
 }
 
 /* TODO: Секція #4 */
