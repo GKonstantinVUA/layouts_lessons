@@ -529,13 +529,13 @@ body {
 }
 
 .home-page__image {
-	max-width: 22px;
+	max-width: 18px;
 	min-height: 18px;
 	width: 100%;
 }
 
 .about-page__image {
-	max-width: 18px;
+	max-width: 22px;
 	min-height: 18px;
 	width: 100%;
 }
