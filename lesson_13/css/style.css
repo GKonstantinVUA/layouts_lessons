@@ -1,0 +1,583 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+/* ?Загальні */
+body {
+	background: url("../img/body.webp") repeat;
+	font: 18px "Roboto", sans-serif;
+	color: #696969;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+/* ?Header */
+.header__section {
+	background-color: #f34a4a;
+	margin-bottom: 70px;
+	padding-left: 270px;
+}
+
+.header__section > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header__section .menu__content {
+	font-size: 20px;
+	text-align: right;
+	font-weight: 500;
+	line-height: 1.4;
+	margin-right: 350px;
+	color: aliceblue;
+}
+
+.header__section .menu__logo {
+	margin-right: 20px;
+	max-width: 94px;
+	padding: 10px;
+	min-height: 103px;
+	width: 100%;
+}
+
+/* ?Загальний блок main */
+
+.wrapper__main {
+	max-width: 1730px;
+	min-height: 100%;
+	padding: 40px 15px;
+	margin: 0 auto 65px;
+	background-color: #f1d3bc;
+}
+
+.wrapper__main > *:not(:last-child) {
+	margin-bottom: 120px;
+}
+
+.transform__row {
+	font-size: 0;
+}
+
+.transform__row > * {
+	display: inline-block;
+}
+
+.row__box .box__title,
+.box__content {
+	font-size: 18px;
+}
+/* ?Блоки transform */
+.body__transform {
+	max-width: 1530px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.transform__row:nth-child(2) {
+	padding-left: 150px;
+}
+
+.transform__row:nth-child(4) {
+	padding-left: 150px;
+}
+
+.body__transform .transform__row:not(:last-child) {
+	margin-bottom: 130px;
+}
+
+.body__transform > .transform__row:nth-child(1) > *:not(:last-child) {
+	margin-right: 125px;
+}
+
+.body__transform > .transform__row:nth-child(2) > *:not(:last-child) {
+	margin-right: 796px;
+}
+
+.body__transform > .transform__row:nth-child(3) > *:not(:last-child) {
+	margin-right: 222px;
+}
+
+.body__transform > .transform__row:nth-child(4) > *:not(:last-child) {
+	margin-right: 796px;
+}
+
+.row__box h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font: 400 20px "Abril Fatface", serif;
+	letter-spacing: 1px;
+	color: #383e41;
+}
+
+.row__box {
+	max-width: 200px;
+}
+
+.box__content {
+	position: relative;
+	min-height: 200px;
+	height: 100%;
+}
+
+.row__box .box__area {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: url("../img/fon_front.webp") center/cover no-repeat;
+}
+
+/* !Налаштування grange */
+.box__content .content__grange {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/* !Poзташування hexagonal */
+.box__content .content__hexagonal {
+	position: absolute;
+	top: 55px;
+	left: 50px;
+	max-width: 100px;
+	min-height: 87px;
+}
+
+/* !Poзташування title */
+
+.box__content .content__subtitle,
+.box__content .content__text {
+	color: white;
+	z-index: 3;
+	text-align: center;
+	font-family: "Typewriter", serif;
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 1.2;
+	max-width: 130px;
+}
+
+.box__content .content__subtitle--translate {
+	position: absolute;
+	top: 90px;
+	left: 62px;
+}
+
+.box__content .content__subtitle--scale {
+	position: absolute;
+	top: 90px;
+	left: 76px;
+}
+
+.box__content .content__subtitle--rotate {
+	position: absolute;
+	top: 90px;
+	left: 72px;
+}
+
+.box__content .content__subtitle--skew {
+	position: absolute;
+	top: 90px;
+	left: 80px;
+}
+
+.box__content .content__subtitle--matrix {
+	position: absolute;
+	top: 90px;
+	left: 72px;
+}
+
+.box__content .content__subtitle--trans-orig {
+	position: absolute;
+	top: 86px;
+	left: 38px;
+	font-size: 12px;
+}
+
+.box__content .content__subtitle--perspective {
+	position: absolute;
+	top: 84px;
+	left: 50px;
+	font-size: 9px;
+	max-width: 100px;
+}
+
+.box__content .content__subtitle--translate-d {
+	position: absolute;
+	top: 86px;
+	left: 62px;
+	font-size: 12px;
+}
+
+.box__content .content__subtitle--scale-d {
+	position: absolute;
+	top: 86px;
+	left: 76px;
+}
+
+.box__content .content__subtitle--rotate-d {
+	position: absolute;
+	top: 86px;
+	left: 72px;
+}
+
+.box__content .content__subtitle--matrix-d {
+	position: absolute;
+	top: 86px;
+	left: 72px;
+}
+
+.box__content .content__subtitle--style {
+	position: absolute;
+	top: 86px;
+	left: 62px;
+	font-size: 12px;
+}
+
+/* !Загальна анімація */
+.box__content {
+	transition: all 1s ease 0.1ms;
+}
+
+.box__content .content__grange,
+.box__content .content__subtitle,
+.box__content .content__hexagonal,
+.box__content .content__perspective {
+	transition: all 1s ease 0.1ms;
+}
+
+/* TODO:Traslate (x, y) */
+
+.transform__row:nth-child(1) > .row__box:nth-child(1) .box__content:hover {
+	transform: translate(100px, 100px);
+}
+
+/* TODO:Scale (x, y) */
+.transform__row:nth-child(1) > .row__box:nth-child(2) .box__content:hover .content__grange {
+	transform: scale(0.5, 0.5);
+}
+
+.transform__row:nth-child(1) > .row__box:nth-child(2) .box__content:hover .content__subtitle {
+	transform: scale(1.5, 1.5);
+}
+
+.transform__row:nth-child(1) > .row__box:nth-child(2) .box__content:hover .content__hexagonal {
+	transform: scale(1.9, 1.9);
+}
+
+/* TODO:Rotate (x, y) */
+
+.transform__row:nth-child(1) > .row__box:nth-child(3) .box__content:hover .content__grange {
+	transform: rotate(180deg);
+}
+
+.transform__row:nth-child(1) > .row__box:nth-child(3) .box__content:hover .content__subtitle {
+	transform: rotate(-360deg);
+}
+
+.transform__row:nth-child(1) > .row__box:nth-child(3) .box__content:hover .content__hexagonal {
+	transform: rotate(-180deg);
+}
+
+/* TODO:Skew (x, y) */
+
+.transform__row:nth-child(1) > .row__box:nth-child(4) .box__content:hover .content__grange {
+	transform: skew(20deg);
+}
+
+.transform__row:nth-child(1) > .row__box:nth-child(4) .box__content:hover .content__subtitle {
+	transform: skew(-20deg);
+}
+
+.transform__row:nth-child(1) > .row__box:nth-child(4) .box__content:hover .content__hexagonal {
+	transform: skew(12deg);
+}
+
+/* TODO:Matrix (a,b,c,d,x,y) */
+
+.transform__row:nth-child(1) > .row__box:nth-child(5) .box__content:hover {
+	transform: translate(-96px, 0px) scale(0.5) rotate(45deg);
+}
+
+.transform__row:nth-child(1) > .row__box:nth-child(5) .box__content:hover .content__subtitle {
+	transform: rotate(-45deg);
+}
+
+.transform__row:nth-child(1) > .row__box:nth-child(5) .box__content:hover .content__hexagonal {
+	transform: rotate(-45deg);
+}
+
+/* TODO:Transform-origin */
+
+.transform__row:nth-child(2) > .row__box:nth-child(1) .box__content:hover {
+	transform-origin: 0% 100%;
+	transform: rotate(-90deg);
+}
+
+.transform__row:nth-child(2) > .row__box:nth-child(1) .box__content:hover .content__subtitle {
+	transform: rotate(90deg);
+}
+
+.transform__row:nth-child(2) > .row__box:nth-child(1) .box__content:hover .content__hexagonal {
+	transform: rotate(270deg);
+	transform: translate(5px, 1px);
+}
+
+/* TODO:Perspective, Perspective-origin */
+
+.transform__row:nth-child(2) > .row__box:nth-child(2) .box__area {
+	perspective: 400px;
+}
+
+.transform__row:nth-child(2) > .row__box:nth-child(2) .box__area:hover .box__content {
+	transform: rotateX(50deg);
+}
+
+.transform__row:nth-child(2) > .row__box:nth-child(2) .box__content:hover .content__subtitle {
+	transform: rotate(360deg);
+}
+
+/* TODO:Translate3D (x, y, z) */
+
+.transform__row:nth-child(3) > .row__box:nth-child(1) .box__area {
+	perspective: 300px;
+}
+
+.transform__row:nth-child(3) > .row__box:nth-child(1) .box__area:hover .box__content {
+	transform: translate3d(75px, 75px, 75px);
+}
+
+/* TODO:Scale3D (x, y, z) */
+
+.transform__row:nth-child(3) > .row__box:nth-child(2) .box__area {
+	perspective: 300px;
+}
+
+.transform__row:nth-child(3) > .row__box:nth-child(2) .box__area:hover .box__content {
+	transform: scale3d(1.5, 1.5, 2);
+}
+
+/* TODO:Rotate3D (x, y, z, n+deg) */
+
+.transform__row:nth-child(3) > .row__box:nth-child(3) .box__area {
+	perspective: 400px;
+}
+
+.transform__row:nth-child(3) > .row__box:nth-child(3) .box__area:hover .box__content {
+	transform: rotate3D(3, 3, 3, -60deg);
+}
+
+/* TODO:Matrix3D (n,n,n,n,n,n,n,n,n...n) */
+
+.transform__row:nth-child(3) > .row__box:nth-child(4) .box__area {
+	perspective: 400px;
+}
+
+.transform__row:nth-child(3) > .row__box:nth-child(4) .box__area:hover .box__content {
+	transform: translate3d(-110px, -110px, 50px) rotate3d(0.5, 0.5, 0.5, -60deg);
+}
+
+/* TODO:Transform-style */
+
+.transform__row:nth-child(4) > .row__box:nth-child(1) .box__area {
+	perspective: 230px;
+}
+
+.transform__row:nth-child(4) > .row__box:nth-child(1) .box__area:hover .box__content {
+	transform: rotateX(60deg);
+	transform-style: preserve-3d;
+}
+
+/* TODO:Backface-visibility */
+
+.transform__row:nth-child(4) > .row__box:nth-child(2) {
+	vertical-align: top;
+}
+
+.transform__row:nth-child(4) > .row__box:nth-child(2) .box__area {
+	perspective: 250px;
+}
+
+.transform__row:nth-child(4) > .row__box:nth-child(2) .box__area .box__content {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+}
+
+.content__front,
+.content__back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 2s ease 0.1ms;
+}
+
+.content__text--front {
+	position: absolute;
+	top: 83px;
+	left: 78px;
+}
+
+.content__text--back {
+	position: absolute;
+	top: 83px;
+	left: 82px;
+}
+
+.content__front {
+	background: url("../img/hexagonal.svg") 55px 50px/100px 87px no-repeat,
+		url("../img/grange_two.webp") 0 0/100% no-repeat;
+	transform: rotateY(0deg);
+}
+
+.content__back {
+	position: relative;
+	background: url("../img/hexagonal.svg") 55px 50px/100px 87px no-repeat,
+		url("../img/grange_three.webp") 0 0/100% no-repeat;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+.transform__row:nth-child(4) > .row__box:nth-child(2) .box__area:hover .content__back {
+	transform: rotateY(0deg);
+	transition: all 2s ease 0.1ms;
+}
+
+.transform__row:nth-child(4) > .row__box:nth-child(2) .box__area:hover .content__front {
+	transform: rotateY(-180deg);
+	opacity: 0.5;
+	transition: all 2s ease 0.1ms;
+}
+
+/* !Додаткова практика */
+
+.wrapper__pactic {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.practic__title {
+	margin-bottom: 40px;
+	font: 500 24px "Roboto", sans-serif;
+	text-align: center;
+	color: #383e41;
+}
+
+.practic__shell {
+	position: relative;
+	transition: all 1s ease 0s;
+}
+
+.practic__background {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 500px;
+	max-width: 500px;
+	min-height: 650px;
+	width: 100%;
+}
+
+.practic__block {
+	position: absolute;
+	top: 24px;
+	left: 530px;
+	width: 440px;
+	height: 600px;
+	border: 20px solid rgba(255, 255, 255, 0.2);
+	transform-style: preserve-3d;
+	perspective: 200px;
+	perspective-origin: center;
+	transition: all 1s ease 0s;
+}
+
+.practic__block:target {
+	transform: rotateX(180deg);
+}
+
+.block__home-page {
+	z-index: 2;
+	transform: rotateX(0deg);
+}
+
+.block__about-page {
+	transform: rotateX(-180deg);
+}
+
+.block__home-page,
+.block__about-page {
+	background: rgba(40, 64, 96, 0.22);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	transition: all 1s ease 0s;
+}
+
+.home-page__image,
+.about-page__image {
+	position: absolute;
+	top: 22px;
+	left: 25px;
+	transition: all 1s ease 0s;
+}
+
+.home-page__image {
+	max-width: 22px;
+	min-height: 18px;
+	width: 100%;
+}
+
+.about-page__image {
+	max-width: 18px;
+	min-height: 18px;
+	width: 100%;
+}
+
+.home-page__image:hover,
+.about-page__image:hover {
+	transform: scale(1.3);
+}
+
+.home-page__subblock,
+.about-page__subblock {
+	padding: 100px 15px 0 15px;
+	text-align: justify;
+}
+
+.subblock__title {
+	text-align: justify;
+	font: 700 20px "Roboto", sans-serif;
+	color: azure;
+}
+
+.subblock__title:not(:last-child) {
+	margin-bottom: 60px;
+}
+
+.subblock__text {
+	font: 400 14px "Roboto", sans-serif;
+	color: aliceblue;
+}
+
+.subblock__text p:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.subblock__text p:last-child {
+	font-size: 13px;
+	color: rgb(253, 161, 161);
+	text-align: center;
+}
+
+/* ?Footer */
+.footer__section {
+	background-color: #262f34;
+	padding: 40px 0;
+}
