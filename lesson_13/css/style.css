@@ -490,8 +490,7 @@ body {
 	height: 600px;
 	border: 20px solid rgba(255, 255, 255, 0.2);
 	transform-style: preserve-3d;
-	perspective: 200px;
-	perspective-origin: center;
+	perspective: 100px;
 	transition: all 1s ease 0s;
 }
 
