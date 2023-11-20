@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Varela:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+@font-face {
+	font-family: "LEMON MILK";
+	src: url("../fonts/LEMONMILK-Medium.woff2") format("woff2"),
+		url("../fonts/LEMONMILK-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "CCSingleBound";
+	src: url("../fonts/CCSingleBound-Light.woff2") format("woff2"),
+		url("../fonts/CCSingleBound-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
