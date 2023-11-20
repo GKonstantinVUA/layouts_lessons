@@ -17,7 +17,11 @@ body {
 .header__section {
 	background-color: #f34a4a;
 	margin-bottom: 70px;
-	padding-left: 270px;
+	padding-left: 70px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.4;
+	color: aliceblue;
 }
 
 .header__section > * {
@@ -25,21 +29,12 @@ body {
 	vertical-align: middle;
 }
 
-.header__section .menu__content {
-	font-size: 20px;
-	text-align: right;
-	font-weight: 500;
-	line-height: 1.4;
-	margin-right: 350px;
-	color: aliceblue;
-}
-
 .header__section .menu__logo {
-	margin-right: 20px;
 	max-width: 94px;
-	padding: 10px;
 	min-height: 103px;
 	width: 100%;
+	padding: 10px;
+	margin-right: 20px;
 }
 
 /* ?Загальний блок main */
