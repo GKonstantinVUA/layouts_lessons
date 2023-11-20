@@ -3,7 +3,7 @@
 
 /* ?Загальні */
 body {
-	background: url("../img/body.webp") repeat;
+	background: url("../img/body.webp");
 	font: 18px "Roboto", sans-serif;
 	color: #696969;
 }
@@ -564,7 +564,7 @@ body {
 	margin-bottom: 15px;
 }
 
-.subblock__text p:last-child {
+.subblock__text p:last-of-type {
 	font-size: 13px;
 	color: rgb(253, 161, 161);
 	text-align: center;
