@@ -1,0 +1,86 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+.block__category {
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* !Контейнер з чоловічим одягом */
+
+.category__title {
+	display: inline-flex;
+	color: #3c4242;
+	font: 600 34px "Core Sans C", sans-serif;
+	line-height: 0.98; /* 33.5/34 */
+	letter-spacing: 0.68px;
+	gap: 20px;
+	min-height: 36px;
+	margin-bottom: 70px;
+}
+
+.category__title::before {
+	content: "";
+	border-radius: 10px;
+	background: #8a33fd;
+	width: 6px;
+	height: 30px;
+	flex: 0 0 6px;
+	align-self: center;
+}
+
+/* !Контейнер з картками (чололвічий одяг) */
+
+.categoty__cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+.inner-cards {
+	min-width: 274px;
+}
+.inner-cards__cell {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 16px;
+}
+.cell {
+}
+.cell__link {
+}
+.cell__img {
+}
+.cell__text-box {
+}
+.box {
+}
+.box__subtitle {
+}
+.box__link {
+}
+.box__paragraph {
+}
+.box__link-arrow {
+}
+.footer {
+}
+.footer__section {
+	background-color: #8a33fd;
+	padding: 20px;
+	width: 100%;
+}
+.section {
+}
