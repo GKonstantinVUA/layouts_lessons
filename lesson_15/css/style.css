@@ -679,7 +679,7 @@ body {
 	transform: scale(1.1);
 }
 
-.box__link:hover {
+.box__subtitle:hover .box__link {
 	color: #700cf1;
 }
 
@@ -819,7 +819,7 @@ body {
 	box-shadow: 0 0 0 3px #fff, 0 0 0 4px rgba(140, 54, 252, 0.5);
 }
 
-.desc__link:hover {
+.desc__link:hover .desc__title {
 	color: #6625bb;
 	text-decoration: underline;
 }
