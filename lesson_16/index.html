@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson #16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+
+		<header class="header">
+			<div class="header__section section"></div>
+		</header>
+
+
+		<main class="main">
+			<div class="main__section section">
+
+				<!-- TODO Форма Contact Us -->
+				<div class="section__contact-us contact-us">
+					<div class="contact-us__desc desc">
+						<h6 class="desc__subtitle">Contact us</h6>
+						<h5 class="desc__title">Request a call back !</h5>
+					</div>
+
+					<form class="contact-us__block block" action="#" method="GET" enctype="multipart/form-data">
+
+						<div class="block__set-inputs element">
+							<input type="text" class="element__field-text" name="your_name" placeholder="your name" required>
+							<input type="mail" class="element__field-mail" name="email_user" placeholder="email adrress" required>
+							<input type="tel" class="element__field-tel" name="phone_user" placeholder="phone number" required>
+							<input type="test" class="element__field-subject" name="element__field-subject" placeholder="subject" required>
+						</div>
+
+						<div class="block__area-text element">
+							<textarea class="element__text-area" name="text-area" placeholder="message..." autocomplete="off"></textarea>
+						</div>
+
+						<button type="submit" class="block__submit-aboutus">Submint</button>
+					</form>
+				</div>
+
+				<!-- TODO Форма My Info -->
+				<div class="section__my-info my-info">
+
+					<div class="my-info__box-text box-text">
+						<h3 class="box-text__title">My info</h3>
+						<h6 class="box-text__subtitle">Add address</h6>
+					</div>
+
+					<form class="my-info__blank blank" action="#" method="GET" enctype="multipart/form-data">
+
+						<!-- ? Строка 1 -->
+						<div class="blank__row row">
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="first-name">First name*</label>
+								<input type="text" id="first-name" class="cell-form__field" name="first-name" placeholder="First Name" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="last-name">Last name*</label>
+								<input type="text" id="last-name" class="cell-form__field" name="last-name" placeholder="Last Name" required>
+							</div>
+						</div>
+
+						<!-- ? Строка 2 -->
+						<div class="blank__row row">
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="country">Country / Region*</label>
+								<input type="text" id="country" class="cell-form__field" name="country" placeholder="Country / Region" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="company">Company Name</label>
+								<input type="text" id="company" class="cell-form__field" name="company" placeholder="Company (optional)" required>
+							</div>
+						</div>
+
+						<!-- ? Строка 3 -->
+						<div class="blank__row row">
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="street">Street Adreess*</label>
+								<input type="text" id="street" class="cell-form__field" name="street" placeholder="House number and street name" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="apartment">Apt, suite, unit</label>
+								<input type="text" id="apartment" class="cell-form__field" name="apartment" placeholder="apartment, suite, unit, etc. (optional)" required>
+							</div>
+						</div>
+
+						<!-- ? Строка 4 -->
+						<div class="blank__row row">
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="city">City*</label>
+								<input type="text" id="city" class="cell-form__field" name="city" placeholder="Town / city" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="state">State*</label>
+								<select class="cell-form__field state" id="state" name="state" required>
+									<option value="State" class="state__item">State</option>
+									<option value="State_1" class="state__item">State_1 </option>
+									<option value="State_2" class="state__item">State_2</option>
+									<option value="State_3" class="state__item">State_3</option>
+									<option value="State_4" class="state__item">State_4</option>
+									<option value="State_5" class="state__item">State_5</option>
+									<option value="State_6" class="state__item">State_6</option>
+									<option value="State_7" class="state__item">State_7</option>
+									<option value="State_8" class="state__item">State_8</option>
+									<option value="State_9" class="state__item">State_9</option>
+									<option value="State_10" class="state__item">State_10</option>
+								</select>
+							</div>
+						</div>
+
+						<!-- ? Строка 5 -->
+						<div class="blank__row row">
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="phone">Phone*</label>
+								<input type="tel" id="phone" class="cell-form__field" name="phone" placeholder="Phone" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="postal-code">Postal Code*</label>
+								<input type="text" id="postal-code" class="cell-form__field" name="postal-code" placeholder="Postal Code" required autocomplete="off">
+							</div>
+						</div>
+
+						<!-- ? Строка 6 -->
+						<div class="blank__row row">
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="instruction">Delivery Instruction</label>
+								<textarea class="cell-form__delivery" id="instruction" placeholder="Delivery Instruction" autocomplete="off" name="instruction"></textarea>
+							</div>
+						</div>
+
+						<!-- ? Строка 7 -->
+						<div class="blank__row row">
+							<div class="row__cell-form cell-form">
+								<input type="checkbox" id="set-shipping" class="cell-form__set-shipping" name="set-shipping">
+								<label class="cell-form__signature" for="set-shipping">Set as default shipping address</label>
+							</div>
+							<div class="row__cell-form cell-form">
+								<input type="checkbox" id="set-shipping" class="cell-form__set-billing" name="set-billing">
+								<label class="cell-form__signature" for="set-shipping">Set as default billing address</label>
+							</div>
+						</div>
+
+						<!-- ? Строка 8 -->
+						<div class="blank__row row">
+							<button type="submit" class="row__button-save">Save</button>
+							<button type="reset" class="row__button-reset">Cancel</button>
+						</div>
+					</form>
+
+
+				</div>
+
+
+				<!-- TODO Форма My Info -->
+				<div class="section__form-area form-area"></div>
+			</div>
+		</main>
+
+
+		<footer class="footer">
+			<div class="footer__section section"></div>
+		</footer>
+
+
+	</div>
+</body>
+
+</html>
