@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700&display=swap");
+
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+body {
+	font-family: "Causten", sans-serif;
+	font-size: 14px;
+	color: #3c4242;
+}
+
+/* ! Форма Contact Us */
+
+.section__contact-us {
+	max-width: 1250px;
+	margin: 0 auto 50px;
+	padding: 0 15px;
+	text-align: center;
+}
+
+.desc__title {
+	color: #37393f;
+	font: 700 40px "Poppins", sans-serif;
+	line-height: 1.21; /* 48.4/40 */
+	margin-bottom: 40px;
+	text-transform: capitalize;
+}
+
+.contact-us input::placeholder,
+.contact-us textarea::placeholder {
+	text-transform: capitalize;
+}
+
+.desc__subtitle {
+	color: #37393f;
+	font: 500 18px "Inter", sans-serif;
+	line-height: 0.9; /* 16/18 */
+	display: flex;
+	gap: 6px;
+	text-transform: capitalize;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+
+.desc__subtitle::before {
+	content: "";
+	height: 12px;
+	flex: 0 0 12px;
+	align-self: flex-start;
+	background: #40ddb6;
+	margin-top: 2px;
+}
+
+[class*="element__field-"] {
+	color: #37393f;
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 0.9; /* 16/18 */
+	padding: 0 40px;
+	height: 65px;
+	background: #f8f8f8;
+	border: 1px solid #ddd;
+}
+
+.block__set-inputs {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 28px;
+	column-gap: 35px;
+}
+
+.set-inputs__element {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	row-gap: 28px;
+	column-gap: 35px;
+	flex: 1 1 45%;
+	min-width: 280px;
+}
+
+.element__text-area {
+	color: #37393f;
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 0.9; /* 16/18 */
+	padding: 22px 0 0 40px;
+	background: #f8f8f8;
+	border: 1px solid #ddd;
+	width: 100%;
+	min-height: 222px;
+	resize: vertical;
+	margin-bottom: 50px;
+}
+
+[class*="element__field-"]:focus-visible,
+.element__text-area:focus-visible {
+	outline: 2px solid #0ead86;
+	border-radius: 2px;
+}
+
+.block__submit-aboutus {
+	color: #fff;
+	text-align: center;
+	font: 600 18px Inter, sans-serif;
+	line-height: 0.9;
+	padding: 21px 61px 22px 61px;
+	background: #6b77e5;
+}
+
+.block__submit-aboutus:hover {
+	background: #3f4797;
+}
+
+/* ! Форма My Info */
+.my-info__box-text {
+}
+.box-text {
+}
+.section__my-info {
+	max-width: 925px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.box-text__title {
+	font: 600 28px "Core Sans C", sans-serif;
+	line-height: 1.2; /* 33.5/28 */
+	letter-spacing: 0.56px;
+	margin-bottom: 20px;
+}
+
+.box-text__subtitle {
+	font: 600 22px "Core Sans C", sans-serifC;
+	line-height: 1.5; /* 33.5/22 */
+	letter-spacing: 0.44px;
+	margin-bottom: 50px;
+}
+
+.cell-form__signature {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 0.9; /* 16/18 */
+	letter-spacing: 0.36px;
+}
+
+.my-info {
+}
+.my-info__box-text {
+}
+.box-text {
+}
+.box-text__title {
+}
+.box-text__subtitle {
+}
+
+.blank__row input,
+.cell-form__field,
+.cell-form__delivery {
+	color: #807d7e;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.blank__body {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 31px;
+	column-gap: 42px;
+}
+
+.row__cell-form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	row-gap: 11px;
+	flex: 1 1 45%;
+	min-width: 280px;
+}
+
+.cell-form__delivery {
+	width: 100%;
+	min-height: 149px;
+	border-radius: 8px;
+	background: #f6f6f6;
+	padding: 18px 0 0 22px;
+	resize: vertical;
+}
+
+.cell-form__field {
+	height: 52px;
+	border-radius: 8px;
+	background: #f6f6f6;
+	padding: 0 22px;
+}
+
+.cell-form__first-name {
+}
+.cell-form__last-name {
+}
+.cell-form__country {
+}
+.cell-form_company {
+}
+.cell-form__street {
+}
+.cell-form__apartment {
+}
+.cell-form__city {
+}
+.cell-form__container {
+}
+.container {
+}
+.container__state {
+}
+.state {
+}
+.state__item {
+}
+.cell-form__phone {
+}
+.cell-form__postal-code {
+}
+.cell-form__instruction {
+}
+.cell-form__set-shipping {
+}
+.cell-form__set-billing {
+}
+.row__button-save {
+}
+.row__button-reset {
+}
