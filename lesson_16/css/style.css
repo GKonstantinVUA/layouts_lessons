@@ -218,15 +218,20 @@ body {
 	letter-spacing: 0.44px;
 }
 
-.cell-form__signature,
-.row__checkbox {
+.cell-form__signature {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 0.9; /* 16/18 */
 	letter-spacing: 0.36px;
 }
 
-.blank__row,
+.row__checkbox {
+	font-size: 20px;
+	line-height: 0.8; /* 16/20 */
+	letter-spacing: 0.36px;
+	color: #3c4242;
+}
+
 .cell-form__field,
 .cell-form__delivery {
 	color: #807d7e;
@@ -408,6 +413,7 @@ body {
 	font: 600 22px "Core Sans C", sans-serif;
 	line-height: 1.5; /* 33.5/22 */
 	letter-spacing: 0.44px;
+	text-transform: capitalize;
 }
 
 .personal-data__user-form {
@@ -787,6 +793,11 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
+}
+
+.payment-form__thumb a:hover {
+	outline: 1.5px solid #8a33fd;
+	border-radius: 10px;
 }
 
 .trumb__icon {
