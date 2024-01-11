@@ -712,8 +712,6 @@ body {
 /* radio credit card */
 
 .radio-wrap__marker,
-.radio-wrap__text-zone,
-.cash-delivery__text-zone,
 .cash-delivery__marker {
 	padding-left: 37px;
 }
@@ -722,6 +720,20 @@ body {
 .cash-delivery__marker,
 .paypal-block__marker {
 	cursor: pointer;
+}
+
+.radio-wrap__marker,
+.cash-delivery__marker {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.cash-delivery__text-zone,
+.radio-wrap__text-zone {
+	color: #807d7e;
+	font-weight: 500;
+	line-height: 1;
 }
 
 .radio-wrap__text-zone > p:not(:last-child),
