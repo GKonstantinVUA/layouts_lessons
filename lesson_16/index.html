@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson #16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+
+		<header class="header">
+			<div class="header__section section">
+
+				<div class="section__inner-header menu-header">
+					<div class="menu-header__menu-desc menu-desc">
+						<img src="img/logo_lesson.svg" alt="Logo lesson" class="menu-desc__logo">
+						<div class="menu-desc__content content">
+							<h1 class="content__title">Домашне завдання #16</h1>
+							<p class="content__paragraph">HTML форми</p>
+						</div>
+					</div>
+					<div class="menu-header__form-box form-box">
+						<a href="#contact-us" class="form-box__link">Contact us form</a>
+						<a href="#my-info" class="form-box__link">My info form</a>
+						<a href="#check-out" class="form-box__link">Check out form</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<main class="main">
+			<div class="main__section section">
+
+				<!-- TODO Форма Contact Us -->
+				<div class="section__contact-us contact-us" id="contact-us">
+					<div class="contact-us__desc desc">
+						<h6 class="desc__subtitle">Contact us</h6>
+						<h5 class="desc__title">Request a call back !</h5>
+					</div>
+
+					<form class="contact-us__block block" action="#" method="GET" enctype="multipart/form-data">
+
+						<div class="block__set-inputs set-inputs">
+							<div class="set-inputs__element element">
+								<input type="text" class="element__field-text" name="your_name" placeholder="your name" required>
+							</div>
+							<div class="set-inputs__element element">
+								<input type="email" class="element__field-mail" name="email_user" placeholder="email adrress" required>
+							</div>
+							<div class="set-inputs__element element">
+								<input type="tel" class="element__field-tel" name="phone_user" placeholder="phone number" required>
+							</div>
+							<div class="set-inputs__element element">
+								<input type="text" class="element__field-subject" name="element__field-subject" placeholder="subject" required>
+							</div>
+							<div class="set-inputs__element element">
+								<textarea class="element__text-area" name="text-area" placeholder="message..." autocomplete="off"></textarea>
+							</div>
+						</div>
+
+						<button type="submit" class="block__submit-aboutus">Submint</button>
+					</form>
+				</div>
+
+				<!-- TODO Форма My Info -->
+				<div class="section__my-info my-info" id="my-info">
+
+					<div class="my-info__box-text box-text">
+						<h3 class="box-text__title">My info</h3>
+						<h6 class="box-text__subtitle">Add address</h6>
+					</div>
+
+					<form class="my-info__blank blank" action="#" method="GET" enctype="multipart/form-data">
+
+						<!-- ? Строка 1-6 -->
+						<div class="blank__body row">
+
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="first-name">First name*</label>
+								<input type="text" id="first-name" class="cell-form__field" name="first-name" placeholder="First Name" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="last-name">Last name*</label>
+								<input type="text" id="last-name" class="cell-form__field" name="last-name" placeholder="Last Name" required>
+							</div>
+
+							<!-- ? Строка 2 -->
+
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="country">Country / Region*</label>
+								<input type="text" id="country" class="cell-form__field" name="country" placeholder="Country / Region" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="company">Company Name</label>
+								<input type="text" id="company" class="cell-form__field" name="company" placeholder="Company (optional)" required>
+							</div>
+
+							<!-- ? Строка 3 -->
+
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="street">Street Adreess*</label>
+								<input type="text" id="street" class="cell-form__field" name="street" placeholder="House number and street name" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="apartment">Apt, suite, unit</label>
+								<input type="text" id="apartment" class="cell-form__field" name="apartment" placeholder="apartment, suite, unit, etc. (optional)" required>
+							</div>
+
+							<!-- ? Строка 4 -->
+
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="city">City*</label>
+								<input type="text" id="city" class="cell-form__field" name="city" placeholder="Town / Сity" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="state">State*</label>
+								<select class="cell-form__field cell-form__field--down state" id="state" name="state" required>
+									<option value="" class="state__item">State</option>
+									<option value="State_1" class="state__item">State_1 </option>
+									<option value="State_2" class="state__item">State_2</option>
+									<option value="State_3" class="state__item">State_3</option>
+									<option value="State_4" class="state__item">State_4</option>
+									<option value="State_5" class="state__item">State_5</option>
+									<option value="State_6" class="state__item">State_6</option>
+									<option value="State_7" class="state__item">State_7</option>
+									<option value="State_8" class="state__item">State_8</option>
+									<option value="State_9" class="state__item">State_9</option>
+									<option value="State_10" class="state__item">State_10</option>
+								</select>
+							</div>
+
+							<!-- ? Строка 5 -->
+
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="phone">Phone*</label>
+								<input type="tel" id="phone" class="cell-form__field" name="phone" placeholder="Phone" required>
+							</div>
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="postal-code">Postal Code*</label>
+								<input type="text" id="postal-code" class="cell-form__field" name="postal-code" placeholder="Postal Code" required autocomplete="off">
+							</div>
+
+							<!-- ? Строка 6 -->
+							<div class="row__cell-form cell-form">
+								<label class="cell-form__signature" for="instruction">Delivery Instruction</label>
+								<textarea class="cell-form__delivery" id="instruction" placeholder="Delivery Instruction" autocomplete="off" name="instruction"></textarea>
+							</div>
+						</div>
+
+						<!-- ? Строка 7 -->
+						<div class="blank__row row">
+							<div class="row__checkbox cell">
+								<input type="checkbox" id="set-shipping" class="cell__check" name="set-shipping">
+								<label class="cell__signature" for="set-shipping">Set as default shipping address</label>
+							</div>
+							<div class="row__checkbox cell">
+								<input type="checkbox" id="set-billing" class="cell__check" name="set-shipping">
+								<label class="cell__signature" for="set-billing">Set as default billing address</label>
+							</div>
+						</div>
+
+						<!-- ? Строка 8 -->
+						<div class="blank__button button">
+							<button type="submit" class="button__save">Save</button>
+							<button type="reset" class="button__reset">Cancel</button>
+						</div>
+					</form>
+				</div>
+
+				<!-- TODO Форма Check Out -->
+				<div class="section__checkout-head-block separate-block" id="check-out">
+					<div class="separate-block__checkout-inner checkout-inner">
+						<!-- ?Заголовки розділу -->
+						<div class="checkout-inner__box">
+							<h2 class="checkout-inner__caption">
+								Check out
+							</h2>
+							<h3 class="checkout-inner__sub-caption">
+								Billing details
+							</h3>
+						</div>
+						<!-- TODO Billing Details -->
+						<!-- ?Форма - інфо користувача -->
+						<form class="checkout-inner__check-out check-out" action="#" method="GET" enctype="multipart/form-data">
+							<div class="check-out__personal-data personal-data">
+								<!-- !1-блок -->
+								<div class="personal-data__user-form user-form">
+									<!-- ?строка -->
+									<div class="user-form__info info">
+										<label class="info__subtitle" for="name-first-user">First Name*</label>
+										<input type="text" id="name-first-user" class="info__client" name="name-first-user" placeholder="First Name" required>
+									</div>
+									<div class="user-form__info info">
+										<label class="info__subtitle" for="name-last-user">Last Name*</label>
+										<input type="text" id="name-last-user" class="info__client" name="name-last-user" placeholder="Last Name" required>
+									</div>
+									<!-- ?строка -->
+									<div class="user-form__info info">
+										<label class="info__subtitle" for="name-region">Country / Region*</label>
+										<input type="text" id="name-region" class="info__client" name="name-region" placeholder="Country / Region" required>
+									</div>
+									<div class="user-form__info info">
+										<label class="info__subtitle" for="name-company">Company Name</label>
+										<input type="text" id="name-company" class="info__client" name="name-company" placeholder="Company (optional)" required>
+									</div>
+									<!-- ?строка -->
+									<div class="user-form__info info">
+										<label class="info__subtitle" for="address-street">Street Address*</label>
+										<input type="text" id="address-street" class="info__client" name="address-street" placeholder="House number and street name" required>
+									</div>
+									<div class="user-form__info info">
+										<label class="info__subtitle" for="suite-house">Apt, suite, unit</label>
+										<input type="text" id="suite-house" class="info__client" name="suite-house" placeholder="apartment, suite, unit, etc. (optional)" required>
+									</div>
+								</div>
+								<!-- !2-блок -->
+								<div class="personal-data__location location">
+									<!-- ?строка -->
+									<div class="location__registration registration">
+										<label class="registration__subtitle" for="client-city">City*</label>
+										<input type="text" id="client-city" class="registration__client" name="client-city" placeholder="City" required>
+									</div>
+									<div class="location__registration registration">
+										<label class="registration__subtitle" for="registration__state">State</label>
+										<select class="registration__list registration__list--down" id="registration__state" name="registration__state" required>
+											<option value="" class="registration__client">State</option>
+											<option value="Denmark" class="registration__client">Denmark</option>
+											<option value="Iceland" class="registration__client">Iceland</option>
+											<option value="Lithuania" class="registration__client">Lithuania</option>
+											<option value="Sweden" class="registration__client">Sweden</option>
+										</select>
+									</div>
+									<div class="location__registration registration">
+										<label class="registration__subtitle" for="code-postal">Postal Code*</label>
+										<input type="text" id="code-postal" class="registration__client" name="code-postal" placeholder="Postal Code" required autocomplete="off">
+									</div>
+								</div>
+								<!-- !3-блок -->
+								<div class="personal-data__telephone telephone">
+									<!-- ?строка -->
+									<div class="telephone__client client">
+										<label class="client__subtitle" for="data-phone">Phone*</label>
+										<input type="tel" id="data-phone" class="client__data-phone" name="data-phone" placeholder="Phone" required>
+									</div>
+								</div>
+								<button type="submit" class="personal-data__delivery">Continue to delivery</button>
+								<div class="personal-data__save-info save-info">
+									<input type="checkbox" id="checkout" class="save-info__checkout" name="checkout" required>
+									<label class="save-info__subtitle" for="checkout">Save my information for a faster checkout
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- TODO Shipping, Payment-->
+					<div class="separate-block__shell shell">
+						<!-- ?Форма - Shipping Address -->
+						<div class="shell__wrap-main wrap-main">
+							<div class="wrap-main__address-shipping address-shipping">
+								<!-- !Заголовки розділу -->
+								<div class="address-shipping__desc">
+									<h3 class="address-shipping__title">
+										Shipping Address
+									</h3>
+									<div class="address-shipping__paragraph">
+										<p>
+											Select the address that matches your card or payment method.
+										</p>
+									</div>
+								</div>
+								<div class="address-shipping__inner-block">
+									<form class="address-shipping__holder holder" action="#" method="GET" enctype="multipart/form-data">
+										<div class="holder__box-address box-address">
+											<div class="box-address__delivery delivery">
+												<input checked type="radio" class="delivery__check" id="billing-delivery" value="delivery-billing" name="shipping-address" required>
+												<label class="box-address__label" for="billing-delivery">Same as Billing address</label>
+											</div>
+											<div class="box-address__delivery delivery">
+												<input type="radio" class="delivery__check" id="billing-different" value="different-billing" name="shipping-address" required>
+												<label class="box-address__label" for="billing-different">Use a different shipping address</label>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- ?Форма - Shipping Method -->
+						<div class="shell__wrap-main wrap-main">
+							<div class="wrap-main__method-shipping method-shipping">
+								<div class="method-shipping__desc">
+									<h3 class="method-shipping__title">
+										Shipping Method
+									</h3>
+								</div>
+								<div class="method-shipping__holder holder">
+									<div class="holder__method-shipping-inner method-shipping-inner">
+										<div class="method-shipping-inner__cost cost">
+											<div class="cost__fact">
+												Arrives by Monday, June 7
+											</div>
+											<div class="cost__delivery-wrap delivery-wrap">
+												<div class="delivery-wrap__desс desc">
+													<h4 class="desc__caption">
+														Delivery Charges lore
+													</h4>
+													<div class="desc__paragraph">
+														<p>Additional fess may apply</p>
+													</div>
+												</div>
+												<div class="delivery-wrap__price">
+													$5.00
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ?Форма - Payment Method -->
+						<div class="shell__wrap-main wrap-main">
+							<div class="wrap-main__method-payment method-payment">
+								<h3 class="method-payment__title">
+									Payment Method
+								</h3>
+								<div class="method-payment__paragraph">
+									<p>All transactions are secure and encrypted.</p>
+								</div>
+							</div>
+
+							<form class="wrap-main__payment-form payment-form" action="#" method="GET" enctype="multipart/form-data">
+								<div class="payment-form__inner-block">
+
+									<div class="payment-form__radio-wrap radio-wrap">
+										<div class="radio-wrap__inner">
+											<input checked type="radio" class="radio-wrap__card-radio" id="card-credit" value="card-credit" name="payment" required>
+											<label class="radio-wrap__marker" for="card-credit">Credit Card</label>
+											<div class="radio-wrap__text-zone text-zone">
+												<p>We accept all major credit cards.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="payment-form__thumb trumb">
+										<a href="#" class="trumb__link" target="_blank"><img src="img/pay.webp" alt="pay" class="trumb__icon"></a>
+										<a href="#" class="trumb__link" target="_blank"><img src="img/visa.webp" alt="visa" class="trumb__icon"></a>
+										<a href="#" class="trumb__link" target="_blank"><img src="img/paypal.webp" alt="paypal" class="trumb__icon"></a>
+										<a href="#" class="trumb__link" target="_blank"><img src="img/paypass.webp" alt="paypass" class="trumb__icon"></a>
+									</div>
+
+									<div class="payment-form__data-card data-card">
+										<div class="data-card__item">
+											<input type="text" class="data-card__number" name="number-card" placeholder="Card Number" required>
+										</div>
+										<div class="data-card__item">
+											<input type="text" class="data-card__name-card" name="card-name" placeholder="Name of card" required>
+										</div>
+										<div class="data-card__item">
+											<input type="text" class="data-card__expiration-date" name="date-expiration" placeholder="Expiration date (MM/YY)" required>
+										</div>
+										<div class="data-card__item ">
+											<input type="password" class="data-card__password" name="security-code" placeholder="Security Code" required maxlength="3">
+											<img src="img/eye.svg" alt="eye" class="data-card__eye">
+										</div>
+									</div>
+
+									<div class="payment-form__cash-delivery cash-delivery">
+										<div class="cash-delivery__inner">
+											<input type="radio" class="cash-delivery__radio" id="delivery-cash" value="delivery-cash" name="payment" required>
+											<label class="cash-delivery__marker" for="delivery-cash">Cash on delivery</label>
+											<div class="cash-delivery__text-zone">
+												<p>Pay with cash upon delivery.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="payment-form__paypal paypal-block">
+										<input type="radio" class="paypal-block__radio" id="paypal-cash" value="cash-paypal" name="payment" required>
+										<label class="paypal-block__marker" for="paypal-cash">PayPal</label>
+									</div>
+								</div>
+
+								<button type="submit" class="payment-form__pay-now">Pay now</button>
+							</form>
+
+
+						</div>
+					</div>
+					<!-- TODO Shipping, Payment-->
+
+				</div>
+			</div>
+		</main>
+
+
+		<footer class="footer">
+			<div class="footer__section section"></div>
+		</footer>
+
+
+	</div>
+</body>
+
+</html>
