@@ -625,7 +625,7 @@ body {
 }
 
 .payment-form__inner-block {
-	padding: 45px 18px;
+	padding: 45px 48px 45px 28px;
 }
 
 .box-address__delivery:nth-child(1),
@@ -707,15 +707,14 @@ body {
 
 /* ?Форма - Payment Method */
 
-.payment-form__inner-block > *:not(:last-child) {
+.radio-wrap__payment-inner-form > *:not(:last-child),
+.payment-form__radio-wrap > *:not(:last-child) {
 	margin-bottom: 30px;
 }
 
 .wrap-main__payment-form > *:not(:last-child) {
 	margin-bottom: 50px;
 }
-
-/* radio credit card */
 
 .radio-wrap__marker,
 .cash-delivery__marker {
@@ -747,6 +746,8 @@ body {
 	margin-bottom: 5px;
 }
 
+/* Credit Card */
+
 .payment-form__radio-wrap {
 	position: relative;
 }
@@ -760,26 +761,44 @@ body {
 	opacity: 0;
 }
 
+.radio-wrap__marker {
+	display: inline-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	row-gap: 5px;
+	position: relative;
+}
+
 .radio-wrap__marker::before {
 	content: "";
 	width: 18px;
 	height: 18px;
-	border: 2px solid #3c4242;
+	border: 3px solid #f6f6f6;
+	outline: 1px solid #3c4242;
 	border-radius: 100%;
 	position: absolute;
 	top: 9px;
 	left: 0;
 }
 
-.radio-wrap__card-radio:focus-visible + .radio-wrap__marker::before {
-	outline: 1px solid black;
+.radio-wrap__payment-inner-form {
+	display: none;
+	padding: 0 28px 30px 38px;
+}
+
+.payment-form__paypal {
+	padding-top: 30px;
 }
 
 .radio-wrap__card-radio:checked + .radio-wrap__marker::before {
-	background: url("../img/circle_radio.svg") center / 10px 10px no-repeat;
+	background-color: #807d7e;
 }
 
-.radio-wrap__inner,
+.radio-wrap__card-radio:checked ~ .radio-wrap__payment-inner-form,
+.radio-wrap__card-radio:focus-visible ~ .radio-wrap__payment-inner-form {
+	display: block;
+}
+
 .cash-delivery__inner {
 	display: inline-flex;
 	flex-direction: column;
@@ -787,15 +806,15 @@ body {
 	gap: 5px;
 }
 
-/* radio credit card */
+/* Credit Card */
 
-.payment-form__thumb {
+.payment-inner-form__thumb {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
 }
 
-.payment-form__thumb a:hover {
+.payment-inner-form__thumb a:hover {
 	outline: 1.5px solid #8a33fd;
 	border-radius: 10px;
 }
@@ -804,13 +823,13 @@ body {
 	border-radius: 10px;
 }
 
-.payment-form__data-card,
 .payment-form__cash-delivery {
-	padding-bottom: 30px;
+	padding: 30px 0;
+	border-top: 1px solid #bebcbd;
 	border-bottom: 1px solid #bebcbd;
 }
 
-/* radio cash delivery */
+/*Cash Delivery */
 
 .payment-form__cash-delivery {
 	position: relative;
@@ -825,27 +844,31 @@ body {
 	opacity: 0;
 }
 
+.cash-delivery__marker {
+	display: inline-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	row-gap: 5px;
+	position: relative;
+}
+
 .cash-delivery__marker::before {
 	content: "";
 	width: 18px;
 	height: 18px;
-	border: 2px solid #3c4242;
+	border: 3px solid #f6f6f6;
+	outline: 1px solid #3c4242;
 	border-radius: 100%;
 	position: absolute;
 	top: 9px;
 	left: 0;
 }
 
-.cash-delivery__radio:focus-visible + .cash-delivery__marker::before {
-	outline: 1px solid black;
-}
-
 .cash-delivery__radio:checked + .cash-delivery__marker::before {
-	background: url("../img/circle_radio.svg") center / 10px 10px no-repeat;
+	background-color: #807d7e;
 }
 
-/* flex field */
-.payment-form__data-card input {
+.payment-inner-form__data-card input {
 	height: 49px;
 	border-radius: 8px;
 	border: 1px solid #3c4242;
@@ -853,7 +876,7 @@ body {
 	background: #f6f6f6;
 }
 
-.payment-form__data-card {
+.payment-inner-form__data-card {
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 30px;
@@ -882,9 +905,7 @@ body {
 	cursor: pointer;
 }
 
-/* radio cash delivery */
-
-/* radio PayPal */
+/* PayPal */
 .payment-form__paypal {
 	position: relative;
 }
@@ -898,29 +919,24 @@ body {
 	opacity: 0;
 }
 
-.paypal-block__marker::before {
-	content: "";
-	width: 18px;
-	height: 18px;
-	border: 2px solid #3c4242;
-	border-radius: 100%;
-}
-
-.paypal-block__radio:focus-visible + .paypal-block__marker::before {
-	outline: 1px solid black;
-}
-
-.paypal-block__radio:checked + .paypal-block__marker::before {
-	background: url("../img/circle_radio.svg") center / 10px 10px no-repeat;
-}
-
 .paypal-block__marker {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: 19px;
 }
 
-/* radio PayPal */
+.paypal-block__marker::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	border: 3px solid #f6f6f6;
+	outline: 1px solid #3c4242;
+	border-radius: 100%;
+}
+
+.paypal-block__radio:checked + .paypal-block__marker::before {
+	background-color: #807d7e;
+}
 
 /* button pay-now */
 
