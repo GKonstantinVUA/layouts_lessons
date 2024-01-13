@@ -334,34 +334,36 @@
 							</div>
 
 							<form class="wrap-main__payment-form payment-form" action="#" method="GET" enctype="multipart/form-data">
+
 								<div class="payment-form__inner-block">
 
 									<div class="payment-form__radio-wrap radio-wrap">
-										<div class="radio-wrap__inner">
-											<input checked type="radio" class="radio-wrap__card-radio" id="card-credit" value="card-credit" name="payment" required>
-											<label class="radio-wrap__marker" for="card-credit">Credit Card <span class="radio-wrap__text-zone">We accept all major credit cards.</span></label>
-										</div>
-									</div>
+										<input checked type="radio" class="radio-wrap__card-radio" id="card-credit" value="card-credit" name="payment" required>
+										<label class="radio-wrap__marker" for="card-credit">Credit Card<span class="radio-wrap__text-zone">We accept all major credit cards.</span></label>
 
-									<div class="payment-form__thumb trumb">
-										<a href="#" class="trumb__link" target="_blank"><img src="img/pay.webp" alt="pay" class="trumb__icon"></a>
-										<a href="#" class="trumb__link" target="_blank"><img src="img/visa.webp" alt="visa" class="trumb__icon"></a>
-										<a href="#" class="trumb__link" target="_blank"><img src="img/paypal.webp" alt="paypal" class="trumb__icon"></a>
-										<a href="#" class="trumb__link" target="_blank"><img src="img/paypass.webp" alt="paypass" class="trumb__icon"></a>
-									</div>
-									<div class="payment-form__data-card data-card">
-										<div class="data-card__item">
-											<input type="text" class="data-card__number" name="number-card" placeholder="Card Number" required>
-										</div>
-										<div class="data-card__item">
-											<input type="text" class="data-card__name-card" name="card-name" placeholder="Name of card" required>
-										</div>
-										<div class="data-card__item">
-											<input type="text" class="data-card__expiration-date" name="date-expiration" placeholder="Expiration date (MM/YY)" required>
-										</div>
-										<div class="data-card__item ">
-											<input type="password" class="data-card__password" name="security-code" placeholder="Security Code" required maxlength="3">
-											<img src="img/eye.svg" alt="eye" class="data-card__eye">
+										<div class="radio-wrap__payment-inner-form payment-inner-form">
+											<div class="payment-inner-form__thumb trumb">
+												<a href="#" class="trumb__link" target="_blank"><img src="img/pay.webp" alt="pay" class="trumb__icon"></a>
+												<a href="#" class="trumb__link" target="_blank"><img src="img/visa.webp" alt="visa" class="trumb__icon"></a>
+												<a href="#" class="trumb__link" target="_blank"><img src="img/paypal.webp" alt="paypal" class="trumb__icon"></a>
+												<a href="#" class="trumb__link" target="_blank"><img src="img/paypass.webp" alt="paypass" class="trumb__icon"></a>
+											</div>
+
+											<div class="payment-inner-form__data-card data-card">
+												<div class="data-card__item">
+													<input type="text" class="data-card__number" name="number-card" placeholder="Card Number" required>
+												</div>
+												<div class="data-card__item">
+													<input type="text" class="data-card__name-card" name="card-name" placeholder="Name of card" required>
+												</div>
+												<div class="data-card__item">
+													<input type="text" class="data-card__expiration-date" name="date-expiration" placeholder="Expiration date (MM/YY)" required>
+												</div>
+												<div class="data-card__item ">
+													<input type="password" class="data-card__password" name="security-code" placeholder="Security Code" required maxlength="3">
+													<img src="img/eye.svg" alt="eye" class="data-card__eye">
+												</div>
+											</div>
 										</div>
 									</div>
 
