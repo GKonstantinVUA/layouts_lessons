@@ -1467,6 +1467,10 @@ body {
 	.card__inner::after {
 		font-size: 36px;
 	}
+
+	.card__filling {
+		padding: 39px 39px;
+	}
 }
 
 @media (max-width: 1108px) {
@@ -1481,6 +1485,10 @@ body {
 	.card__inner::after {
 		font-size: 35px;
 		right: 7px;
+	}
+
+	.card__filling {
+		padding: 38px 38px;
 	}
 }
 
@@ -1514,6 +1522,10 @@ body {
 		font-size: 38px;
 		top: 3px;
 		right: 5px;
+	}
+
+	.card__filling {
+		padding: 37px 37px;
 	}
 }
 
@@ -1553,6 +1565,14 @@ body {
 	.body-cards__card {
 		gap: 16px;
 	}
+
+	.card__filling {
+		padding: 36px 36px;
+	}
+
+	.inner__paragraphs {
+		padding-right: 40px;
+	}
 }
 
 @media (max-width: 526px) {
@@ -1582,6 +1602,10 @@ body {
 	.card__inner::after {
 		font-size: 32px;
 	}
+
+	.inner__paragraphs {
+		padding-right: 25px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -1596,6 +1620,10 @@ body {
 	.card__inner::after {
 		font-size: 30px;
 		right: -5px;
+	}
+
+	.card__filling {
+		padding: 32px 32px;
 	}
 }
 
@@ -1616,7 +1644,7 @@ body {
 
 @media (max-width: 434px) {
 	.cards__wrap {
-		font-size: 11px;
+		font-size: 12px;
 	}
 
 	.inner__title {
@@ -1628,11 +1656,15 @@ body {
 		top: 5px;
 		right: -8px;
 	}
+
+	.card__filling {
+		padding: 29px 25px;
+	}
 }
 
-@media (max-width: 411px) {
+@media (max-width: 412px) {
 	.cards__wrap {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.inner__title {
@@ -1642,6 +1674,39 @@ body {
 	.card__inner::after {
 		font-size: 24px;
 		top: 5px;
-		right: -8px;
+		right: -10px;
+	}
+
+	.card__filling {
+		padding: 27px 18px;
+	}
+}
+
+@media (max-width: 388px) {
+	.card__filling {
+		padding: 22px 18px;
+	}
+
+	.cards__wrap {
+		font-size: 11px;
+	}
+
+	.inner__title {
+		font-size: 18px;
+	}
+
+	.card__inner::after {
+		font-size: 21px;
+		top: 5px;
+		right: -16px;
+	}
+}
+
+@media (max-width: 340px) {
+	.card__inner::after {
+		right: 12px;
+		top: 10px;
+		width: 20px;
+		height: 20px;
 	}
 }
