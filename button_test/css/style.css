@@ -1,0 +1,61 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+.main__section {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 100px 15px;
+}
+
+.test__link {
+	border: 1px solid black;
+	border-radius: 6px;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	padding: 15px 20px;
+	display: inline-block;
+	min-width: 112px;
+	overflow: hidden;
+}
+
+.test__link::before {
+	position: absolute;
+	content: "";
+	width: 130%;
+	height: 100%;
+	top: 0;
+	left: -139%;
+	background-color: rgba(137, 43, 226, 0.521);
+	border-radius: 6px;
+	transition: left 0.5s;
+	transform: skew(-25deg);
+}
+
+.test__link:hover::before {
+	left: -11%;
+}
+
+.link__two {
+	display: none;
+}
+
+.test__link:hover .link__two {
+	display: block;
+}
+
+.test__link:hover .link__one {
+	display: none;
+}
