@@ -9,20 +9,16 @@ let swiper = new Swiper(".myswiper", {
 	breakpoints: {
 		640: {
 			slidesPerView: 2,
-			spaceBetween: 34,
+			spaceBetween: 23,
 		},
 		768: {
-			slidesPerView: 4,
-			spaceBetween: 34,
-		},
-		1249: {
 			slidesPerView: 3,
-			spaceBetween: 34,
+			spaceBetween: 31,
 		},
 
-		1250: {
+		1083: {
 			slidesPerView: 4,
-			spaceBetween: 34,
+			spaceBetween: 38,
 		},
 	},
 });
