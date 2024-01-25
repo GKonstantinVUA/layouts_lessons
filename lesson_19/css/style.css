@@ -233,42 +233,41 @@
 		transform: scale(1.03);
 	}
 
-	.discounts-zone__item:nth-child(1) .jump__link:hover .jump__replacement,
-	.discounts-zone__item:nth-child(2) .jump__link:hover .jump__replacement,
-	.discounts-zone__item:nth-child(3) .jump__link:hover .jump__replacement,
-	.discounts-zone__item:nth-child(4) .jump__link:hover .jump__replacement,
-	.discounts-zone__item:nth-child(5) .jump__link:hover .jump__replacement {
+	.jump__link--hawaiian:hover .jump__replacement,
+	.jump__link--printed:hover .jump__replacement,
+	.jump__link--cargo:hover .jump__replacement,
+	.jump__link--urban:hover .jump__replacement,
+	.jump__link--oversized:hover .jump__replacement {
 		display: block;
 	}
 
-	.discounts-zone__item:nth-child(1) .jump__link:hover .jump__inscription,
-	.discounts-zone__item:nth-child(2) .jump__link:hover .jump__inscription,
-	.discounts-zone__item:nth-child(3) .jump__link:hover .jump__inscription,
-	.discounts-zone__item:nth-child(4) .jump__link:hover .jump__inscription,
-	.discounts-zone__item:nth-child(5) .jump__link:hover .jump__inscription {
+	.jump__link--hawaiian:hover .jump__inscription,
+	.jump__link--printed:hover .jump__inscription,
+	.jump__link--cargo:hover .jump__inscription,
+	.jump__link--urban:hover .jump__inscription,
+	.jump__link--oversized:hover .jump__inscription {
 		display: none;
 	}
 
-	.discounts-zone__item:nth-child(1) .jump__link:hover,
-	.discounts-zone__item:nth-child(2) .jump__link:hover {
+	.jump__link--hawaiian:hover,
+	.jump__link--printed:hover {
 		color: #292c2c;
 	}
 
-	.discounts-zone__item:nth-child(3) .jump__link:hover,
-	.discounts-zone__item:nth-child(4) .jump__link:hover,
-	.discounts-zone__item:nth-child(5) .jump__link:hover {
-		color: #ffffff;
+	.jump__link--cargo:hover,
+	.jump__link--urban:hover,
+	.jump__link--oversized:hover {
 		color: #d41900;
 	}
 
-	.discounts-zone__item:nth-child(1) .jump__link:hover::before,
-	.discounts-zone__item:nth-child(2) .jump__link:hover::before {
+	.jump__link--hawaiian:hover::before,
+	.jump__link--printed:hover::before {
 		left: -12px;
 	}
 
-	.discounts-zone__item:nth-child(3) .jump__link:hover::before,
-	.discounts-zone__item:nth-child(4) .jump__link:hover::before,
-	.discounts-zone__item:nth-child(5) .jump__link:hover::before {
+	.jump__link--cargo:hover::before,
+	.jump__link--urban:hover::before,
+	.jump__link--oversized:hover::before {
 		left: -12px;
 	}
 }
