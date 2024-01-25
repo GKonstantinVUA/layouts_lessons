@@ -25,6 +25,12 @@
 							<p class="content__paragraph">Модуль GRID</p>
 						</div>
 					</div>
+					<div class="menu-header__form-box form-box">
+						<a href="#explore-items" class="form-box__link">Explore Items</a>
+						<a href="#new-arrival" class="form-box__link">New Arrival</a>
+						<a href="#new-arrival-ss" class="form-box__link">New Arrival (Slider Swiper)</a>
+						<a href="#big-save-zone" class="form-box__link">Big saving zone</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -36,7 +42,7 @@
 				<div class="shop">
 					<div class="shop__wrap block">
 						<!-- ?Блок Explore Items -->
-						<div class="block__explore explore">
+						<div class="block__explore explore" id="explore-items">
 
 							<div class="explore__inner container">
 								<div class="container__pad">
@@ -77,7 +83,7 @@
 						<!-- !Блок Explore Items -->
 
 						<!-- ?Блок New Arrival -->
-						<div class="block__new-arrival arrival-block">
+						<div class="block__new-arrival arrival-block" id="new-arrival">
 							<h3 class="arrival-block__caption">New arrival</h3>
 							<div class="arrival-block__body body-arrival">
 
@@ -133,7 +139,7 @@
 
 						<!-- TODO Блок New Arrival (створення за допомогою Slider Swiper) -->
 
-						<div class="block__new-arrival-slider">
+						<div class="block__new-arrival-slider" id="new-arrival-ss">
 							<h3 class="block__myswiper-caption">New arrival <span>(slider swiper)</span></h3>
 							<div class="block__navi navi">
 								<button class="navi__arrow-left"></button>
@@ -248,25 +254,25 @@
 						<!-- TODO Блок New Arrival (створення за допомогою Slider Swiper) -->
 
 						<!-- ?Блок Discounts -->
-						<div class="block__discounts discounts-zone">
+						<div class="block__discounts discounts-zone" id="big-save-zone">
 							<h3 class="discounts-zone__caption">Big saving zone</h3>
 
 							<div class="discounts-zone__body">
 
 								<div class="discounts-zone__item unit">
 
-									<img src="img/big_saving_one.webp" alt="Model" class="unit__img">
+									<img src="img/big_saving_one.webp" alt="Model" class="unit__img unit__img--hawaiian">
 
-									<div class="unit__desc desc">
+									<div class="unit__desc desc unit__desc--hawaiian">
 										<div class="desc__area area">
 											<h4 class="area__title">Hawaiian shirts</h4>
 											<div class="area__tagline">Dress up in summer vibe</div>
 											<div class="area__opto">Upto 50% off</div>
 										</div>
 
-										<div class="desc__jump jump">
+										<div class="desc__jump jump desc__jump--hawaiian">
 											<a href="#" class="jump__arrow"><img src="img/arrow_white.svg" alt="arrow" class="jump__link-arrow"></a>
-											<a href="#" class="jump__link">
+											<a href="#" class="jump__link jump__link--hawaiian">
 												<span class="jump__inscription">Shop now</span>
 												<span class="jump__replacement">Buy</span>
 											</a>
@@ -275,22 +281,22 @@
 								</div>
 
 								<div class="discounts-zone__item unit unit--speak">
-									<img src="img/big_saving_two.webp" alt="Model" class="unit__img">
+									<img src="img/big_saving_two.webp" alt="Model" class="unit__img unit__img--printed">
 
-									<div class="unit__desc desc">
+									<div class="unit__desc desc unit__desc--printed">
 										<div class="desc__stock stock">
 											<a href="#" class="stock__link">Limited stock</a>
 										</div>
 
 										<div class="desc__area area">
-											<h4 class="area__title">Hawaiian shirts</h4>
+											<h4 class="area__title">Printed T-Shirt</h4>
 											<div class="area__tagline">New designs every week</div>
 											<div class="area__opto">Upto 50% off</div>
 										</div>
 
-										<div class="desc__jump jump">
+										<div class="desc__jump jump desc__jump--printed">
 											<a href="#" class="jump__arrow"><img src="img/arrow_white.svg" alt="arrow" class="jump__link-arrow"></a>
-											<a href="#" class="jump__link">
+											<a href="#" class="jump__link jump__link--printed">
 												<span class="jump__inscription">Shop now</span>
 												<span class="jump__replacement">Buy</span>
 											</a>
@@ -301,18 +307,18 @@
 
 								<div class="discounts-zone__item unit unit--black">
 
-									<img src="img/big_saving_three.webp" alt="Model" class="unit__img">
+									<img src="img/big_saving_three.webp" alt="Model" class="unit__img unit__img--cargo">
 
-									<div class="unit__desc desc">
+									<div class="unit__desc desc unit__desc--cargo">
 										<div class="desc__area area">
 											<h4 class="area__title">Cargo Joggers</h4>
 											<div class="area__tagline">Move with style & comfort</div>
 											<div class="area__opto">Upto 50% off</div>
 										</div>
 
-										<div class="desc__jump jump">
+										<div class="desc__jump jump desc__jump--cargo">
 											<a href="#" class="jump__arrow"><img src="img/arrow_black.svg" alt="arrow" class="jump__link-arrow"></a>
-											<a href="#" class="jump__link">
+											<a href="#" class="jump__link jump__link--cargo">
 												<span class="jump__inscription">Shop now</span>
 												<span class="jump__replacement">Buy</span>
 											</a>
@@ -321,18 +327,18 @@
 								</div>
 
 								<div class="discounts-zone__item unit unit--flat">
-									<img src="img/big_saving_four.webp" alt="Model" class="unit__img unit__img unit__img--big">
+									<img src="img/big_saving_four.webp" alt="Model" class="unit__img unit__img--urban">
 
-									<div class="unit__desc desc">
+									<div class="unit__desc desc unit__desc--urban">
 										<div class="desc__area area">
 											<h4 class="area__title">Urban Shirts</h4>
 											<div class="area__tagline">Live in confort</div>
 											<div class="area__opto">Upto 60% off</div>
 										</div>
 
-										<div class="desc__jump jump">
+										<div class="desc__jump jump desc__jump--urban">
 											<a href="#" class="jump__arrow"><img src="img/arrow_black.svg" alt="arrow" class="jump__link-arrow"></a>
-											<a href="#" class="jump__link">
+											<a href="#" class="jump__link jump__link--urban">
 												<span class="jump__inscription">Shop now</span>
 												<span class="jump__replacement">Buy</span>
 											</a>
@@ -342,18 +348,18 @@
 								</div>
 
 								<div class="discounts-zone__item unit unit--flat">
-									<img src="img/big_saving_five.webp" alt="Model" class="unit__img unit__img--big">
+									<img src="img/big_saving_five.webp" alt="Model" class="unit__img unit__img--oversized">
 
-									<div class="unit__desc desc">
+									<div class="unit__desc desc unit__desc--oversized">
 										<div class="desc__area area">
 											<h4 class="area__title">Oversized T-Shirts</h4>
 											<div class="area__tagline">Sstreet style icon</div>
 											<div class="area__opto">Upto 60% off</div>
 										</div>
 
-										<div class="desc__jump jump">
+										<div class="desc__jump jump desc__jump--oversized">
 											<a href="#" class="jump__arrow"><img src="img/arrow_black.svg" alt="arrow" class="jump__link-arrow"></a>
-											<a href="#" class="jump__link">
+											<a href="#" class="jump__link jump__link--oversized">
 												<span class="jump__inscription">Shop now</span>
 												<span class="jump__replacement">Buy</span>
 											</a>
