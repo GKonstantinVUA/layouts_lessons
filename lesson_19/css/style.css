@@ -14,11 +14,12 @@
 
 /* ?Основні налаштування */
 
-.body {
+body {
 	color: #3c4242;
 	font-family: "Causten", sans-serif;
 	font-weight: 600;
 }
+
 .main__section {
 	padding: 220px 0 50px;
 }
@@ -35,7 +36,6 @@
 
 /* ?Розділ header */
 .header__section {
-	font-family: "Core Sans C", sans-serif;
 	background-color: rgba(82, 54, 52, 0.5);
 	font-size: 18px;
 	line-height: 1.4;
@@ -217,7 +217,7 @@
 }
 
 .item__subtitle {
-	font: 800 18px Montserrat, "sans-serif";
+	font: 800 18px "Montserrat", sans-serif;
 	line-height: 1.7;
 	letter-spacing: 0.251px;
 }
@@ -271,6 +271,10 @@
 	}
 
 	.item__text-cell:hover .item__link-text::before {
+		width: 100%;
+	}
+
+	.swiper-slide__text-cell:hover .swiper-slide__link-text::before {
 		width: 100%;
 	}
 
@@ -346,7 +350,7 @@
 /* TODO Основні налаштування Блок New Arrival Блок Discounts*/
 
 [class*="__caption"] {
-	font-family: "Core Sans C";
+	font-family: "Core Sans C", sans-serif;
 	font-size: 34px;
 	line-height: 0.98;
 	letter-spacing: 0.68px;
@@ -414,7 +418,8 @@
 .item__text-cell {
 	line-height: 0.8;
 	letter-spacing: 0.2px;
-	font: 700 20px "Causten", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
 	text-transform: capitalize;
 }
 
@@ -464,7 +469,6 @@
 	grid-template-columns: repeat(6, 1fr);
 	gap: 20px;
 	color: #fff;
-	font-family: "Causten", sans-serif;
 }
 
 .discounts-zone__item--hawaiian,
@@ -505,7 +509,7 @@
 
 .area__title {
 	color: #fff;
-	font: 700 31px "Core Sans C";
+	font: 600 32px "Core Sans C", sans-serif;
 	line-height: 1.4;
 	letter-spacing: 0.56px;
 }
@@ -684,16 +688,6 @@
 	margin: 0 auto;
 }
 
-.swiper-button-disabled {
-	opacity: 0.4;
-	cursor: default;
-}
-
-.swiper-pagination-total,
-.swiper-pagination-current {
-	opacity: 0.6;
-}
-
 .swiper-slide__text-cell {
 	line-height: 0.8;
 	letter-spacing: 0.2px;
@@ -716,7 +710,7 @@
 }
 
 [class*="__myswiper-caption"] {
-	font-family: "Core Sans C";
+	font-family: "Core Sans C", sans-serif;
 	font-size: 34px;
 	line-height: 0.98;
 	letter-spacing: 0.68px;
@@ -741,6 +735,10 @@
 
 .block__myswiper-caption:not(:last-child) {
 	margin-bottom: 70px;
+}
+
+.swiper-slide__text-cell {
+	padding-bottom: 8px;
 }
 
 .block__myswiper-caption span {
@@ -814,7 +812,7 @@
 	position: relative;
 }
 
-.swiper-slide__text-cell .swiper-slide__link-text::before {
+.swiper-slide__link-text::before {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -832,10 +830,6 @@
 
 .swiper-slide__text-cell:active .swiper-slide__link-text::before {
 	background-color: #8a33fd;
-}
-
-.swiper-slide__text-cell:hover .swiper-slide__link-text::before {
-	width: 100%;
 }
 
 .swiper-slide__link-trump:hover .swiper-slide__img {
