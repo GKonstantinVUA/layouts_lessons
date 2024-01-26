@@ -45,8 +45,12 @@
 	z-index: 50;
 }
 
-.menu-desc__content {
+.menu-desc__content h1 {
 	font-size: 22px;
+}
+
+.menu-desc__content p {
+	font-size: 16px;
 }
 
 .section__inner-header {
@@ -66,37 +70,90 @@
 	align-items: center;
 }
 
-.menu-header__form-box {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
-	justify-content: center;
-	align-items: center;
+@media (max-width: 733px) {
+	.main__section {
+		padding-top: 210px;
+	}
 }
 
-/* анимація */
-
-.form-box__link {
-	position: relative;
-	overflow: hidden;
-	transition: all 0.3s;
+@media (max-width: 484px) {
+	.section__inner-header {
+		min-height: 140px;
+	}
+	.main__section {
+		padding-top: 200px;
+	}
 }
 
-.form-box__link::after {
-	content: "";
-	position: absolute;
-	bottom: 0px;
-	left: 50%;
-	width: 0;
-	height: 2px;
-	background-color: #523634;
-	transition: all 0.3s;
+@media (max-width: 399px) {
+	.main__section {
+		padding-top: 180px;
+	}
+
+	.section__inner-header {
+		min-height: 125px;
+	}
+
+	.menu-desc__content h1 {
+		font-size: 20px;
+	}
+
+	.menu-desc__content p {
+		font-size: 15px;
+	}
+
+	.menu-header__menu-desc img {
+		width: 80px;
+		height: 88px;
+	}
 }
 
-.form-box__link:hover::after {
-	width: 100%;
-	left: 0;
+@media (max-width: 361px) {
+	.main__section {
+		padding-top: 170px;
+	}
+
+	.section__inner-header {
+		min-height: 115px;
+	}
+
+	.menu-desc__content h1 {
+		font-size: 18px;
+	}
+
+	.menu-desc__content p {
+		font-size: 14px;
+	}
+
+	.menu-header__menu-desc img {
+		width: 76px;
+		height: 83px;
+	}
 }
+
+@media (max-width: 333px) {
+	.main__section {
+		padding-top: 165px;
+	}
+
+	.section__inner-header {
+		min-height: 108px;
+	}
+
+	.menu-desc__content h1 {
+		font-size: 16px;
+	}
+
+	.menu-desc__content p {
+		font-size: 13px;
+	}
+
+	.menu-header__menu-desc img {
+		width: 72px;
+		height: 79px;
+	}
+}
+
 /* !Розділ header */
 
 /* ?Розділ footer */
@@ -315,7 +372,7 @@
 .arrival-block__body {
 	display: grid;
 	grid-template-columns: 15px 1fr 15px;
-	column-gap: 20px;
+	column-gap: 18px;
 }
 
 /* ?Кнопки слайдера */
