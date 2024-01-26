@@ -346,10 +346,8 @@
 	gap: 38px;
 }
 
-.sliders__item {
-	display: flex;
-	flex-direction: column;
-	gap: 33px;
+.sliders__item > *:not(:last-child) {
+	margin-bottom: 33px;
 }
 
 .item__text-cell {
@@ -747,10 +745,8 @@
 
 /* !Кнопки слайдера */
 
-.swiper-wrapper__swiper-slide {
-	display: flex;
-	flex-direction: column;
-	row-gap: 33px;
+.swiper-wrapper__swiper-slide > *:not(:last-child) {
+	margin-bottom: 33px;
 }
 
 .swiper-slide-active {
@@ -1241,9 +1237,9 @@
 		column-gap: 33px;
 	}
 
-	.sliders__item,
-	.swiper-wrapper__swiper-slide {
-		row-gap: 26px;
+	.sliders__item > *:not(:last-child),
+	.swiper-wrapper__swiper-slide > *:not(:last-child) {
+		margin-bottom: 26px;
 	}
 
 	.item__text-cell,
@@ -1262,9 +1258,9 @@
 		display: none;
 	}
 
-	.sliders__item,
-	.swiper-wrapper__swiper-slide {
-		row-gap: 24px;
+	.sliders__item > *:not(:last-child),
+	.swiper-wrapper__swiper-slide > *:not(:last-child) {
+		margin-bottom: 24px;
 	}
 
 	.arrival-block__body {
@@ -1277,9 +1273,9 @@
 		column-gap: 28px;
 	}
 
-	.sliders__item,
-	.swiper-wrapper__swiper-slide {
-		row-gap: 21px;
+	.sliders__item > *:not(:last-child),
+	.swiper-wrapper__swiper-slide > *:not(:last-child) {
+		margin-bottom: 21px;
 	}
 }
 
@@ -1295,9 +1291,9 @@
 		column-gap: 27px;
 	}
 
-	.sliders__item,
-	.swiper-wrapper__swiper-slide {
-		row-gap: 18px;
+	.sliders__item > *:not(:last-child),
+	.swiper-wrapper__swiper-slide > *:not(:last-child) {
+		margin-bottom: 18px;
 	}
 }
 
@@ -1311,9 +1307,9 @@
 		display: none;
 	}
 
-	.sliders__item,
-	.swiper-wrapper__swiper-slide {
-		row-gap: 16px;
+	.sliders__item > *:not(:last-child),
+	.swiper-wrapper__swiper-slide > *:not(:last-child) {
+		margin-bottom: 16px;
 	}
 
 	.arrival-block__body {
@@ -1331,9 +1327,9 @@
 		display: none;
 	}
 
-	.sliders__item,
-	.swiper-wrapper__swiper-slide {
-		row-gap: 18px;
+	.sliders__item > *:not(:last-child),
+	.swiper-wrapper__swiper-slide > *:not(:last-child) {
+		margin-bottom: 18px;
 	}
 
 	.arrival-block__body {
@@ -1351,9 +1347,9 @@
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	}
 
-	.sliders__item,
-	.swiper-wrapper__swiper-slide {
-		row-gap: 12px;
+	.sliders__item > *:not(:last-child),
+	.swiper-wrapper__swiper-slide > *:not(:last-child) {
+		margin-bottom: 12px;
 	}
 
 	.item__text-cell,
