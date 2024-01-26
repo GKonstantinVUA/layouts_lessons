@@ -746,10 +746,6 @@
 }
 
 /* ?Кнопки з боків */
-.block__navi:not(:last-child) {
-	margin-bottom: 10px;
-}
-
 .block__new-arrival-slider {
 	position: relative;
 	padding: 0 20px;
