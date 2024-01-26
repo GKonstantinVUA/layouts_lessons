@@ -290,6 +290,10 @@
 		transform: scale(1.03);
 	}
 
+	.item__link-trump:hover {
+		box-shadow: 0 0 0 3px #fff, 0 0 0 4px rgba(61, 67, 67, 0.5);
+	}
+
 	.jump__link--hawaiian:hover .jump__replacement,
 	.jump__link--printed:hover .jump__replacement,
 	.jump__link--cargo:hover .jump__replacement,
@@ -836,6 +840,10 @@
 
 .swiper-slide__link-trump:hover .swiper-slide__img {
 	transform: scale(1.03);
+}
+
+.swiper-slide__img {
+	padding-top: 2px;
 }
 
 /* TODO Медіа запити*/
