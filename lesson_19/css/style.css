@@ -273,12 +273,11 @@
 
 	.desc__stock:hover .stock__link {
 		background: #575f5f;
-		/* border: 1px solid #fff; */
 	}
 }
 
 .desc__stock:active .stock__link {
-	border: 1px solid #fff;
+	outline: 1px solid #fff;
 }
 
 /* !Блок Explore Items */
@@ -563,16 +562,10 @@
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 1.2;
-}
-
-.desc__stock {
-	position: relative;
+	text-transform: capitalize;
 }
 
 .stock__link {
-	position: absolute;
-	top: 0;
-	right: 0;
 	text-transform: capitalize;
 	font-size: 12px;
 	font-weight: 700;
