@@ -1,0 +1,212 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+.main {
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+	background-color: #37393f;
+}
+
+/* !Убрать после тестов*/
+.main__section {
+	padding-top: 800px;
+	margin-bottom: 1250px;
+}
+/* !Убрать после тесто */
+
+.main__section > *:not(:last-child) {
+	margin-bottom: 150px;
+}
+
+/* ?Вариант #1 (Progress Bar) */
+.progress-bar__block-bar {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 0 15px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.block-bar__clients,
+.block-bar__project {
+	background-color: #2e2f34;
+	padding: 27px 30px;
+	flex: 1 1 auto;
+}
+
+.clients-bar__wrap,
+.project-bar__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	align-items: center;
+}
+.clients-bar__circular,
+.project-bar__circular {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: conic-gradient(#40ddb6 3.7deg, #37393f 0deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.clients-bar__circular::before,
+.project-bar__circular::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: #37393f;
+}
+.clients-bar__value,
+.project-bar__value {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 0.8;
+	z-index: 2;
+}
+
+.text-block__paragraph {
+	text-transform: capitalize;
+	font-family: "Inter", sans-serif;
+	line-height: 1.4;
+}
+
+.text-block__paragraph:not(:last-child) {
+	margin-bottom: 1px;
+}
+.text-block__subtitle {
+	text-transform: capitalize;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 0.9;
+}
+
+[class*="-bar__value"] {
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 0.8;
+}
+
+/* !Вариант #1 (Progress Bar) */
+
+/* ?Вариант #2 (Progress Bar) */
+
+.circular-bar__block {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 0 15px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.decs__paragraph {
+	text-transform: capitalize;
+	font-family: "Inter", sans-serif;
+	line-height: 1.4;
+}
+
+.decs__subcaption {
+	text-transform: capitalize;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 0.9;
+}
+
+.block-circular__products-inner,
+.block-circular__clients-inner {
+	background-color: #2e2f34;
+	padding: 27px 28px;
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.bar-products__outer-item,
+.bar-clients__outer-item {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background-color: #37393f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.bar-products__inner-item,
+.bar-clients__inner-item {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#bar-products__value,
+#bar-clients__value {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 0.8;
+	z-index: 2;
+}
+
+.circular-bar__anim.circular-bar__products.circular-bar__active {
+	fill: #37393F;
+	stroke: #40ddb6;
+	stroke-width: 5px;
+	stroke-dasharray: 226; /* параметр для создания полноценной окружности */
+	stroke-dashoffset: 226; /* параметр для начальной точки отсчета */
+	animation: sircle-products 1s linear forwards;
+}
+
+.circular-bar__anim.circular-bar__clients.circular-bar__active {
+	fill: #37393F;
+	stroke: #40ddb6;
+	stroke-width: 5px;
+	stroke-dasharray: 226; /* параметр для создания полноценной окружности */
+	stroke-dashoffset: 226; /* параметр для начальной точки отсчета */
+	animation: sircle-clients 1s linear forwards;
+}
+
+.circular-bar__products, .circular-bar__clients {
+	transform: rotate(-84deg);
+}
+
+@keyframes sircle-products {
+	100% {
+		stroke-dashoffset: 11;
+	}
+}
+
+@keyframes sircle-clients {
+	100% {
+		stroke-dashoffset: 20;
+	}
+}
+
