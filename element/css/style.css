@@ -1,0 +1,118 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* !Цікавий випадок. Вихід за межі контейнер */
+
+.section {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #6b6a6a;
+}
+
+@media (min-width: 767px){
+ .section{
+	display: flex;
+ }
+}
+
+.section__content {
+	flex: 0 0 100%;
+	display: flex;
+}
+
+.section__container {
+	max-width: 1350px;
+	margin: 0 auto;
+	padding: 0 15px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	
+}
+.section__body {
+	/* Может меняться если не 50% */
+	width: 30%;
+	padding: 50px 20px 50px 0;
+	
+}
+
+@media (max-width: 767px){
+	.section__body{
+		width: 100%;
+		padding: 50px 20px 50px 0;
+	}
+  }
+
+
+.section__title {
+	font-size: 40px;
+	line-height: 1.2;
+}
+
+.section__title:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+
+.section__paragraph {
+	font-size: 16px;
+	line-height: 1;
+}
+
+.section__paragraph>*:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.section__image img{
+	max-width: 100%;
+}
+
+@media (min-width: 767px){
+	/* Если 50% */
+	.section__image{
+		position: relative;
+		flex: 0 0 70%; /* размер может меняться (не 50%)*/
+		padding: 0 0 30% 0;
+		transform: translate(-100%, 0px);
+	}
+
+	/* Если не 50% */
+	.section__image{
+		position: relative;
+		flex: 0 0 calc(((100vw - 30px)*0.7) + 15px);
+		padding: 0 0 44.5% 0;
+		transform: translate(-100%, 0px);
+	}
+
+	.section__image img{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+/* для размеров больше ограничивающего контейнера*/
+@media (min-width: 1350px){
+	.section__image{
+		flex: 0 0 calc(100vw - (((100vw - 1350px) / 2) + ((1350px-30px)*0.3)+15px));
+	}
+}
+
+
+
+
+
+
