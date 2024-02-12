@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .a {
+        fill: #6b77e5;
+      }
+    </style>
+  </defs>
+  <title>Ресурс 2</title>
+  <path class="a" d="M9,18a1,1,0,0,1-1-1V10H1A1,1,0,0,1,1,8H8V1a1,1,0,0,1,2,0V8h7a1,1,0,0,1,0,2H10v7A1,1,0,0,1,9,18Z"/>
+</svg>
