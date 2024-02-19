@@ -166,8 +166,11 @@ body {
   color: #3c4242;
 }
 
+.main--box {
+  padding-top: 90px;
+}
 .main__section {
-  padding: 150px 0 70px 0;
+  padding: 90px 0 70px 0;
 }
 
 .header__section {
