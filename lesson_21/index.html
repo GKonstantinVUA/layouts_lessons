@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson #21</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__section section">
+				<div class="section__inner-header menu-header">
+					<div class="menu-header__menu-desc menu-desc">
+						<img src="img/logo_lesson.svg" alt="Logo lesson" class="menu-desc__logo">
+						<div class="menu-desc__content content">
+							<h2 class="content__title">Домашне завдання #21</h2>
+							<p class="content__paragraph">Супер сила SASS&SCSS. Семантика та доступність</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main main--box">
+			<div class="main__section section">
+
+				<!-- TODO Секція SUMMER -->
+				<section class="summer summer--speaking">
+
+					<!-- ?Текстовий контент-->
+					<div class="summer__cotainer">
+						<div class="summer__inner-text inner-text">
+							<div class="inner-text__box">
+
+								<ul class="inner-text__accent-list">
+									<li class="inner-text__item-accent">
+										<a href="#" class="inner-text__link-accent" target="_blank">T-Shirt</a>
+									</li>
+									<li class="inner-text__item-accent">
+										<a href="#" class="inner-text__link-accent" target="_blank">Tops</a>
+									</li>
+								</ul>
+
+								<h1 class="inner-text__caption">Summer value pack</h1>
+
+								<ul class="inner-text__list">
+									<li class="inner-text__subitem"><a href="#" class="inner-text__sublink" target="_blank">cool</a></li>
+									<li class="inner-text__subitem"><a href="#" class="inner-text__sublink" target="_blank">colorful</a></li>
+									<li class="inner-text__subitem"><a href="#" class="inner-text__sublink" target="_blank">comfy</a></li>
+								</ul>
+
+								<!-- !Посилання-->
+								<a href="#" class="inner-text__link-shop" target="_blank">Shop now</a>
+							</div>
+						</div>
+
+						<!-- !Кнопкa слайдера -->
+						<button type="button" class="summer__btn summer__btn--prev" aria-label="Попередній слайд">
+							<img src="img/poster/carousel_prev.svg" alt="button" class="summer__icon">
+						</button>
+						<button type="button" class="summer__btn summer__btn--next" aria-label="Наступний кадр">
+							<img src="img/poster/carousel_next.svg" alt="button" class="summer__icon">
+						</button>
+
+						<!-- ?Кнопки пагинації -->
+						<div class="summer__pagination pagination-shop">
+							<button type="button" class="pagination-shop__prev" aria-label="Попередній слайд">
+								<img src="img/poster/carousel_indicators.svg" alt="pagination" class="pagination-shop__icon pagination-shop__icon--prev">
+							</button>
+							<button type="button" class="pagination-shop__next" aria-label="Наступний слайд">
+								<img src="img/poster/carousel_indicators.svg" alt="pagination" class="pagination-shop__icon pagination-shop__icon--next">
+							</button>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- TODO Секція UPTO -->
+				<div class="upto upto--speaking">
+					<!-- !Внутрішня обгортка  -->
+					<div class="upto__inner">
+						<!-- !Картка #1 -->
+						<article class="upto__cell">
+							<!-- ?Картка -->
+							<img src="img/upto/upto_one.webp" alt="model" class="upto__img upto__img--yellow">
+							<!-- ?Текстовий контент до картки-->
+							<div class="upto__text-block">
+								<h4 class="upto__subtitle">Low price</h4>
+								<h2 class="upto__title">High coziness</h2>
+								<h5 class="upto__discount">Upto 50% off</h5>
+								<!-- ?Посилання title-->
+								<h3 class="upto__jump">
+									<a href="#" class="upto__link" target="_blank">
+										Explore items
+									</a>
+								</h3>
+							</div>
+						</article>
+
+						<!-- !Картка #2 -->
+						<article class="upto__cell">
+							<!-- ?Картка -->
+							<img src="img/upto/upto_two.webp" alt="model" class="upto__img upto__img--lilac">
+							<!-- ?Текстовий контент до картки-->
+							<div class="upto__text-block">
+								<h4 class="upto__subtitle">Beyoung Presents</h4>
+								<h2 class="upto__title">Breezy Summer Style</h2>
+								<h5 class="upto__discount">Upto 50% off</h5>
+								<!-- ?Посилання title-->
+								<h3 class="upto__jump">
+									<a href="#" class="upto__link" target="_blank">
+										Explore items
+									</a>
+								</h3>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<!-- TODO Секція ARRIVAL -->
+				<section class="arrival arrival--speaking">
+					<!-- !Внутрішня обгортка  -->
+					<div class="arrival__inner">
+						<!-- ?Заголовок блоку  -->
+						<h2 class="arrival__title title title--block">New arrival</h2>
+
+						<!-- ?Блок з картками -->
+						<div class="arrival-cards">
+							<div class="arrival-cards__inner card-arrival">
+
+								<!-- ?Пагінація -->
+								<div class="card-arrival__pagination">
+									<button type="button" class="card-arrival__pagination-prev" aria-label="Попередній кадр">
+										<img src="img/arrival/arrival_arrow_prev.svg" alt="arrow prev" class="card-arrival__arrow card-arrival__arrow--prev">
+									</button>
+									<button type="button" class="card-arrival__pagination-mark card-arrival__pagination-next" aria-label="Наступний кадр" aria-label="Наступний кадр">
+										<img src="img/arrival/arrival_arrow_next.svg" alt="arrow next" class="card-arrival__arrow card-arrival__arrow--next">
+									</button>
+								</div>
+
+								<div class="card-arrival__row">
+									<!-- !Картка #1-->
+									<article class="card-arrival__cell">
+										<!-- ?Посилання-зображення -->
+										<a href="#" class="card-arrival__link" target="_blank">
+											<img src="img/arrival/arrival_one.webp" alt="model" class="card-arrival__img">
+										</a>
+										<!-- ?Посилання-title -->
+										<h3 class="card-arrival__label">
+											<a href="#" target="_blank" class="card-arrival__link-label">Knitted Joggers</a>
+										</h3>
+									</article>
+									<!-- !Картка -#2-->
+									<article class="card-arrival__cell">
+										<!-- ?Посилання-зображення -->
+										<a href="#" class="card-arrival__link" target="_blank">
+											<img src="img/arrival/arrival_two.webp" alt="model" class="card-arrival__img">
+										</a>
+										<!-- ?Посилання-title -->
+										<h3 class="card-arrival__label">
+											<a href="#" target="_blank" class="card-arrival__link-label">Full Sleeve</a>
+										</h3>
+									</article>
+									<!-- !Картка -#3-->
+									<article class="card-arrival__cell">
+										<!-- ?Посилання-зображення -->
+										<a href="#" class="card-arrival__link" target="_blank">
+											<img src="img/arrival/arrival_three.webp" alt="model" class="card-arrival__img">
+										</a>
+										<!-- ?Посилання-title -->
+										<h3 class="card-arrival__label">
+											<a href="#" target="_blank" class="card-arrival__link-label">Active T-Shirts</a>
+										</h3>
+									</article>
+									<!-- !Картка -#4-->
+									<article class="card-arrival__cell">
+										<!-- ?Посилання-зображення -->
+										<a href="#" class="card-arrival__link" target="_blank">
+											<img src="img/arrival/arrival_four.webp" alt="model" class="card-arrival__img">
+										</a>
+										<!-- ?Посилання-title -->
+										<h3 class="card-arrival__label">
+											<a href="#" target="_blank" class="card-arrival__link-label">Urban Shirts</a>
+										</h3>
+									</article>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO Секція ZONE -->
+				<section class="zone zone--speaking">
+					<!-- !Внутрішня обгортка  -->
+					<div class="zone__inner">
+
+						<!-- ?Заголовок блоку  -->
+						<h2 class="zone__title title title--block">Big saving zone</h2>
+
+						<!-- ?Блок з картками -->
+						<div class="zone-cards">
+							<div class="zone-cards__inner card-zone">
+								<!-- !Картка #1-->
+								<article class="card-zone__cell card-zone__cell--small card-zone__cell--left">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-zone__link card-zone__link--small" target="_blank">
+										<img src="img/zone/zone_one.webp" alt="model" class="card-zone__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-zone__text-block text-block text-block--hawaiian">
+										<!-- !Опис до картки-->
+										<div class="text-block__desk">
+											<h3 class="text-block__title">Hawaiian shirts</h3>
+											<div class="text-block__paragraph">
+												<p>Dress up in summer vibe</p>
+											</div>
+											<strong class="text-block__upto">Upto 50% off</strong>
+										</div>
+										<!-- !Посилання до картки-->
+										<div class="text-block__jump">
+											<a href="#" target="_blank" class="text-block__arrow-link" aria-label="Перейти до посилання">
+												<img src="img/zone/arrow_white_saving.svg" alt="arrow-icon" class="text-block__icon">
+											</a>
+											<a href="#" target="_blank" class="text-block__link-button">Shop now</a>
+										</div>
+									</div>
+								</article>
+
+								<!-- !Картка #2-->
+								<article class="card-zone__cell card-zone__cell--small card-zone__cell--limited">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-zone__link card-zone__link--small" target="_blank">
+										<img src="img/zone/zone_two.webp" alt="model" class="card-zone__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-zone__text-block text-block text-block--limited">
+										<!-- !Опис до картки-->
+										<button type="button" class="text-block__stock-title">Limited stock</button>
+										<div class="text-block__desk">
+											<h3 class="text-block__title">Printed T-Shirt</h3>
+											<div class="text-block__paragraph">
+												<p>New designs every week</p>
+											</div>
+											<strong class="text-block__upto">Upto 50% off</strong>
+										</div>
+										<!-- !Посилання до картки-->
+										<div class="text-block__jump text-block__jump--right" aria-label="Перейти до посилання">
+											<a href="#" target="_blank" class="text-block__arrow-link">
+												<img src="img/zone/arrow_white_saving.svg" alt="arrow-icon" class="text-block__icon">
+											</a>
+											<a href="#" target="_blank" class="text-block__link-button">Shop now</a>
+										</div>
+									</div>
+								</article>
+
+								<!-- !Картка #3-->
+								<article class="card-zone__cell card-zone__cell--small card-zone__cell--right">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-zone__link card-zone__link--small" target="_blank">
+										<img src="img/zone/zone_three.webp" alt="model" class="card-zone__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-zone__text-block text-block text-block--cargo">
+										<!-- !Опис до картки-->
+										<div class="text-block__desk">
+											<h3 class="text-block__title">Cargo Joggers</h3>
+											<div class="text-block__paragraph">
+												<p>Move with style & comfort</p>
+											</div>
+											<strong class="text-block__upto">Upto 50% off</strong>
+										</div>
+										<!-- !Посилання до картки-->
+										<div class="text-block__jump text-block__jump--right">
+											<a href="#" target="_blank" class="text-block__arrow-link" aria-label="Перейти до посилання">
+												<img src="img/zone/arrow_black_saving.svg" alt="arrow-icon" class="text-block__icon">
+											</a>
+											<a href="#" target="_blank" class="text-block__link-button text-block__link-button--black">Shop now</a>
+										</div>
+									</div>
+								</article>
+
+								<!-- !Картка #4-->
+								<article class="card-zone__cell card-zone__cell--big card-zone__cell--center">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-zone__link card-zone__link--big" target="_blank">
+										<img src="img/zone/zone_four.webp" alt="model" class="card-zone__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-zone__text-block text-block text-block--urban">
+										<!-- !Опис до картки-->
+										<div class="text-block__desk">
+											<h3 class="text-block__title">Urban shirts</h3>
+											<div class="text-block__paragraph">
+												<p>Live in confort</p>
+											</div>
+											<strong class="text-block__upto">Upto 50% off</strong>
+										</div>
+										<!-- !Посилання до картки-->
+										<div class="text-block__jump text-block__jump--urban">
+											<a href="#" target="_blank" class="text-block__arrow-link" aria-label="Перейти до посилання">
+												<img src="img/zone/arrow_black_saving.svg" alt="arrow-icon" class="text-block__icon">
+											</a>
+											<a href="#" target="_blank" class="text-block__link-button text-block__link-button--black">Shop now</a>
+										</div>
+									</div>
+								</article>
+
+								<!-- !Картка #5-->
+								<article class="card-zone__cell card-zone__cell--big card-zone__cell--center">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-zone__link card-zone__link--big" target="_blank">
+										<img src="img/zone/zone_five.webp" alt="model" class="card-zone__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-zone__text-block text-block text-block--oversized">
+										<!-- !Опис до картки-->
+										<div class="text-block__desk">
+											<h3 class="text-block__title">Oversized T-Shirts</h3>
+											<div class="text-block__paragraph">
+												<p>Street style icon</p>
+											</div>
+											<strong class="text-block__upto">Upto 50% off</strong>
+										</div>
+										<!-- !Посилання до картки-->
+										<div class="text-block__jump text-block__jump--oversized" aria-label="Перейти до посилання">
+											<a href="#" target="_blank" class="text-block__arrow-link">
+												<img src="img/zone/arrow_black_saving.svg" alt="arrow-icon" class="text-block__icon">
+											</a>
+											<a href="#" target="_blank" class="text-block__link-button text-block__link-button--black">Shop now</a>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO Секція FASHION -->
+				<section class="fashion fashion--speaking">
+					<!-- !Внутрішня обгортка  -->
+					<div class="fashion__inner">
+						<!-- !Картка #1 -->
+						<div class="fashion__cell fashion__cell--left">
+							<!-- ?Картка -->
+							<img src="img/fashion/fashion_one.webp" alt="plants" class="fashion__img fashion__img--left">
+							<!-- ?Текстовий контент до картки-->
+							<div class="fashion__box-text box-text">
+								<div class="box-text__inner">
+									<h2 class="box-text__title">We made your everyday fashion better!</h2>
+									<div class="box-text__paragraph">
+										<p>
+											In our journey to improve everyday fashion, euphoria presents <span class="fashion__lead">everyday</span> wear range - Comfortable & Affordable fashion 24/7
+										</p>
+									</div>
+									<a href="#" class="box-text__button" aria-label="Перейти до покупки" target="_blank">Shop now</a>
+								</div>
+							</div>
+						</div>
+						<!-- !Картка #2 -->
+						<div class="fashion__cell fashion__cell--right">
+							<!-- ?Картка -->
+							<img src="img/fashion/fashion_two.webp" alt="plants" class="fashion__img fashion__img--right">
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO Секція CATEGORIES (man) -->
+				<section class="categories categories--speaking">
+					<!-- !Внутрішня обгортка  -->
+					<div class="categories__inner">
+
+						<!-- ?Заголовок блоку  -->
+						<h2 class="categories__title title title--block">Categories for men</h2>
+						<!-- ?Блок з картками -->
+						<div class="categories-cards">
+							<div class="categories-cards__inner card-category">
+
+								<!-- !Картка #1-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/man/man_one.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link">Shirts</a>
+											</h3>
+
+											<div class="text-row__paragraph">
+												<p>Explore Now!</p>
+											</div>
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #2-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/man/man_two.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link">Printed T-Shirts</a>
+											</h3>
+
+											<div class="text-row__paragraph">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #3-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/man/man_three.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link">Plain T-Shirt</a>
+											</h3>
+
+											<div class="text-row__paragraph">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #4-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/man/man_four.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link">Polo T-Shirt</a>
+											</h3>
+
+											<div class="text-row__paragraph">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #5-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/man/man_five.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link">Hoodies & Sweetshirt</a>
+											</h3>
+
+											<div class="text-row__paragraph">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #6-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/man/man_six.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link">Jeans</a>
+											</h3>
+
+											<div class="text-row__paragraph">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #7-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/man/man_seven.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link">Activewear</a>
+											</h3>
+
+											<div class="text-row__paragraph">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #8-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/man/man_eight.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link">Boxers</a>
+											</h3>
+
+											<div class="text-row__paragraph">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO Секція CATEGORIES (woman) -->
+				<section class="categories categories--speaking">
+					<!-- !Внутрішня обгортка  -->
+					<div class="categories__inner">
+
+						<!-- ?Заголовок блоку  -->
+						<h2 class="categories__title title title--block">Categories for women</h2>
+						<!-- ?Блок з картками -->
+						<div class="categories-cards">
+							<div class="categories-cards__inner card-category">
+
+								<!-- !Картка #1-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/women/women_one.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link-women">Hoodies & Sweetshirt</a>
+											</h3>
+
+											<div class="text-row__paragraph-women">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #2-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/women/women_two.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link-women">Coats & Parkas</a>
+											</h3>
+
+											<div class="text-row__paragraph-women">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #3-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/women/women_three.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link-women">Tees & T-Shirt</a>
+											</h3>
+
+											<div class="text-row__paragraph-women">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link" aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+
+								<!-- !Картка #4-->
+								<article class="card-category__cell">
+									<!-- ?Посилання-зображення -->
+									<a href="#" class="card-category__link" target="_blank">
+										<img src="img/categories/women/women_four.webp" alt="model" class="card-category__pic">
+									</a>
+									<!-- ?Контент до картки-->
+									<div class="card-category__text-row text-row">
+										<!-- !Опис до картки-->
+										<div class="text-row__desc">
+
+											<h3 class="text-row__title">
+												<a href="#" target="_blank" class="text-row__link-women">Boxers</a>
+											</h3>
+
+											<div class="text-row__paragraph-women">
+												<p>Explore Now!</p>
+											</div>
+
+										</div>
+										<!-- !Посилання до картки-->
+										<a href="#" target="_blank" class="text-row__pointer-link"aria-label="Перейти до покупки"></a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO Секція BRANDS -->
+				<section class="brands brands--speaking">
+					<!-- !Внутрішня обгортка  -->
+					<div class="brands__inner">
+						<h2 class="brands__title">Top brands deal</h2>
+						<h4 class="brands__subtitle">Up To <strong class="brands__lead">60%</strong> off on brands</h4>
+
+						<ul class="brands__list">
+							<li class="brands__item">
+								<img src="img/brands/brand_one.webp" alt="adidas" class="brands__logo">
+							</li>
+							<li class="brands__item">
+								<img src="img/brands/brand_two.webp" alt="hm" class="brands__logo">
+							</li>
+							<li class="brands__item">
+								<img src="img/brands/brand_three.webp" alt="levis" class="brands__logo">
+							</li>
+							<li class="brands__item">
+								<img src="img/brands/brand_four.webp" alt="us polo" class="brands__logo">
+							</li>
+							<li class="brands__item">
+								<img src="img/brands/brand_five.webp" alt="puma" class="brands__logo">
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- TODO Секція LIME -->
+				<section class="lime lime--speaking">
+					<!-- !Внутрішня обгортка  -->
+					<div class="lime__inner">
+
+						<!-- ?Заголовок блоку  -->
+						<h2 class="lime__title title title--block">In the limelight</h2>
+						<!-- ?Блок з картками -->
+						<div class="lime-cards">
+							<div class="lime-cards__inner card-lime">
+
+								<!-- !Картка #1-->
+								<article class="card-lime__cell">
+									<!-- ?Посилання-зображення -->
+									<div class="card-lime__item">
+										<a href="#" class="card-lime__link" target="_blank">
+											<img src="img/lime/lime_one.webp" alt="model" class="card-lime__pic card-lime__pic--grey">
+										</a>
+										<button type="button" class="card-lime__like"></button>
+									</div>
+									<!-- ?Контент до картки-->
+									<div class="card-lime__text-row text-meta">
+										<!-- !Опис до картки-->
+										<div class="text-meta__desk">
+											<h3 class="text-meta__title">
+												<a href="#" target="_blank" class="text-meta__link">Black Sweatshirt with...</a>
+											</h3>
+											<div class="text-meta__paragraph">
+												<p>Jhanvi’s brand</p>
+											</div>
+										</div>
+										<!-- !Прайс до картки-->
+										<div class="text-meta__price">$123</div>
+									</div>
+								</article>
+
+								<!-- !Картка #2-->
+								<article class="card-lime__cell">
+									<!-- ?Посилання-зображення -->
+									<div class="card-lime__item">
+										<a href="#" class="card-lime__link" target="_blank">
+											<img src="img/lime/lime_two.webp" alt="model" class="card-lime__pic  card-lime__pic--pink">
+										</a>
+										<button type="button" class="card-lime__like"></button>
+									</div>
+									<!-- ?Контент до картки-->
+									<div class="card-lime__text-row text-meta">
+										<!-- !Опис до картки-->
+										<div class="text-meta__desk">
+											<h3 class="text-meta__title">
+												<a href="#" target="_blank" class="text-meta__link">Line pattern black h...</a>
+											</h3>
+											<div class="text-meta__paragraph">
+												<p>AS’s brand</p>
+											</div>
+										</div>
+										<!-- !Прайс до картки-->
+										<div class="text-meta__price">$37</div>
+									</div>
+								</article>
+
+								<!-- !Картка #3-->
+								<article class="card-lime__cell">
+									<!-- ?Посилання-зображення -->
+									<div class="card-lime__item">
+										<a href="#" class="card-lime__link" target="_blank">
+											<img src="img/lime/lime_three.webp" alt="model" class="card-lime__pic card-lime__pic--orange">
+										</a>
+										<button type="button" class="card-lime__like"></button>
+									</div>
+									<!-- ?Контент до картки-->
+									<div class="card-lime__text-row text-meta">
+										<!-- !Опис до картки-->
+										<div class="text-meta__desk">
+											<h3 class="text-meta__title">
+												<a href="#" target="_blank" class="text-meta__link">Black shorts</a>
+											</h3>
+											<div class="text-meta__paragraph">
+												<p>MM’s Brand</p>
+											</div>
+										</div>
+										<!-- !Прайс до картки-->
+										<div class="text-meta__price">$37</div>
+									</div>
+								</article>
+
+								<!-- !Картка #4-->
+								<article class="card-lime__cell">
+									<!-- ?Посилання-зображення -->
+									<div class="card-lime__item">
+										<a href="#" class="card-lime__link" target="_blank">
+											<img src="img/lime/lime_four.webp" alt="model" class="card-lime__pic card-lime__pic--salmon">
+										</a>
+										<button type="button" class="card-lime__like"></button>
+									</div>
+									<!-- ?Контент до картки-->
+									<div class="card-lime__text-row text-meta">
+										<!-- !Опис до картки-->
+										<div class="text-meta__desk">
+											<h3 class="text-meta__title">
+												<a href="#" target="_blank" class="text-meta__link">Levender hoodie with ....</a>
+											</h3>
+											<div class="text-meta__paragraph">
+												<p>Nike’s Brand</p>
+											</div>
+										</div>
+										<!-- !Прайс до картки-->
+										<div class="text-meta__price">$119</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO Секція FEEDBACK -->
+				<section class="feedback feedback--speaking">
+					<!-- !Внутрішня обгортка  -->
+					<div class="feedback__inner">
+
+						<!-- ?Заголовок блоку  -->
+						<h2 class="feedback__title title title--block">Feedback</h2>
+						<!-- ?Блок з картками -->
+						<div class="feedback-cards">
+							<div class="feedback-cards__inner card-feedback">
+
+								<!-- !Картка #1-->
+								<article class="card-feedback__cell">
+									<!-- ?Посилання-зображення -->
+									<div class="card-feedback__item">
+											<img src="img/feedback/feedback_one.webp" alt="employee" class="card-feedback__pic" title="Floyd Miles">
+										<div class="card-feedback__list-renting">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_halfull.svg" alt="star">
+											<img src="img/feedback/rating_empty.svg" alt="star">
+										</div>
+									</div>
+									<!-- ?Контент до картки-->
+									<div class="card-feedback__text-area text-area">
+										<!-- !Опис до картки-->
+										<h3 class="text-area__title">Floyd miles</h3>
+										<div class="text-area__paragraph">
+											<p>
+												Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+											</p>
+											<p>
+												Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+											</p>
+										</div>
+									</div>
+								</article>
+
+								<!-- !Картка #2-->
+								<article class="card-feedback__cell">
+									<!-- ?Посилання-зображення -->
+									<div class="card-feedback__item">
+											<img src="img/feedback/feedback_two.webp" alt="employee" class="card-feedback__pic" title="Ronald Richards">
+										<div class="card-feedback__list-renting">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_halfull.svg" alt="star">
+										</div>
+									</div>
+									<!-- ?Контент до картки-->
+									<div class="card-feedback__text-area text-area">
+										<!-- !Опис до картки-->
+										<h3 class="text-area__title">Ronald Richards</h3>
+										<div class="text-area__paragraph">
+											<p>
+												Ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+											</p>
+										</div>
+									</div>
+								</article>
+
+								<!-- !Картка #3-->
+								<article class="card-feedback__cell">
+									<!-- ?Посилання-зображення -->
+									<div class="card-feedback__item">
+											<img src="img/feedback/feedback_three.webp" alt="employee" class="card-feedback__pic" title="Savannah Nguyen">
+										<div class="card-feedback__list-renting">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_full.svg" alt="star">
+											<img src="img/feedback/rating_halfull.svg" alt="star">
+											<img src="img/feedback/rating_empty.svg" alt="star">
+										</div>
+									</div>
+									<!-- ?Контент до картки-->
+									<div class="card-feedback__text-area text-area">
+										<!-- !Опис до картки-->
+										<h3 class="text-area__title">Savannah Nguyen</h3>
+										<div class="text-area__paragraph">
+											<p>
+												Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+											</p>
+											<p>
+												Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+											</p>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="feedback-cards__pagin">
+								<button class="feedback-cards__jump-cadr" aria-label="Наступний кадр">
+									<img src="img/feedback/ellipse_active.svg" alt="icon circle">
+								</button>
+								<button class="feedback-cards__jump-cadr" aria-label="Наступний кадр">
+									<img src="img/feedback/ellipse_no_active.svg" alt="icon circle">
+								</button>
+								<button class="feedback-cards__jump-cadr" aria-label="Наступний кадр">
+									<img src="img/feedback/ellipse_no_active.svg" alt="icon circle">
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- !БЛОК MAIN -->
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__section section">
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
