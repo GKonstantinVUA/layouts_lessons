@@ -362,6 +362,9 @@ body {
             column-gap: calc(2px + 11 * (100vw - 100px) / 568);
   }
 }
+.content-summer__transfer {
+  white-space: nowrap;
+}
 .content-summer__submenu {
   font-size: 32px;
   font-style: normal;
