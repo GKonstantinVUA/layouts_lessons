@@ -1,0 +1,422 @@
+@use "sass:math";
+
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_common.scss";
+@import "_fonts.scss";
+
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+//TODO Налаштування
+$colorTitle: #fff;
+$colorItemBeforeButton: #40ddb6;
+$colorParagraph: #b9b9b9;
+$colorButtonSubItem: #37393f;
+$colorList: #7d7d7d;
+$backgroundBigButton: #6b77e5;
+$backgroundCircls: #2e2f34;
+$colorКating: #ffb342;
+$backgroundExpertTeam: rgba(55, 57, 63, 0.8);
+$backgroundCorporation: rgba(55, 57, 63, 0.91);
+$fillCooperation: rgba(64, 221, 182, 0.75);
+$backgroundFooter: #b6452c;
+$backgroundHeader: rgba(82, 54, 52, 0.5);
+$bacgroundPlanBiseness: #f4f4f4;
+$HoverLink: #30a084;
+
+$mainFont: "Inter", sans-serif;
+$TitleFont: "Poppins", sans-serif;
+
+:root {
+	--mainContainer: #{toRem(1220)};
+	--mainPaddingContainer: #{toRem(15)};
+	--headerHight: #{toRem(150)};
+}
+
+//TODO Миксини
+//!Before для subtitle
+@mixin beforeSubtitle($color: $colorTitle, $fontHight: 600, $lineHight: 1.461889, $marginBottom: toRem(10)) {
+	font-size: toRem(18);
+	font-weight: $fontHight;
+	line-height: $lineHight;
+	display: flex;
+	gap: toRem(10);
+	color: $color;
+
+	&::before {
+		content: "";
+		left: 0;
+		top: 0;
+		width: 11px;
+		height: 11px;
+		flex: 0 0 11px;
+		background-color: $colorItemBeforeButton;
+		transform: translateY(6px);
+	}
+
+	&:not(:last-child) {
+		margin-bottom: $marginBottom;
+	}
+}
+
+//TODO Миксини
+//!Hover для link
+
+@mixin hoiverLink(
+	$backgroundLink: $colorItemBeforeButton,
+	$colorLink: $colorButtonSubItem,
+	$backgroundHoverLink: $HoverLink,
+	$colorHoverLink: $colorTitle
+) 
+{
+	padding: 22px 27px 22px 27px;
+	background: $backgroundLink;
+
+	color: $colorLink;
+	text-align: center;
+	font-weight: 600;
+	line-height: 0.89;
+	text-transform: capitalize;
+	transition: all 0.4s ease-in-out;
+
+	@media (any-hover: hover) {
+		&:hover {
+			cursor: pointer;
+			background-color: $backgroundHoverLink;
+			color: $colorHoverLink;
+		}
+	}
+}
+
+// TODO HEADER
+
+.header {
+	// min-height: var(--headerHight);
+	// .header__section
+	&__section {
+		background-color: $backgroundHeader;
+		font-size: 18px;
+		line-height: 1.4;
+		color: $colorTitle;
+		position: fixed;
+		width: 100%;
+		z-index: 50;
+		@media (max-width: toEm(1203)) {
+			font-size: calc(12px + (25 - 12) * ((100vw - 200px) / (1203 - 200)));
+		}
+	}
+}
+
+.section {
+	// .section__inner-header
+	&__inner-header {
+		max-width: 1250px;
+		margin: 0 auto;
+		padding: 0 15px;
+		min-height: 150px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 100px;
+	}
+}
+
+.menu-header {
+	// .menu-header__menu-desc
+	&__menu-desc {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+		align-items: center;
+	}
+}
+
+.menu-desc {
+	// .menu-desc__logo
+	&__logo {
+		@media (max-width: 1203px) {
+			width: calc(56px + (80 - 56) * ((100vw - 200px) / (1203 - 200)));
+			height: calc(77px + (103 - 77) * ((100vw - 200px) / (1203 - 200)));
+		}
+		@media (max-width: 497px) {
+			display: none;
+		}
+	}
+}
+
+.content {
+	// .content__title
+	&__title {
+		font-size: toRem(22);
+	}
+
+	// .content__paragraph
+	&__paragraph {
+		font-size: toRem(16);
+		&:not(:last-child) {
+			margin-bottom: toEm(5, 16);
+		}
+	}
+}
+
+// TODO FOOTER
+.footer {
+	// .footer__section
+	&__section {
+		background-color: $backgroundFooter;
+		padding: toEm(40) 0;
+	}
+}
+
+// TODO BODY
+
+body {
+	font-family: $mainFont;
+}
+
+.main--wrap {
+}
+
+// TODO Секція corporation
+
+.block-corporation {
+	padding-top: var(--headerHight);
+	background: url("../img/poster/poster.webp") left var(--headerHight)/cover no-repeat;
+	
+	// .block-corporation__wrap
+	&__wrap {
+		display: grid;
+		grid-template-columns: toRem(828) 1fr;
+		min-height: calc(100svh - var(--headerHight));
+		max-width: toRem(829);
+		background-color: $backgroundCorporation;
+	}
+}
+
+.corporation {
+	// .corporation__text-speaking
+	&__text-speaking {
+		// grid-column: 1 / 2;
+		// grid-row: 1 / 2;
+		max-width: toRem(529);
+		// padding: toEm(205) 0;
+		align-self: center;
+		justify-self: center;
+		
+	}
+
+	// .corporation__subtitle
+	&__subtitle {
+		@include beforeSubtitle;
+	}
+
+	// .corporation__title
+	&__title {
+		color: $colorTitle;
+		font-family: $TitleFont;
+		font-size: toRem(60);
+		font-weight: 700;
+		line-height: 1.1;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(20, 60);
+		}
+	}
+
+	// .corporation__business
+	&__business {
+		color: $colorItemBeforeButton;
+	}
+
+	// .corporation__paragraph
+	&__paragraph {
+		color: #b9b9b9;
+		font-size: toRem(18);
+		line-height: 1.451889;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(35, 18);
+		}
+
+		& > p:not(:last-child) {
+			margin-bottom: toEm(10, 18);
+		}
+	}
+
+	// .corporation__links
+	&__links {
+		font-size: toRem(18);
+		display: flex;
+		column-gap: toEm(30, 18);
+	}
+
+	// .corporation__banner
+	&__banner {
+		// aspect-ratio: 1094/818;
+		// background: url("../img/poster/poster.webp") center/cover no-repeat;
+		// grid-column: 1 / 3;
+		// grid-row: 1 / 2;
+		// z-index: -1;
+		// width: 100%;
+	}
+}
+
+.link-corporation {
+	// .link-corporation__video-play
+	&__video-play {
+		@include hoiverLink;
+	}
+
+	// .link-corporation__inner-link
+	&__inner-link {
+		display: flex;
+
+		@media (any-hover: hover) {
+			// .link-corporation__inner-link
+			&:hover{
+				cursor: pointer;
+			}
+		}	
+	}
+
+	// .link-corporation__jump-video
+	&__jump-video {
+		transition: all 0.3s ease-in-out;
+		&:not(:last-child) {
+			margin-right: toRem(10);
+		}
+
+		&::before{
+			content: "";
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background: $backgroundBigButton url("../img/cooperation/icon_play.svg") 50% / 20px 20px no-repeat;
+		} 
+
+		&:hover {
+			transform: scale(1.03);
+		}
+	}
+
+	// .link-corporation__watch-video
+	&__watch-video {
+		transition: all 0.3s ease-in-out;
+		text-decoration: underline;
+		align-self: center;
+		color: $colorTitle;
+
+	&:hover{
+		cursor: pointer;
+		color: $HoverLink;
+	}
+	}
+}
+
+//TODO Секція Business Plan
+
+.plan-business {
+
+	// .plan-business__proposal
+	&__proposal {
+		background-color: $bacgroundPlanBiseness;
+	}
+
+	// .plan-business__care
+	&__care {
+	}
+}
+
+.plan-business--speaking {
+		display: grid;
+		grid-template-columns: toRem(829) 1fr;
+		grid-template-rows: toRem(983);
+}
+
+.proposal {
+
+	// .proposal__inner-block
+	&__inner-block {
+		max-width: toRem(424);
+		// padding: toEm(151) toEm(52) toEm(151) 0;
+		
+	}
+
+	// .proposal__wrap-pic
+	&__wrap-pic {
+		overflow: hidden;
+		aspect-ratio: 424/450;
+	}
+
+	// .proposal__img
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	// .proposal__text-block
+	&__text-block {
+	}
+
+	// .proposal__title
+	&__title {
+	}
+
+	// .proposal__paragraph
+	&__paragraph {
+	}
+
+	// .proposal__link
+	&__link {
+	}
+}
+
+.care {
+
+	// .care__subtitle
+	&__subtitle {
+	}
+
+	// .care__title
+	&__title {
+	}
+
+	// .care__paragraph
+	&__paragraph {
+	}
+
+	// .care__list
+	&__list {
+	}
+
+	// .care__item
+	&__item {
+	}
+
+	// .care__annotations-list
+	&__annotations-list {
+	}
+}
+
+.annotations {
+
+	// .annotations__item
+	&__item {
+	}
+
+	// .annotations__title
+	&__title {
+	}
+
+	// .annotations__paragraph
+	&__paragraph {
+	}
+}
