@@ -1,0 +1,899 @@
+@use "sass:math";
+
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_common.scss";
+@import "_fonts.scss";
+
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+//TODO Налаштування
+$colorTitle: #fff;
+$colorItemBeforeButton: #40ddb6;
+$colorParagraph: #b9b9b9;
+$colorButtonSubItem: #37393f;
+$colorList: #7d7d7d;
+$backgroundBigButton: #6b77e5;
+$backgroundCircls: #2e2f34;
+$colorКating: #ffb342;
+$backgroundExpertTeam: rgba(55, 57, 63, 0.8);
+$backgroundCorporation: rgba(55, 57, 63, 0.91);
+$fillCooperation: rgba(64, 221, 182, 0.75);
+$backgroundFooter: #b6452c;
+$backgroundHeader: rgba(82, 54, 52, 0.5);
+$bacgroundPlanBiseness: #f4f4f4;
+$HoverLink: #30a084;
+$HoverLinkList: #5761b8;
+$borderList: #e3e3e3;
+
+$mainFont: "Inter", sans-serif;
+$TitleFont: "Poppins", sans-serif;
+
+:root {
+	--mainContainer: #{toRem(1220)};
+	--mainPaddingContainer: #{toRem(15)};
+	--headerHight: #{toRem(150)};
+}
+
+//TODO Mixin
+//?Загальний блок контейнера
+@mixin mainBlockZone {
+	max-width: calc(var(--mainContainer) + var(--mainPaddingContainer) * 2);
+	margin-inline: auto;
+	padding: 0 var(--mainPaddingContainer);
+}
+
+//TODO Mixin
+//?Заголовок subtitle
+@mixin setupSubtitleTwolevel {
+	color: $colorButtonSubItem;
+	font-family: $TitleFont;
+	font-size: toRem(40);
+	font-weight: 700;
+	line-height: 1.21;
+	text-transform: capitalize;
+}
+
+//TODO Mixin
+//?Before для subtitle
+@mixin beforeSubtitle(
+	$color: $colorTitle,
+	$fontHight: 600,
+	$lineHight: 1.461889,
+	$marginBottom: toEm(10, 18),
+	$gapBefore: toEm(10, 18),
+	$transformBefore: translateY(#{toEm(8, 18)})
+) {
+	font-size: toRem(18);
+	font-weight: $fontHight;
+	line-height: $lineHight;
+	color: $color;
+	display: flex;
+	gap: $gapBefore;
+
+	&::before {
+		content: "";
+		left: 0;
+		top: 0;
+		width: 11px;
+		height: 11px;
+		flex: 0 0 11px;
+		background-color: $colorItemBeforeButton;
+		transform: $transformBefore;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: $marginBottom;
+	}
+}
+
+//TODO Mixin
+//?Hover для link
+@mixin hoiverLink(
+	$backgroundLink: $colorItemBeforeButton,
+	$colorLink: $colorButtonSubItem,
+	$backgroundHoverLink: $HoverLink,
+	$colorHoverLink: $colorTitle,
+	$fontSizeLinkItem: toRem(18)
+) {
+	padding: toEm(27, 18);
+	background: $backgroundLink;
+	font-size: $fontSizeLinkItem;
+
+	color: $colorLink;
+	text-align: center;
+	font-weight: 600;
+	line-height: 0.89;
+	text-transform: capitalize;
+	transition: all 0.4s ease-in-out;
+
+	@media (any-hover: hover) {
+		&:hover {
+			cursor: pointer;
+			background-color: $backgroundHoverLink;
+			color: $colorHoverLink;
+		}
+	}
+}
+
+// TODO HEADER
+
+.header {
+	// .header__section
+	&__section {
+		background-color: $backgroundHeader;
+		font-size: toRem(18);
+		line-height: 1.4;
+		color: $colorTitle;
+		position: fixed;
+		width: 100%;
+		z-index: 50;
+	}
+}
+
+.section {
+	// .section__inner-header
+	&__inner-header {
+		max-width: toEm(1250);
+		margin: 0 auto;
+		padding: 0 toEm(15);
+		min-height: var(--headerHight);
+		display: flex;
+	}
+}
+
+.menu-header {
+	// .menu-header__menu-desc
+	&__menu-desc {
+		display: flex;
+		flex-wrap: wrap;
+		gap: toEm(15);
+		align-items: center;
+	}
+}
+
+.menu-desc {
+	// .menu-desc__logo
+	&__logo {
+		@media (max-width: toEm(1250)) {
+
+			width: calc(toRem(56) + (80 - 56) * ((100vw - toEm(200)) / (1203 - 200)));
+			height: calc(toRem(77) + (103 - 77) * ((100vw - toEm(200)) / (1203 - 200)));
+		}
+		@media (max-width: toEm(497)) {
+			display: none;
+		}
+	}
+}
+
+.content {
+	// .content__title
+	&__title {
+		font-size: toRem(22);
+	}
+
+	// .content__paragraph
+	&__paragraph {
+		font-size: toRem(16);
+		&:not(:last-child) {
+			margin-bottom: toEm(5, 16);
+		}
+	}
+}
+
+// TODO FOOTER
+.footer {
+	// .footer__section
+	&__section {
+		background-color: $backgroundFooter;
+		padding: toEm(40) 0;
+	}
+}
+
+// TODO BODY
+
+body {
+	font-family: $mainFont;
+}
+
+.main--wrap{
+	padding: var(--headerHight) 0 var(--headerHight) 0;
+}
+
+
+// TODO Секція corporation
+
+.block-corporation {
+	
+	background: url("../img/poster/poster.webp") left 0 / cover no-repeat;
+
+	// .block-corporation__wrap
+	&__wrap {
+		display: grid;
+		grid-template-columns: toRem(828) 1fr;
+		min-height: calc(100svh - var(--headerHight));
+		max-width: toRem(829);
+		background-color: $backgroundCorporation;
+
+		@media (min-width: toEm(992)){
+			max-width: calc(toRem(700) + (828 - 700) * ((100vw - toEm(992)) / (1800 - 992)));
+		}
+
+		@media (min-width: toEm(200)) and ((max-width: toEm(991.98))){
+			max-width: 100%;
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+.corporation {
+	// .corporation__text-speaking
+	&__text-speaking {
+		max-width: toRem(529);
+		align-self: center;
+		justify-self: center;
+		padding: toRem(40) 0;
+
+		@media (min-width: toEm(200)) and ((max-width: toEm(991.98))){
+			max-width: 100%;
+			padding: toRem(40) calc(toRem(30) + (180 - 30) * ((100vw - toEm(320)) / (991.98 - 320)));
+		}
+	}
+
+	// .corporation__subtitle
+	&__subtitle {
+		@include beforeSubtitle;
+	}
+
+	// .corporation__title
+	&__title {
+		color: $colorTitle;
+		font-family: $TitleFont;
+		font-size: toRem(60);
+		font-weight: 700;
+		line-height: 1.1;
+		text-transform: capitalize;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(20, 60);
+		}
+
+		@media (min-width: toEm(992)){
+			font-size: calc(toRem(50) + (60 - 50) * ((100vw - toEm(992)) / (1800 - 992)));
+		}
+
+		@media (min-width: toEm(200)) and ((max-width: toEm(991.98))){
+			font-size: calc(toRem(30) + (50 - 30) * ((100vw - toEm(200)) / (991.98 - 200)));
+		}
+	}
+
+	// .corporation__business
+	&__business {
+		color: $colorItemBeforeButton;
+	}
+
+	// .corporation__paragraph
+	&__paragraph {
+		color: #b9b9b9;
+		font-size: toRem(18);
+		line-height: 1.451889;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(35, 18);
+		}
+
+		& > p:not(:last-child) {
+			margin-bottom: toEm(10, 18);
+		}
+	}
+
+	// .corporation__links
+	&__links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: toEm(30, 18);
+	}
+}
+
+.link-corporation {
+	// .link-corporation__video-play
+	&__video-play {
+		@include hoiverLink;
+	}
+
+	// .link-corporation__inner-link
+	&__inner-link {
+		font-size: toRem(18);
+		display: flex;
+
+		@media (any-hover: hover) {
+			// .link-corporation__inner-link
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	// .link-corporation__jump-video
+	&__jump-video {
+		transition: all 0.3s ease-in-out;
+		&:not(:last-child) {
+			margin-right: toRem(10);
+		}
+
+		&::before {
+			content: "";
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background: $backgroundBigButton url("../img/cooperation/icon_play.svg") 50% / 20px 20px no-repeat;
+		}
+
+		&:hover {
+			transform: scale(1.03);
+		}
+	}
+
+	// .link-corporation__watch-video
+	&__watch-video {
+		transition: all 0.3s ease-in-out;
+		text-decoration: underline;
+		align-self: center;
+		color: $colorTitle;
+
+		&:hover {
+			cursor: pointer;
+			color: $HoverLink;
+		}
+	}
+}
+
+//TODO Секція Business Plan
+
+.plan-business {
+	
+	// .plan-business__proposal
+	&__proposal {
+		background-color: $bacgroundPlanBiseness;
+		width: 100%;
+	}
+
+	// .plan-business__care
+	&__care {
+		padding: toEm(145) toEm(170) toEm(69) toEm(170);
+
+		@media (max-width: toEm(1840)){
+			background-color: $bacgroundPlanBiseness;
+			}
+
+			@media (min-width: toEm(992)) and (max-width: toEm(1840)){
+				background-color: $bacgroundPlanBiseness;
+				padding: toEm(80) toEm(70) toEm(69) toEm(70);
+			}
+
+			@media (min-width: toEm(200)) and (max-width: toEm(991.98)){
+				padding: toEm(22) toEm(22) toEm(22);
+			}
+	}
+}
+
+.plan-business--speaking {
+	display: grid;
+	grid-template-columns: toEm(840) 1fr;
+	min-height: toEm(983);
+
+	&:not(:last-child) {
+		margin-bottom: toEm(100);
+	}
+
+	@media (min-width: toEm(992)) and (max-width: toEm(1500)){
+		grid-template-columns: 1fr 1fr;
+		}
+	
+	@media (min-width: toEm(200)) and (max-width: toEm(991.98)){
+		grid-template-columns: 1fr;
+		min-height: 100%;
+		}
+
+	@media (max-width: toEm(444)){
+		&:not(:last-child) {
+			margin-bottom: toEm(30);
+		}		
+	}
+}
+
+.proposal {
+	// .proposal__inner-block
+	&__inner-block {
+		display: grid;
+		max-width: toRem(424);
+		padding: toEm(151) toEm(52) toEm(151) 0;
+		margin-left: auto;
+
+		@media (max-width: toEm(1540)){
+			max-width: 100%;
+			margin-left: 0;
+		}
+
+		@media (min-width: toEm(200)) and (max-width: toEm(1840)){
+			padding: toEm(80) toEm(22) toEm(30) toEm(22);
+		}
+		
+	}
+
+	// .proposal__wrap-pic
+	&__wrap-pic {
+		overflow: hidden;
+		aspect-ratio: 424/450;
+		&:not(:last-child) {
+			margin-bottom: toEm(19, 30);
+		}
+
+		@media ((max-width: toEm(991.98))){
+			display: none;
+		}
+	}
+
+	// .proposal__img
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	// .proposal__title
+	&__title {
+		color: #37393f;
+		font-family: $mainFont;
+		font-size: toRem(30);
+		font-weight: 600;
+		line-height: 1.21;
+		text-transform: capitalize;
+		&:not(:last-child) {
+			margin-bottom: toEm(13, 30);
+		}
+
+		@media (min-width: toEm(200)) and ((max-width: toEm(991.98))){
+			font-size: calc(toRem(22) + (30 - 22) * ((100vw - toEm(200)) / (991.98 - 200)));
+		}
+	}
+
+	// .proposal__paragraph
+	&__paragraph {
+		color: $colorList;
+		font-size: toRem(18);
+		line-height: 1.46;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(15, 30);
+		}
+
+		& p:not(:last-child) {
+			margin-bottom: toEm(10, 30);
+		}
+	}
+
+	// .proposal__link
+	&__link {
+		color: $colorButtonSubItem;
+		font-size: toRem(18);
+		font-style: normal;
+		font-weight: 600;
+		line-height: 0.89;
+		text-transform: capitalize;
+
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 100%;
+			transform: translateX(-50%);
+			width: 100%;
+			height: 2px;
+			background-color: $colorButtonSubItem;
+			transition: width 0.45s ease-in-out;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $backgroundBigButton;
+			}
+
+			&:hover::before {
+				width: 0;
+				background-color: $backgroundBigButton;
+			}
+		}
+	}
+}
+
+.care {
+	// .care__subtitle
+	&__subtitle {
+		@include beforeSubtitle(
+			$color: $colorButtonSubItem,
+			$fontHight: 500,
+			$lineHight: 0.89,
+			$marginBottom: toEm(10, 16),
+			$gapBefore: toEm(10, 16),
+			$transformBefore: translateY(#{toEm(3, 16)})
+		);
+	}
+
+	// .care__title
+	&__title {
+		@include setupSubtitleTwolevel;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(20, 40);
+		}
+
+		@media (min-width: toEm(200)) and ((max-width: toEm(991.98))){
+			font-size: calc(toRem(30) + (40 - 30) * ((100vw - toEm(200)) / (991.98 - 200)));
+		}
+	}
+
+	// .care__paragraph
+	&__paragraph {
+		color: $colorList;
+		font-size: toRem(18);
+		line-height: 1.46;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(20, 18);
+		}
+
+		& p:not(:last-child) {
+			margin-bottom: toEm(15, 18);
+		}
+	}
+
+	// .care__list
+	&__list {
+		color: $colorButtonSubItem;
+		font-family: $TitleFont;
+		font-size: toRem(20);
+		line-height: 1.4;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(43, 20);
+		}
+	}
+
+	// .care__item
+	&__item {
+		display: flex;
+		gap: toEm(8, 20);
+
+		&::before {
+			content: "";
+			left: 0;
+			top: 0;
+			width: 27px;
+			height: 27px;
+			flex: 0 0 27px;
+			border-radius: 50%;
+			background: $backgroundBigButton url("../img/business_plan/check_mark.svg") 50% / 15px no-repeat;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: toEm(23, 20);
+		}
+	}
+
+	// .care__annotations-list
+	&__annotations-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: toRem(21);
+		&:not(:last-child) {
+			margin-bottom: toEm(37, 20);
+		}
+	}
+
+	// .care__more-about
+	&__more-about {
+		@include hoiverLink(
+			$backgroundLink: $backgroundBigButton,
+			$colorLink: $colorTitle,
+			$backgroundHoverLink: $HoverLinkList,
+			$colorHoverLink: $colorTitle,
+			$fontSizeLinkItem: toRem(18)
+		);
+
+		@media (max-width: toEm(673)){
+			width: 100%;
+		}
+	}
+}
+
+.annotations {
+	// .annotations__title
+	&__title {
+		color: $colorButtonSubItem;
+		font-family: $TitleFont;
+		font-size: toRem(20);
+		font-weight: 600;
+		line-height: 0.8;
+		flex-grow: 1;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(3, 20);
+		}
+	}
+
+	// .annotations__paragraph
+	&__paragraph {
+		color: $colorList;
+		line-height: 1.35;
+
+		&:not(:last-child) {
+			margin-bottom: toEm(10, 20);
+		}
+
+		& p:not(:last-child) {
+			margin-bottom: toEm(5, 20);
+		}
+	}
+
+	// .annotations__item
+	&__item {
+		padding: toEm(32, 20);
+		border: 1px solid $borderList;
+		display: flex;
+		flex-basis: 304px;
+		flex-grow: 1;
+		gap: toEm(19, 20);
+	}
+
+	&__subitem {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .annotations__item--experience
+	&__item--experience {
+		&::before {
+			content: "";
+			width: 42px;
+			height: 42px;
+			flex: 0 0 42px;
+			background: url("../img/business_plan/icon_cup.svg");
+		}
+	}
+
+	// .annotations__item--cup
+	&__item--cup {
+		&::before {
+			content: "";
+			width: 42px;
+			height: 42px;
+			flex: 0 0 42px;
+			background: url("../img/business_plan/icon_experience.svg");
+		}
+	}
+}
+
+//TODO Секція Brands
+
+.brand--logo {
+	@include mainBlockZone;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(toRem(150), 1fr));
+	gap: toRem(115);
+
+	&:not(:last-child) {
+		margin-bottom: toEm(82);
+	}
+
+	@media (max-width: toEm(444)){
+		grid-template-columns: repeat(auto-fill, minmax(toRem(90), 1fr));
+		gap: toRem(40);
+		}
+}
+
+.brand {
+
+	// .brand__wrap
+	&__wrap {
+		aspect-ratio: 150/100;
+		overflow: hidden;
+	}
+
+	// .brand__pic
+	&__pic {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+}
+
+
+//TODO Секція Bisseness Solutions
+
+.solutions--wrap {
+	@include mainBlockZone;
+}
+
+.solutions {
+
+		// .solutions__text-row
+		&__text-row {
+			text-align: center;
+
+			&:not(:last-child){
+				margin-bottom: toRem(40);
+			}
+		}
+
+		// .solutions__subtitle
+		&__subtitle {
+		@include	beforeSubtitle(
+	$color: $colorButtonSubItem,
+	$fontHight: 500,
+	$lineHight: 0.89,
+	$marginBottom: toEm(16, 18),
+	$gapBefore: toEm(6, 18),
+	$transformBefore: translateY(#{toEm(3, 18)}));
+	justify-content: center;
+	text-transform: capitalize;
+	}
+
+		// .solutions__title
+		&__title {
+			@include setupSubtitleTwolevel;
+			max-width: toEm(495, 40);
+			margin-inline: auto;
+		
+			&:not(:last-child){
+				margin-bottom: toEm(20, 40);
+			}
+
+			@media (min-width: toEm(200)) and ((max-width: toEm(991.98))){
+				font-size: calc(toRem(22) + (40 - 22) * ((100vw - toEm(200)) / (991.98 - 200)));
+			}
+		}
+
+		// .solutions__card-catalog
+		&__card-catalog {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+			gap: toRem(32);
+			@media (max-width: toEm(831)){
+				grid-template-columns: 1fr;
+			}
+
+		}
+}
+
+.catalog {
+
+		// .catalog__row
+		&__row {
+			background: #F4F4F4;
+			padding: toRem(30);
+		}
+
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			min-height: 100%;
+		}
+
+		// .catalog__title
+		&__title {
+			color: $colorButtonSubItem;
+			font-family: $TitleFont;
+			font-size: toRem(25);
+			font-weight: 600;
+			line-height: 1.27;
+			text-transform: capitalize;
+
+			&:not(:last-child){
+				margin-bottom: toEm(27, 25);
+			}
+			flex-grow: 1;
+			display: flex;
+			gap: toEm(20, 25);
+			justify-content: space-between;
+
+
+			&::after{
+				content: "";
+				width: 72px;
+				height: 72px;
+				border-radius: 50%;
+				flex: 0 0 72px;
+				background: $colorItemBeforeButton url("../img/business_solutions/icon_consultancy.svg") 50% / 46px no-repeat;
+			}
+
+			@media (max-width: toEm(380)){
+				font-size: calc(toRem(16) + (25 - 16) * ((100vw - toEm(200)) / (380 - 200)));
+			}
+
+		}
+
+		//catalog__title--business
+		&__title--business{
+			&::after{
+				background: $backgroundBigButton url("../img/business_solutions/icon_management.svg") 50% / 46px no-repeat;
+			}
+		}
+
+		//catalog__title--сonsultants
+		&__title--сonsultants{
+		
+			&::after{
+				background: $colorItemBeforeButton url("../img/business_solutions/icon_program.svg") 50% / 46px no-repeat;
+			}
+		}
+
+		//catalog__title--company
+		&__title--company{
+
+			&::after{
+				background: $colorItemBeforeButton url("../img/business_solutions/icon_bild.svg") 50% / 46px no-repeat;
+			}
+		}
+
+			//catalog__title--financial
+			&__title--financial{
+
+				&::after{
+					background: $colorItemBeforeButton url("../img/business_solutions/icon_financial.svg") 50% / 46px no-repeat;
+				}
+			}
+				
+		// .catalog__row--link-other
+				&__row--link-other{
+					background-color: $backgroundBigButton;
+					padding: toRem(72) toRem(100);
+					text-align: center;
+					color: $colorTitle;
+					font-size: toRem(25);
+					font-weight: 600;
+					text-transform: capitalize;
+					transition: all 0.4s ease-in-out;
+					@media (any-hover: hover) {
+						&:hover {
+							cursor: pointer;
+							background-color: #5761b8;
+							color: #fff;
+					}
+				}	
+				@media (max-width: toEm(831)){
+					padding: toRem(27) toRem(27);
+					font-size: toRem(18);
+				}
+			}
+
+		// .catalog__link-read-more
+		&__link-read-more {
+			color: $backgroundBigButton;
+			font-size: toRem(18);
+			font-weight: 600;
+			line-height: 1.8;
+			text-transform: capitalize;
+		  transition: all 0.3s ease-in-out;
+			position: relative;
+			cursor: pointer;
+			
+			@media (any-hover: hover) {
+			&:hover {
+				color: $HoverLink;
+			}
+		}
+	}
+}
+
+
