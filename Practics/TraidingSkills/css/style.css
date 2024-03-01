@@ -238,7 +238,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  row-gap: 5rem;
 }
 @media (max-width: 61.99875em) {
   .presentation__body {
@@ -250,6 +249,9 @@ body {
   height: 2.6875rem;
   width: clamp(6.75rem, 5.567rem + 5.92vw, 10rem);
   height: clamp(1.813rem, 1.494rem + 1.59vw, 2.688rem);
+}
+.presentation__logo:not(:last-child) {
+  margin-bottom: clamp(2.5rem, 1.974rem + 2.63vw, 5rem);
 }
 .presentation__text-box {
   display: -webkit-box;
