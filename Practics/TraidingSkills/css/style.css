@@ -238,7 +238,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  row-gap: 3.125rem;
+  row-gap: 4.375rem;
 }
 @media (max-width: 61.99875em) {
   .presentation__body {
