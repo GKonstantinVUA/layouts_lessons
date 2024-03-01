@@ -235,6 +235,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
 @media (max-width: 61.99875em) {
   .presentation__body {
@@ -246,9 +252,6 @@ body {
   height: 2.6875rem;
   width: clamp(6.75rem, 5.567rem + 5.92vw, 10rem);
   height: clamp(1.813rem, 1.494rem + 1.59vw, 2.688rem);
-}
-.presentation__logo:not(:last-child) {
-  margin-bottom: clamp(5rem, 1.684rem + 16.58vw, 20.75rem);
 }
 .presentation__text-box {
   display: -webkit-box;
@@ -1379,7 +1382,7 @@ body {
 }
 
 .block__enrollment {
-  background: linear-gradient(255deg, #192230 0%, #161C26 42.28%, #141920 69.68%, #12161D 100%);
+  background: linear-gradient(255deg, #192230 0%, #161c26 42.28%, #141920 69.68%, #12161d 100%);
   padding: 3.125rem 3.75rem 3.75rem 3.75rem;
 }
 @media (max-width: 99.99875em) {
@@ -1458,7 +1461,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: linear-gradient(269deg, #12161C 0%, #12161C 19.35%, #13181F 40.38%, #151B24 56.88%, #151D28 79.92%, #171C25 98.41%);
+  background: linear-gradient(269deg, #12161c 0%, #12161c 19.35%, #13181f 40.38%, #151b24 56.88%, #151d28 79.92%, #171c25 98.41%);
   padding: clamp(0.938rem, 0.477rem + 2.3vw, 3.125rem) clamp(1.25rem, 0.724rem + 2.63vw, 3.75rem);
   font-size: clamp(1.25rem, 1.118rem + 0.66vw, 1.875rem);
 }
@@ -1486,7 +1489,7 @@ body {
 }
 .enrollment__button {
   text-align: center;
-  background: linear-gradient(269deg, #12161C 0%, #12161C 19.35%, #13181F 40.38%, #151B24 56.88%, #151D28 79.92%, #171C25 98.41%);
+  background: linear-gradient(269deg, #12161c 0%, #12161c 19.35%, #13181f 40.38%, #151b24 56.88%, #151d28 79.92%, #171c25 98.41%);
   padding: clamp(1.375rem, 1.007rem + 1.84vw, 3.125rem) clamp(1.625rem, 1.178rem + 2.24vw, 3.75rem);
 }
 .enrollment__join {
@@ -1524,7 +1527,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: clamp(1.25rem, 1.118rem + 0.66vw, 1.875rem);
-  background: linear-gradient(269deg, #12161C 0%, #12161C 19.35%, #13181F 40.38%, #151B24 56.88%, #151D28 79.92%, #171C25 98.41%);
+  background: linear-gradient(269deg, #12161c 0%, #12161c 19.35%, #13181f 40.38%, #151b24 56.88%, #151d28 79.92%, #171c25 98.41%);
   padding: clamp(0.938rem, 0.477rem + 2.3vw, 3.125rem) clamp(1.25rem, 0.724rem + 2.63vw, 3.75rem);
 }
 .enrollment__messageuser:not(:last-child) {
@@ -1594,7 +1597,7 @@ body {
 .section__send-form {
   color: #377de5;
   padding: 0.9375em 2.5em;
-  background: linear-gradient(86deg, #122F54 2.11%, #122237 63.76%, #12161D 100%);
+  background: linear-gradient(86deg, #122f54 2.11%, #122237 63.76%, #12161d 100%);
   border-radius: 1.875em;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
