@@ -6,73 +6,75 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
-	<title>lesson #21</title>
+	<title>lesson 18</title>
 </head>
 
 <body>
 	<div class="wrapper">
 
 		<header class="header">
-			<div class="header__section section">
-				<div class="section__inner-header menu-header">
-					<div class="menu-header__menu-desc menu-desc">
+			<nav class="header__menu menu">
+
+				<div class="menu__logo">Pretty stones</div>
+
+				<div class="nav-menu">
+					<div class="nav-menu__body">
+						<ul class="nav-menu__list">
+							<li class="nav-menu__item">
+								<a href="#" class="nav-menu__link">Shop</a>
+							</li>
+							<li class="nav-menu__item nav-menu__item--parent">
+								<a href="#" class="nav-menu__link nav-menu__link--parent">Product</a>
+									<div class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Collection</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Amazing</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Popular</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Vip products</a>
+											</li>
+										</ul>
+									</div>
+							</li>
+							<li class="nav-menu__item">
+								<a href="#" class="nav-menu__link">Blog</a>
+							</li>
+							<li class="nav-menu__item">
+								<a href="#" class="nav-menu__link">Pages</a>
+							</li>
+							<li class="nav-menu__item">
+								<a href="#" class="nav-menu__link">Contact</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</div>
+
+				<div class="menu__favorities favorities">
+					<a href="#" class="favorities__link" target="_blank">
+						<img src="img/header/icon_like_heart.webp" alt="Like" class="favorities__pic">
+						<span class="favorities__value">1</span>
+					</a>
+					<a href="#" class="favorities__link" target="_blank">
+						<img src="img/header/icon_buy.webp" alt="Byu" class="favorities__pic">
+						<span class="favorities__value">1</span>
+					</a>
+
+					<button class="favorities__burger">
+						<span class="favorities__line"></span>
+					</button>
+				</div>
+
+			</nav>
 		</header>
 
-		<main class="main main--box">
+		<main class="main">
 			<div class="main__section section">
-
-				<!-- TODO Секція SUMMER -->
-				<section class="summer summer--speaking">
-
-					<!-- ?Текстовий контент-->
-					<div class="summer__block">
-						<div class="summer__container content-summer">
-
-								<ul class="content-summer__mainmenu">
-									<li class="content-summer__mainitem">
-										<a href="#" class="content-summer__mainlink" target="_blank">T-Shirt</a>
-									</li>
-									<li class="content-summer__mainitem">
-										<a href="#" class="content-summer__mainlink" target="_blank">Tops</a>
-									</li>
-								</ul>
-
-								<h1 class="content-summer__caption">Summer value pack</h1>
-
-								<ul class="content-summer__submenu">
-									<li class="content-summer__subitem"><a href="#" class="content-summer__sublink" target="_blank">cool</a></li>
-									<li class="content-summer__subitem"><a href="#" class="content-summer__sublink" target="_blank">colorful</a></li>
-									<li class="content-summer__subitem"><a href="#" class="content-summer__sublink" target="_blank">comfy</a></li>
-								</ul>
-
-								<a href="#" class="content-summer__link-shop" target="_blank">Shop now</a>
-
-									<!-- !Кнопкa слайдера -->
-								<button type="button" class="content-summer__btn content-summer__btn--prev" aria-label="Попередній слайд">
-									<img src="img/poster/btncarousel.svg" alt="button" class="content-summer__icon content-summer__icon--prev">
-								</button>
-								<button type="button" class="content-summer__btn content-summer__btn--next" aria-label="Наступний кадр">
-									<img src="img/poster/btncarousel.svg" alt="button" class="content-summer__icon content-summer__icon--next">
-								</button>
-
-								<!-- ?Кнопки пагинації -->
-								<div class="content-summer__pagination pagination-item">
-									<button type="button" class="pagination-item__btn pagination-item__btn--prev" aria-label="Попередній слайд">
-									</button>
-									<button type="button" class="pagination-item__btn pagination-item__btn--next" aria-label="Наступний слайд">
-									</button>
-								</div>
-
-						</div>
-					</div>
-
-				</section>
-
-
-				<!-- !БЛОК MAIN -->
 			</div>
 		</main>
 
@@ -81,6 +83,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

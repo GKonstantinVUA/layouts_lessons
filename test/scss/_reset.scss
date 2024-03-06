@@ -26,24 +26,17 @@ h2,
 h3,
 h4,
 h5,
-h6,
-strong,
-b {
+h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
-
-em, i{
-	font-style: normal;
-}
-
 html,
 body {
 	line-height: 1;
 	height: 100%;
 }
 
-// !FOR FORM
+// FOR FORM
 
 input,
 button,
@@ -72,12 +65,3 @@ textarea {
 	-moz-appearance: none;
 	appearance: none;
 }
-
-textarea {
-	resize: vertical;
-}
-
-table {
-	border-collapse: collapse; /* cellspacing="0" */
-	border-spacing: 0;
-	}
