@@ -1,5 +1,0 @@
-Merriweather - 400, 700
-Cormorant Infant - 600, 700
-Inter - 400, 500
-
-DM Serif Text - 400
