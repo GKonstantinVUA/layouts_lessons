@@ -1,0 +1,83 @@
+// <RATING>
+// Сніппет (HTML): rating
+// Rating
+$star: "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='_layer_2' xmlns='http://www.w3.org/2000/svg' width='20' height='19.88' viewBox='0 0 20 19.88'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23cf6f49;stroke-width:0px;%7D%3C/style%3E%3C/defs%3E%3Cg id='_layer_1-2'%3E%3Cpath class='cls-1' d='M19.65,8.64c.68-.61.31-1.77-.58-1.84l-5.26-.44c-.38-.03-.71-.28-.85-.64L10.93.64c-.34-.85-1.52-.85-1.86,0l-2.03,5.08c-.14.36-.47.61-.85.64l-5.26.44c-.89.07-1.26,1.23-.58,1.84l4.02,3.57c.28.25.41.66.32,1.04l-1.23,5.34c-.2.91.74,1.62,1.51,1.14l4.51-2.87c.32-.2.72-.2,1.04,0l4.51,2.87c.77.48,1.71-.23,1.51-1.14l-1.23-5.34c-.09-.38.04-.79.32-1.04l4.02-3.57ZM13.99,11.57c-.2.18-.29.46-.23.73l1.23,4.73c.16.54-.4.91-.81.56l-3.82-2.71c-.23-.15-.52-.15-.75,0l-3.96,3.03c-.55.46-1.01-.02-.74-.64l1.3-4.97c.06-.27-.03-.55-.23-.73l-3.93-2.93c-.48-.43-.17-1.02.31-1l4.92-.23c.27-.03.5-.2.6-.46l1.65-4.44c.19-.46.73-.46.91,0l1.65,4.44c.1.26.34.43.6.46l4.58.31c.54.02.75.59.38.99l-3.66,2.86Z'/%3E%3C/g%3E%3C/svg%3E";
+$starActive: "data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_5_425)'%3E%3Cpath d='M9.07088 0.644571C9.41462 -0.214858 10.5854 -0.214857 10.9291 0.644574L12.9579 5.71708C13.1029 6.0794 13.4306 6.32696 13.8067 6.35831L19.0727 6.79735C19.9649 6.87173 20.3267 8.02961 19.6469 8.63516L15.6348 12.2092C15.3482 12.4644 15.223 12.8651 15.3106 13.2466L16.5363 18.5905C16.744 19.4959 15.7969 20.2116 15.033 19.7264L10.5245 16.8627C10.2025 16.6581 9.7975 16.6581 9.47548 16.8627L4.96699 19.7264C4.20311 20.2116 3.25596 19.4959 3.46363 18.5905L4.68942 13.2466C4.77698 12.8651 4.65182 12.4644 4.36526 12.2092L0.353062 8.63516C-0.326718 8.02961 0.035068 6.87173 0.927291 6.79735L6.19336 6.35831C6.5695 6.32696 6.89716 6.0794 7.04207 5.71708L9.07088 0.644571Z' fill='%23CF6F49'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5_425'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A";
+$starGap: toRem(4);
+$starWidth: toRem(20);
+$starHeight: toRem(20);
+
+.rating {
+	display: inline-block;
+	// .rating__items
+	&__items {
+		display: inline-flex;
+		align-items: flex-start;
+		gap: $starGap;
+		[data-rating="set"] & {
+			@media (any-hover: hover) {
+				&:hover {
+					.rating__item {
+						background: url($starActive) 0 0 / $starWidth no-repeat;
+					}
+				}
+			}
+		}
+	}
+	// .rating__item
+	&__item {
+		flex: 0 0 $starWidth;
+		width: $starWidth;
+		height: $starHeight;
+		position: relative;
+		background: url($star) 0 0 / $starWidth no-repeat;
+		transition: all 0.3s;
+		&--active {
+			background: url($starActive) 0 0 / $starWidth no-repeat;
+		}
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: $starHeight;
+			background: url($starActive) 0 0 / $starWidth no-repeat;
+		}
+		&:not(:last-child) {
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 100%;
+				width: $starGap;
+				transform: translateX(100%);
+				[data-rating="set"] & {
+					cursor: pointer;
+				}
+			}
+		}
+		[data-rating="set"] & {
+			@media (any-hover: hover) {
+				&:hover {
+					~ .rating__item {
+						background: url($star) 0 0 / $starWidth no-repeat;
+						span {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	// .rating__input
+	&__input {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		display: block;
+		[data-rating="set"] & {
+			cursor: pointer;
+		}
+	}
+}

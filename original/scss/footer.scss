@@ -1,0 +1,261 @@
+@import "setup";
+
+
+.footer {
+  
+
+   // .footer__fon
+   &__fon {
+    background-color: $colorBackgroundSection;
+  }
+
+  // .footer__container
+  &__container {
+  }
+
+  // .footer__wrap
+  &__wrap {
+    padding: toEm(64) 0;
+  }
+
+  // .footer__inner
+  &__inner {
+    display: flex;
+    column-gap: toEm(20);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: toEm(40);
+
+    // @media (max-width: toEm(956)){
+    //   flex-direction: column;
+    // }
+  }
+
+  // .footer__section
+  &__section {
+    flex-grow: 1;
+    display: flex;
+    column-gap: toEm(20);
+    align-items: flex-start;
+    max-width: 768px;
+  }
+
+  // .footer__logo-company
+  &__logo-company{
+    flex-grow: 1;
+    max-width: 205px;
+  }
+
+  // .footer__text-content
+  &__text-content {
+    flex: 1 0 auto;
+    display: flex;
+    column-gap: toEm(30);
+   justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  // .footer__menu-jump
+  &__menu-jump {
+    flex: 1 0 auto;
+  }
+
+  // .footer__sub-caption
+  &__sub-caption {
+    color: $fontTitleSubTitleHeaderMenu;
+    line-height: 1.1;
+   
+    &:not(:last-child){
+    margin-bottom: toEm(16);
+  }
+    text-transform: capitalize;
+  }
+
+  // .footer__subilist
+  &__subilist {
+  }
+
+  // .footer__subitem
+  &__subitem {
+    text-transform: capitalize;
+
+    &:not(:last-child){
+      margin-bottom: toEm(16)
+    }
+        @media(any-hover: hover){
+        cursor: pointer;
+        &:hover .footer__sublink{
+        color: $colorButtonLink;
+      }
+         &:hover .footer__sublink::before {
+         width: 100%;
+      }
+    }
+  }
+
+  // .footer__sublink
+  &__sublink {
+    position: relative;
+    &::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 0;
+    height: toEm(2);
+    background-color: $colorButtonLink;
+    transition: width .4s ease-in-out;
+    }
+  }
+
+  // .footer__subscribe
+  &__subscribe {
+    @media (max-width: toEm(956)){
+      flex-grow: 1;
+    }
+  }
+
+  // .footer__subcaption
+  &__subcaption {
+    
+  }
+
+  // .footer__subpar
+  &__subpar {
+    &:not(:last-child){
+    margin-bottom: toEm(15);
+    }
+  }
+
+  // .footer__enter-mail
+  &__enter-mail {
+    display: flex;
+    column-gap: toEm(16);
+
+    &:not(:last-child){
+      margin-bottom: toEm(16);
+    }
+  }
+
+  // .footer__form-label
+  &__form-label {
+    flex-grow: 1;
+  }
+
+  // .footer__form-input
+  &__form-input {
+    height: toEm(48);
+    border-radius: toEm(6);
+    border: toEm(1) solid $colorFonSubTitleBorder;
+    background: $fontSubMainButtonLink;
+    box-shadow: 0 toEm(2) toEm(4) 0 $boxShadowInputForm;
+    padding: toEm(12) toEm(14);
+  }
+
+  // .footer__send-subscribe
+  &__send-subscribe {
+    @include linkButtonHover;
+  }
+
+  // .footer__sub-lowpar
+  &__sub-lowpar {
+   
+    font-size: toRem(12);
+    line-height: 0.888889;
+    
+    display: flex;
+    column-gap: toEm(14);
+
+    &>*:not(:last-child){
+      margin-bottom: toEm(16);
+    }
+  }
+
+// .footer__jump-privacy-policy
+&__jump-privacy-policy{
+  color: $fontMainProject;
+
+  @media (any-hover: hover) {
+  cursor: pointer;
+  &:hover {
+    color: $colorButtonLink;
+      }
+    }
+  } 
+}
+
+
+.sublevel--setup {
+  background-color: $colorSubFon;
+}
+
+.sublevel {
+ 
+  // .sublevel__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: roEm(10);
+    align-items: center;
+    padding: toEm(25) toEm(64);
+    flex-wrap: wrap;
+    row-gap: toEm(15);
+
+    @media (max-width: toEm(469)){
+      justify-content: center;
+    }
+  }
+
+  // .sublevel__copyright
+  &__copyright {
+    display: flex;
+    column-gap: toEm(6);
+    flex-shrink: 0;
+  }
+
+  // .sublevel__social
+  &__social {
+    display: flex;
+    column-gap: toEm(12);
+    color: $fontTitleSubTitleHeaderMenu;
+  }
+
+  // .sublevel__list-web
+  &__list-web {
+    font-size: toRem(24);
+  
+    @media (any-hover: hover) {
+    cursor: pointer;
+    &:hover .sublevel__network-link {
+        color: $colorButtonLink;
+      }
+    }
+  }
+
+  // .sublevel__network-link
+  &__network-link {
+    transition: all .4s ease-in;
+  }
+
+  // ._icon-by
+  &_icon-by {
+  }
+
+  // ._icon-fc
+  &_icon-fc {
+  }
+
+  // ._icon-instagram
+  &_icon-instagram {
+  }
+
+  // ._icon-twitter
+  &_icon-twitter {
+  }
+
+  // ._icon-in
+  &_icon-in {
+  }
+}

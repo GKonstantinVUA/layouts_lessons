@@ -1,0 +1,67 @@
+//$Шрифти
+$fontTitleSubTitleHeaderMenu: #2A2C1F;
+$fontSubMainButtonLink: #FFFFFF;
+$fontLabel: #737680;
+$fontMainProject: #65665C; 
+
+//$Кольори
+$colorButtonLink: #CF6F49;
+$colorHoverButtonLink: #9c5437;
+$colorBackgroundButtonLink: #FAE8E1;
+
+$colorFonTitleSubtitle: #222222;
+$colorFonSubTitleBorder: #E7E8E3;
+$colorBackgroundSection: #FFFFFF;
+$colorSubFon: #F5F5F2;
+$colorLabel: #737680;
+$colorBackgroundSubHeader: #939878;
+
+
+//$Сімейство шрифтів 
+$familyIcons: "IconFont";
+$familySubIcons: "Material Icons";
+
+//$Form
+$boxShadowInputForm: rgba(0, 0, 0, 0.08);
+
+//@Реалізація кнопок-посилань
+
+@mixin linkButtonHover ($linkLineHeight: 1.5, $linkColorText: $fontSubMainButtonLink, $linkPadding: toEm(13) toEm(28), $linkBackgroundHover: $colorHoverButtonLink){
+    line-height: $linkLineHeight;
+    color: $linkColorText;
+    border-radius: toEm(6);
+    border: toEm(1) solid $colorButtonLink;
+    background: $colorButtonLink;
+    padding: $linkPadding;
+
+    transition: background-color .3s ease-in;
+
+    @media (any-hover: hover) {
+    cursor: pointer;
+    &:hover {
+    background-color: $linkBackgroundHover;
+      }
+    }
+}
+
+@mixin setupTitleContainer ($titleColorFont: $fontTitleSubTitleHeaderMenu) {
+    color: $titleColorFont;
+    font-size: clamp(2.5rem, 2.333rem + 0.83vw, 3rem); //*Переход 48-40
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@mixin setupTitleCard {
+    color: $fontTitleSubTitleHeaderMenu;
+    font-size: clamp(1.25rem, 1.167rem + 0.42vw, 1.5rem); //*24-20
+    font-weight: 700;
+    line-height: 1.1;
+    }
+
+
+@mixin setupParagraphContainer ($paragraphColorFont: $fontTitleSubTitleHeaderMenu, $paragraphAligh: center) {
+    color: $paragraphColorFont;
+    font-size: clamp(1rem, 0.958rem + 0.21vw, 1.125rem); //*Переход 18-16
+    line-height: 1.5;
+    text-align: $paragraphAligh;
+}
