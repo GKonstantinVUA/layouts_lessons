@@ -300,7 +300,8 @@ table {
   object-fit: contain
 }
 .header__up-block {
-  background-color: #939878
+  background-color: #939878;
+  z-index: 3
 }
 .header__menu {
   display: flex;
@@ -595,7 +596,7 @@ table {
   content: "";
   position: absolute;
   left: 50%;
-  top: 100%;
+  top: 110%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 0;
@@ -2138,10 +2139,10 @@ body {
   .spollers__subitem {
     cursor: pointer
   }
-  .spollers__subitem:hover .footer__sublink {
+  .spollers__subitem:hover .spollers__sublink {
     color: #cf6f49
   }
-  .spollers__subitem:hover .footer__sublink::before {
+  .spollers__subitem:hover .spollers__sublink::before {
     width: 100%
   }
   .sublevel__list-web {
@@ -2183,16 +2184,14 @@ body {
     color: #cf6f49
   }
   .box-house__poster-house {
-    cursor: -webkit-zoom-in;
-    cursor: zoom-in
+    cursor: pointer
   }
   .box-house__poster-house:hover .box-house__house-trump {
     -webkit-transform: scale(1.02);
     transform: scale(1.02)
   }
   .house-minion__poster {
-    cursor: -webkit-zoom-in;
-    cursor: zoom-in
+    cursor: pointer
   }
   .house-minion__poster:hover .house-minion__trump {
     -webkit-transform: scale(1.02);
@@ -2249,8 +2248,7 @@ body {
     color: #fff
   }
   .flat-card__poster {
-    cursor: -webkit-zoom-in;
-    cursor: zoom-in
+    cursor: pointer
   }
   .flat-card__poster:hover .flat-card__trump {
     -webkit-transform: scale(1.02);
